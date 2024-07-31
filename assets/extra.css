@@ -1,0 +1,34 @@
+.bullets-image{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.bullets-image__card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 728px){
+    .bullets-image{
+        align-items: flex-start;
+    }
+    .bullets-image__card{
+        text-align: center;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Verificado */
+
+.verificado{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}

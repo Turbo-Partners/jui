@@ -5,6 +5,7 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+{{ 'extra.css' | asset_url | stylesheet_tag }}
 {% unless section.settings.product.has_only_default_variant %}
   {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
   {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
@@ -156,6 +157,30 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {%- when 'verificado' -%}
+                <div class="verificado">
+                  <img src="{{ block.settings.verificado__icon | image_url: width: 50 }}" />
+                  <span>{{ block.settings.verificado__texto }}</span>
+                </div>
+              {%- when 'bullets_image' -%}
+                <div class="bullets-image">
+                  <div class="bullets-image__card">
+                    <img src="{{ block.settings.bullets__image1 | image_url: width: 100 }}" />
+                    <span>{{ block.settings.bullets__text1 }}</span>
+                  </div>
+                  <div class="bullets-image__card">
+                    <img src="{{ block.settings.bullets__image2 | image_url: width: 100 }}" />
+                    <span>{{ block.settings.bullets__text2 }}</span>
+                  </div>
+                  <div class="bullets-image__card">
+                    <img src="{{ block.settings.bullets__image3 | image_url: width: 100 }}" />
+                    <span>{{ block.settings.bullets__text3 }}</span>
+                  </div>
+                  <div class="bullets-image__card">
+                    <img src="{{ block.settings.bullets__image4 | image_url: width: 100 }}" />
+                    <span>{{ block.settings.bullets__text4 }}</span>
+                  </div>
+                </div>
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -455,7 +480,9 @@
                   product_form_id: product_form_id,
                   update_url: false
                 %}
-              {%- when 'buy_buttons' -%}
+                {%- when 'variant_picker2' -%}
+                  {% render 'product-variant-picker2', product: product, block: block, product_form_id: product_form_id %}
+                {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
@@ -707,6 +734,96 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "verificado",
+      "name": "verificado",
+      "settings": [
+        {
+          "type": "text",
+          "id": "verificado__texto",
+          "label": "texto do verificado",
+          "default": "Compra 100% segura!"
+        },
+        {
+          "type": "image_picker",
+          "id": "verificado__icon",
+          "label": "Icone do Verificado"
+        }
+      ]
+    },
+    {
+      "type": "bullets_image",
+      "name": "bullets_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "bullets__image1",
+          "label": "Imagem do Bullet"
+        },
+        {
+          "type": "text",
+          "id": "bullets__text1",
+          "label": "Texto do Bullet",
+          "default": "Vegano"
+        },
+        {
+          "type": "image_picker",
+          "id": "bullets__image2",
+          "label": "Imagem do Bullet"
+        },
+        {
+          "type": "text",
+          "id": "bullets__text2",
+          "label": "Texto do Bullet",
+          "default": "Vegano"
+        },
+        {
+          "type": "image_picker",
+          "id": "bullets__image3",
+          "label": "Imagem do Bullet"
+        },
+        {
+          "type": "text",
+          "id": "bullets__text3",
+          "label": "Texto do Bullet",
+          "default": "Vegano"
+        },
+        {
+          "type": "image_picker",
+          "id": "bullets__image4",
+          "label": "Imagem do Bullet"
+        },
+        {
+          "type": "text",
+          "id": "bullets__text4",
+          "label": "Texto do Bullet",
+          "default": "Vegano"
+        }
+      ]
+    },
+    {
+      "type": "variant_picker2",
+      "name": "variant_picker2",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "dropdown",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__1.label"
+            },
+            {
+              "value": "button",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+            }
+          ],
+          "default": "button",
+          "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        }
+      ]
     },
     {
       "type": "text",
