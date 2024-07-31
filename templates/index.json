@@ -357,6 +357,15 @@
         "review_bGahcc": {
           "type": "review",
           "settings": {
+            "image": "shopify:\/\/shop_images\/chlora.webp",
+            "name": "",
+            "job": "<h4><strong>Spirullina e Chlorella<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
+          }
+        },
+        "review_4qXiQp": {
+          "type": "review",
+          "settings": {
             "name": "<h3>Willian Souza<\/h3>",
             "job": "<p>Motociclista<\/p>",
             "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
@@ -381,6 +390,7 @@
       },
       "block_order": [
         "review_bGahcc",
+        "review_4qXiQp",
         "review_GTTAPW",
         "review_hWcRXN"
       ],
