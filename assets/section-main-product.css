@@ -1177,7 +1177,7 @@ a.product__text {
 }
 
 .product__view-details {
-  display: block;
+  display: none;
   text-decoration: none;
 }
 
