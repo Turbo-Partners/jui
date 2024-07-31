@@ -366,9 +366,10 @@
         "review_4qXiQp": {
           "type": "review",
           "settings": {
-            "name": "<h3>Willian Souza<\/h3>",
-            "job": "<p>Motociclista<\/p>",
-            "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
+            "image": "shopify:\/\/shop_images\/biotina.webp",
+            "name": "",
+            "job": "<h4><strong>Biotina<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
           }
         },
         "review_GTTAPW": {
