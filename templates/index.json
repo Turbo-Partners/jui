@@ -498,13 +498,13 @@
         "row_f3nxjh"
       ],
       "custom_css": [
-        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px;border-radius: 32px;background: #B3D825;}",
+        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px; border-radius: 32px; background: #b3d825;}",
         ".image-with-text__media--placeholder {display: ;}",
         ":root {--media-display: block; \/* Padrão é exibir a imagem *\/}",
         "@media screen {.media-container {position: relative; width: 100%; max-width: 600px; margin: auto; } .media-image, .media-video {width: 100%; height: auto; } .media-image {display: var(--media-display); } .media-video {display: block; \/* Mostrar vídeo em telas maiores *\/ }}"
       ],
       "settings": {
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
