@@ -15,7 +15,6 @@
                     "default": "#00AF85"
                 }
             ],
-        "max_blocks": 5,
         "blocks": [
             {
                 "type": "faq",
@@ -31,6 +30,11 @@
                         "type": "richtext",
                         "id": "faq_resposta",
                         "label": "Resposta"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "faq_bg",
+                        "label": "Background do Block"
                     }
                 ]
             }
@@ -49,7 +53,7 @@
                 </div>
                 <div class="faq-container__faqs">
                     {% for block in section.blocks %}
-                        <div class="faq-container__faq">
+                        <div class="faq-container__faq" style="background-image: url({{ block.settings.faq_bg | image_url }}); background-position: center; background-size: cover;  background-repeat: no-repeat;">
                             <div class="question" onclick="toggleFAQ('faq-answer-{{ forloop.index0 }}')" style="background-color: transparent; color: black;">
                                 <span style="margin-top: 0.5rem;">{{ block.settings.faq_pergunta }}</span>
                                 <span style="font-size: 2.4rem;">+</span>
@@ -69,7 +73,7 @@
         padding: 2rem 1.6rem 20rem 1.6rem;
     }
     .faq-container__title h1{
-        color: white;
+        color: #C7FD04;
         font-size: 3.2rem;
         font-weight: bold;
         margin: 3rem 0;
@@ -81,7 +85,6 @@
         gap: 16px;
     }
     .faq-container__faq{
-        background-color: white;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -94,6 +97,8 @@
         border-radius: 1rem 1rem 0 0;
         display: flex;
         justify-content: space-between;
+        height: 100% !important;
+        Width: 100% !important; 
     }
     .answer {
         display: none;
@@ -135,7 +140,7 @@
         answer.style.display = isAnswerOpen ? 'none' : 'block';
         
         // Alterna a cor de fundo da pergunta
-        question.style.backgroundColor = isAnswerOpen ? 'transparent' : '#17382D';
+        //question.style.backgroundColor = isAnswerOpen ? 'transparent' : '#17382D';
         question.style.color = isAnswerOpen ? 'black' : 'white';
     }
 </script>
