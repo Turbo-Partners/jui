@@ -1,0 +1,58 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "10% OFF PRIMEIRA COMPRA - CUPOM VIVAJUI10",
+            "link": "https:\/\/vivajui.com.br\/#gZQDtb5Fxv"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "custom_css": [
+        "span {font-weight: 600;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b25d35aa-7c4f-4054-8254-fe66fb1aaeab",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".header__icon--search {display:none;}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-b9866602-e288-4774-bddf-4a828bc71559",
+        "menu_color_scheme": "scheme-b9866602-e288-4774-bddf-4a828bc71559",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
