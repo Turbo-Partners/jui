@@ -204,6 +204,122 @@
         "padding_bottom": 36
       }
     },
+    "reviews_by_turbo_ceKrGQ": {
+      "type": "reviews-by-turbo",
+      "blocks": {
+        "review_bGahcc": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chlora.webp",
+            "name": "",
+            "job": "<h4><strong>Spirullina e Chlorella<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
+          }
+        },
+        "review_4qXiQp": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biotina.webp",
+            "name": "",
+            "job": "<h4><strong>Biotina<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
+          }
+        },
+        "review_GTTAPW": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stevia.webp",
+            "name": "",
+            "job": "<h4><strong>Stevia<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
+          }
+        },
+        "review_hWcRXN": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vitaminas.webp",
+            "name": "",
+            "job": "<h4><strong>Vitaminas e minerais<\/strong><\/h4>",
+            "message": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco, Vitamina C, Magnésio.<\/p>"
+          }
+        },
+        "review_3FBTUw": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Curma.webp",
+            "name": "",
+            "job": "<h4><strong>Extrato de Cúrcuma<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos. <\/p>"
+          }
+        },
+        "review_cbJGeG": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/greens.png",
+            "name": "",
+            "job": "<h4><strong>Mix de Greens & Superfoods<\/strong><\/h4>",
+            "message": "<p>Limão, espinafre, couve, gengibre e chá verde.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_bGahcc",
+        "review_4qXiQp",
+        "review_GTTAPW",
+        "review_hWcRXN",
+        "review_3FBTUw",
+        "review_cbJGeG"
+      ],
+      "custom_css": [
+        ".review-card-wrapper {background: none; box-shadow: unset;}",
+        ".reviews-wrapper {display: flex; width: 1936px; padding: 140px 0px 96px 64px; flex-direction: column; align-items: flex-start; gap: 9.278;}",
+        ".client-name {color: rgba(0, 0, 0, 0.8); font-size: 16px; font-weight: 500; line-height: 150%; letter-spacing: 0.48px;}",
+        ".review-card {margin-top: -71px;}",
+        ".reviews {background: linear-gradient(180deg, #fff 50%, #b3d825 50%);}",
+        ".client-photo {border-radius: 6%; border: 1px solid black;}",
+        ".client-job {display: flex; padding-left: 4%;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "",
+        "subtitle": "",
+        "show_view_all": false,
+        "view_all_link": "",
+        "color_scheme": "",
+        "swiper_on": true,
+        "center_slides": true,
+        "initial_slide": 2,
+        "fixed_width": true,
+        "fixed_width_mobile": true,
+        "slides_width": 260,
+        "slides_width_mobile": 260,
+        "slides": 3,
+        "slides_mobile": 1.6,
+        "photo-cover": true,
+        "text_absolute": false,
+        "border-radius": 12,
+        "vertical-padding": 0,
+        "horizontal-padding": 0,
+        "photo-size": 124,
+        "photo-size-mobile": 54,
+        "photo-height": 260,
+        "photo-height-mobile": 260,
+        "info-flex": false,
+        "text-align": false,
+        "verified_text": "",
+        "order": "1,2,3",
+        "font_size": 16,
+        "gap": 14,
+        "scale_slide": 100,
+        "scale_active_slide": 100,
+        "scale_slide_mobile": 100,
+        "scale_active_slide_mobile": 100,
+        "navigation": "",
+        "pagination": "",
+        "padding_top": 100,
+        "padding_bottom": 40
+      }
+    },
     "gp_section_512853366297068749": {
       "type": "gp-section-512853366297068749",
       "settings": {
@@ -351,120 +467,49 @@
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
     },
-    "reviews_by_turbo_ceKrGQ": {
-      "type": "reviews-by-turbo",
+    "multirow_TdyKYV": {
+      "type": "multirow",
       "blocks": {
-        "review_bGahcc": {
-          "type": "review",
+        "row_tEL4jE": {
+          "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/chlora.webp",
-            "name": "",
-            "job": "<h4><strong>Spirullina e Chlorella<\/strong><\/h4>",
-            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
+            "image": "shopify:\/\/shop_images\/tabela.webp",
+            "caption": "",
+            "heading": "Informações nutricionais",
+            "text": "<p>Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.<\/p>",
+            "button_label": "Comprar agora",
+            "button_link": ""
           }
         },
-        "review_4qXiQp": {
-          "type": "review",
+        "row_f3nxjh": {
+          "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/biotina.webp",
-            "name": "",
-            "job": "<h4><strong>Biotina<\/strong><\/h4>",
-            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
-          }
-        },
-        "review_GTTAPW": {
-          "type": "review",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stevia.webp",
-            "name": "",
-            "job": "<h4><strong>Stevia<\/strong><\/h4>",
-            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.<\/p>"
-          }
-        },
-        "review_hWcRXN": {
-          "type": "review",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vitaminas.webp",
-            "name": "",
-            "job": "<h4><strong>Vitaminas e minerais<\/strong><\/h4>",
-            "message": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco, Vitamina C, Magnésio.<\/p>"
-          }
-        },
-        "review_3FBTUw": {
-          "type": "review",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Curma.webp",
-            "name": "",
-            "job": "<h4><strong>Extrato de Cúrcuma<\/strong><\/h4>",
-            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos. <\/p>"
-          }
-        },
-        "review_cbJGeG": {
-          "type": "review",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/greens.png",
-            "name": "",
-            "job": "<h4><strong>Mix de Greens & Superfoods<\/strong><\/h4>",
-            "message": "<p>Limão, espinafre, couve, gengibre e chá verde.<\/p>"
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "review_bGahcc",
-        "review_4qXiQp",
-        "review_GTTAPW",
-        "review_hWcRXN",
-        "review_3FBTUw",
-        "review_cbJGeG"
-      ],
-      "custom_css": [
-        ".review-card-wrapper {background: none; box-shadow: unset;}",
-        ".reviews-wrapper {display: flex; width: 1936px; padding: 140px 0px 96px 64px; flex-direction: column; align-items: flex-start; gap: 9.278;}",
-        ".client-name {color: rgba(0, 0, 0, 0.8); font-size: 16px; font-weight: 500; line-height: 150%; letter-spacing: 0.48px;}",
-        ".review-card {margin-top: -71px;}",
-        ".reviews {background: linear-gradient(180deg, #fff 50%, #b3d825 50%);}",
-        ".client-photo {border-radius: 6%; border: 1px solid black;}",
-        ".client-job {display: flex; padding-left: 4%;}"
+        "row_tEL4jE",
+        "row_f3nxjh"
       ],
       "settings": {
-        "full_width": true,
-        "title": "",
-        "subtitle": "",
-        "show_view_all": false,
-        "view_all_link": "",
-        "color_scheme": "",
-        "swiper_on": true,
-        "center_slides": true,
-        "initial_slide": 2,
-        "fixed_width": true,
-        "fixed_width_mobile": true,
-        "slides_width": 260,
-        "slides_width_mobile": 260,
-        "slides": 3,
-        "slides_mobile": 1.6,
-        "photo-cover": true,
-        "text_absolute": false,
-        "border-radius": 12,
-        "vertical-padding": 0,
-        "horizontal-padding": 0,
-        "photo-size": 124,
-        "photo-size-mobile": 54,
-        "photo-height": 260,
-        "photo-height-mobile": 260,
-        "info-flex": false,
-        "text-align": false,
-        "verified_text": "",
-        "order": "1,2,3",
-        "font_size": 16,
-        "gap": 14,
-        "scale_slide": 100,
-        "scale_active_slide": 100,
-        "scale_slide_mobile": 100,
-        "scale_active_slide_mobile": 100,
-        "navigation": "",
-        "pagination": "",
-        "padding_top": 100,
-        "padding_bottom": 40
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -477,6 +522,7 @@
     "gp_section_514655966772331532",
     "gp_section_513864092595782682",
     "image_with_text_XXYWym",
+    "reviews_by_turbo_ceKrGQ",
     "gp_section_512853366297068749",
     "gp_section_514853679853994823",
     "gp_section_516895934638982307",
@@ -486,6 +532,6 @@
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
     "gp_section_514710608571008012",
-    "reviews_by_turbo_ceKrGQ"
+    "multirow_TdyKYV"
   ]
 }
