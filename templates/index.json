@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "tp_banner_Ph7QwD": {
@@ -341,6 +350,80 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
+    },
+    "reviews_by_turbo_ceKrGQ": {
+      "type": "reviews-by-turbo",
+      "blocks": {
+        "review_bGahcc": {
+          "type": "review",
+          "settings": {
+            "name": "<h3>Willian Souza<\/h3>",
+            "job": "<p>Motociclista<\/p>",
+            "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
+          }
+        },
+        "review_GTTAPW": {
+          "type": "review",
+          "settings": {
+            "name": "<h3>Willian Souza<\/h3>",
+            "job": "<p>Motociclista<\/p>",
+            "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
+          }
+        },
+        "review_hWcRXN": {
+          "type": "review",
+          "settings": {
+            "name": "<h3>Willian Souza<\/h3>",
+            "job": "<p>Motociclista<\/p>",
+            "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_bGahcc",
+        "review_GTTAPW",
+        "review_hWcRXN"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "subtitle": "",
+        "show_view_all": false,
+        "view_all_link": "",
+        "color_scheme": "",
+        "swiper_on": true,
+        "center_slides": true,
+        "initial_slide": 0,
+        "fixed_width": false,
+        "fixed_width_mobile": false,
+        "slides_width": 400,
+        "slides_width_mobile": 150,
+        "slides": 3,
+        "slides_mobile": 1.6,
+        "photo-cover": false,
+        "text_absolute": false,
+        "border-radius": 12,
+        "vertical-padding": 20,
+        "horizontal-padding": 20,
+        "photo-size": 124,
+        "photo-size-mobile": 54,
+        "photo-height": 100,
+        "photo-height-mobile": 100,
+        "info-flex": false,
+        "text-align": true,
+        "verified_text": "",
+        "order": "1,2,3",
+        "font_size": 16,
+        "gap": 14,
+        "scale_slide": 100,
+        "scale_active_slide": 100,
+        "scale_slide_mobile": 100,
+        "scale_active_slide_mobile": 100,
+        "navigation": "",
+        "pagination": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -360,6 +443,7 @@
     "1718743964e2a4b132",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012"
+    "gp_section_514710608571008012",
+    "reviews_by_turbo_ceKrGQ"
   ]
 }
