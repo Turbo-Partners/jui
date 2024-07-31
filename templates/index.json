@@ -133,6 +133,7 @@
     },
     "gp_section_513864092595782682": {
       "type": "gp-section-513864092595782682",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "ggqDI_oYHV0_text": "<strong>Verde e Verdadeiro<\/strong>",
@@ -402,6 +403,56 @@
         "section_preload": "false"
       }
     },
+    "multirow_TdyKYV": {
+      "type": "multirow",
+      "blocks": {
+        "row_tEL4jE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tabela.webp",
+            "caption": "",
+            "heading": "Informações nutricionais",
+            "text": "<p>Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.<\/p>",
+            "button_label": "Comprar agora",
+            "button_link": ""
+          }
+        },
+        "row_f3nxjh": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo.gif",
+            "caption": "",
+            "heading": "Como preparar meu Jui?",
+            "text": "<ol><li>Coloque 200ml de água beeeem gelada em um copo.<\/li><li>Adicione 1 dose (10g) de Jui.<\/li><li>Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente<\/li><\/ol>",
+            "button_label": "Quero provar!",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_tEL4jE",
+        "row_f3nxjh"
+      ],
+      "custom_css": [
+        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px; border-radius: 32px; background: #b3d825;}",
+        ".li {color: green;}"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1718743964e2a4b132": {
       "type": "apps",
       "blocks": {
@@ -435,6 +486,24 @@
       "disabled": true,
       "settings": {
         "include_margins": true
+      }
+    },
+    "image_with_text_7Uj8GJ": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/elemeny.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "gp_section_511770980398466215": {
@@ -495,58 +564,6 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
-    },
-    "multirow_TdyKYV": {
-      "type": "multirow",
-      "blocks": {
-        "row_tEL4jE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tabela.webp",
-            "caption": "",
-            "heading": "Informações nutricionais",
-            "text": "<p>Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.<\/p>",
-            "button_label": "Comprar agora",
-            "button_link": ""
-          }
-        },
-        "row_f3nxjh": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo.gif",
-            "caption": "",
-            "heading": "Como preparar meu Jui?",
-            "text": "<ol><li>Coloque 200ml de água beeeem gelada em um copo.<\/li><li>Adicione 1 dose (10g) de Jui.<\/li><li>Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente<\/li><\/ol>",
-            "button_label": "Quero provar!",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_tEL4jE",
-        "row_f3nxjh"
-      ],
-      "custom_css": [
-        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px; border-radius: 32px; background: #b3d825;}",
-        ".image-with-text__media--placeholder {display: ;}",
-        ":root {--media-display: block; \/* Padrão é exibir a imagem *\/}",
-        "@media screen {.media-container {position: relative; width: 100%; max-width: 600px; margin: auto; } .media-image, .media-video {width: 100%; height: auto; } .media-image {display: var(--media-display); } .media-video {display: block; \/* Mostrar vídeo em telas maiores *\/ }}"
-      ],
-      "settings": {
-        "image_height": "large",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -565,10 +582,11 @@
     "gp_section_513772542951949467",
     "1722461618979fbe75",
     "gp_section_513797264515269478",
+    "multirow_TdyKYV",
     "1718743964e2a4b132",
+    "image_with_text_7Uj8GJ",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012",
-    "multirow_TdyKYV"
+    "gp_section_514710608571008012"
   ]
 }
