@@ -389,13 +389,23 @@
             "job": "<h4><strong>Vitaminas e minerais<\/strong><\/h4>",
             "message": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco, Vitamina C, Magnésio.<\/p>"
           }
+        },
+        "review_3FBTUw": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Curma.webp",
+            "name": "",
+            "job": "<h4><strong>Extrato de Cúrcuma<\/strong><\/h4>",
+            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos. <\/p>"
+          }
         }
       },
       "block_order": [
         "review_bGahcc",
         "review_4qXiQp",
         "review_GTTAPW",
-        "review_hWcRXN"
+        "review_hWcRXN",
+        "review_3FBTUw"
       ],
       "custom_css": [
         ".review-card-wrapper {background: none; box-shadow: unset;}",
