@@ -367,6 +367,35 @@
         "ggBObnnWO3n_text": "Aqui o papo é aberto e reto."
       }
     },
+    "1722461618979fbe75": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_dqmVaM": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "jui-suco-verde-em-po-sabor-limao"
+          }
+        },
+        "judge_me_reviews_all_reviews_text_jLwRtt": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "judge_me_reviews_verified_badge_pQFAqN": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/verified_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_dqmVaM",
+        "judge_me_reviews_all_reviews_text_jLwRtt",
+        "judge_me_reviews_verified_badge_pQFAqN"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "gp_section_513797264515269478": {
       "type": "gp-section-513797264515269478",
       "settings": {
@@ -534,6 +563,7 @@
     "gp_section_514853679853994823",
     "gp_section_516895934638982307",
     "gp_section_513772542951949467",
+    "1722461618979fbe75",
     "gp_section_513797264515269478",
     "1718743964e2a4b132",
     "gp_section_511770980398466215",
