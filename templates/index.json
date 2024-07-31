@@ -398,6 +398,15 @@
             "job": "<h4><strong>Extrato de Cúrcuma<\/strong><\/h4>",
             "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos. <\/p>"
           }
+        },
+        "review_cbJGeG": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/greens.png",
+            "name": "",
+            "job": "<h4><strong>Mix de Greens & Superfoods<\/strong><\/h4>",
+            "message": "<p>Limão, espinafre, couve, gengibre e chá verde.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -405,7 +414,8 @@
         "review_4qXiQp",
         "review_GTTAPW",
         "review_hWcRXN",
-        "review_3FBTUw"
+        "review_3FBTUw",
+        "review_cbJGeG"
       ],
       "custom_css": [
         ".review-card-wrapper {background: none; box-shadow: unset;}",
