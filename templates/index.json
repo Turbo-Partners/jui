@@ -384,9 +384,10 @@
         "review_hWcRXN": {
           "type": "review",
           "settings": {
-            "name": "<h3>Willian Souza<\/h3>",
-            "job": "<p>Motociclista<\/p>",
-            "message": "<p>O atendimento foi excelente, fui muito bem orientado pelos vendedores e encontrei o capacete perfeito para minhas necessidades. Além disso, o produto chegou rapidamente e em perfeitas condições.<\/p>"
+            "image": "shopify:\/\/shop_images\/vitaminas.webp",
+            "name": "",
+            "job": "<h4><strong>Vitaminas e minerais<\/strong><\/h4>",
+            "message": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco, Vitamina C, Magnésio.<\/p>"
           }
         }
       },
