@@ -484,10 +484,11 @@
         "row_f3nxjh": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo.gif",
+            "caption": "",
+            "heading": "Como preparar meu Jui?",
+            "text": "<ol><li>Coloque 200ml de água beeeem gelada em um copo.<\/li><li>Adicione 1 dose (10g) de Jui.<\/li><li>Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente<\/li><\/ol>",
+            "button_label": "Quero provar!",
             "button_link": ""
           }
         }
