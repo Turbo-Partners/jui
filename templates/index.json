@@ -497,6 +497,12 @@
         "row_tEL4jE",
         "row_f3nxjh"
       ],
+      "custom_css": [
+        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px;border-radius: 32px;background: #B3D825;}",
+        ".image-with-text__media--placeholder {display: ;}",
+        ":root {--media-display: block; \/* Padrão é exibir a imagem *\/}",
+        "@media screen {.media-container {position: relative; width: 100%; max-width: 600px; margin: auto; } .media-image, .media-video {width: 100%; height: auto; } .media-image {display: var(--media-display); } .media-video {display: block; \/* Mostrar vídeo em telas maiores *\/ }}"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -505,7 +511,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "image_layout": "alternate-right",
         "section_color_scheme": "",
         "row_color_scheme": "",
         "mobile_content_alignment": "left",
