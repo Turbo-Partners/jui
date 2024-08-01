@@ -98,6 +98,7 @@
     },
     "gp_section_511770980314514599": {
       "type": "gp-section-511770980314514599",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "ggY7_0jvl81_text": "<strong>Tenha Jui sempre <\/strong><br><strong>com você<\/strong>",
@@ -106,6 +107,7 @@
     },
     "gp_section_514655966772331532": {
       "type": "gp-section-514655966772331532",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "gNxxYZOwXgjJG_text": "<p>1xJui - Limão <\/p><p>(30 doses)<\/p>",
@@ -321,6 +323,44 @@
         "padding_bottom": 40
       }
     },
+    "tp_preparo_7fdL9w": {
+      "type": "tp-preparo",
+      "blocks": {
+        "bullets_nVXXAA": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "1.",
+            "bullet__desc": "Coloque 200ml de água beeeem gelada em um copo."
+          }
+        },
+        "bullets_EW3JAq": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "2.",
+            "bullet__desc": "Adicione 1 dose (10g) de Jui"
+          }
+        },
+        "bullets_R7hg8P": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "3.",
+            "bullet__desc": "Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente"
+          }
+        }
+      },
+      "block_order": [
+        "bullets_nVXXAA",
+        "bullets_EW3JAq",
+        "bullets_R7hg8P"
+      ],
+      "settings": {
+        "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/576b576004624fcdaee0187ed5e5c941.mp4",
+        "preparo__color": "#e375da",
+        "preparo__title": "Como preparar meu Jui?",
+        "preparo__url-cta": "#",
+        "image_layout": "left"
+      }
+    },
     "gp_section_512853366297068749": {
       "type": "gp-section-512853366297068749",
       "settings": {
@@ -362,9 +402,10 @@
     },
     "gp_section_513772542951949467": {
       "type": "gp-section-513772542951949467",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
-        "ggqpgHXGlRL_text": "<strong>Review<\/strong>",
+        "ggqpgHXGlRL_text": "<strong>Aval<\/strong>",
         "ggBObnnWO3n_text": "Aqui o papo é aberto e reto."
       }
     },
@@ -403,56 +444,6 @@
         "section_preload": "false"
       }
     },
-    "multirow_TdyKYV": {
-      "type": "multirow",
-      "blocks": {
-        "row_tEL4jE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tabela.webp",
-            "caption": "",
-            "heading": "Informações nutricionais",
-            "text": "<p>Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.<\/p>",
-            "button_label": "Comprar agora",
-            "button_link": ""
-          }
-        },
-        "row_f3nxjh": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo.gif",
-            "caption": "",
-            "heading": "Como preparar meu Jui?",
-            "text": "<ol><li>Coloque 200ml de água beeeem gelada em um copo.<\/li><li>Adicione 1 dose (10g) de Jui.<\/li><li>Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente<\/li><\/ol>",
-            "button_label": "Quero provar!",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_tEL4jE",
-        "row_f3nxjh"
-      ],
-      "custom_css": [
-        ".button {display: flex; padding: 18px 32px; justify-content: center; align-items: center; gap: 10px; border-radius: 32px; background: #b3d825;}",
-        ".li {color: green;}"
-      ],
-      "settings": {
-        "image_height": "large",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1718743964e2a4b132": {
       "type": "apps",
       "blocks": {
@@ -488,24 +479,6 @@
         "include_margins": true
       }
     },
-    "image_with_text_7Uj8GJ": {
-      "type": "image-with-text",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/elemeny.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "gp_section_511770980398466215": {
       "type": "gp-section-511770980398466215",
       "settings": {
@@ -517,6 +490,7 @@
     },
     "gp_section_511770980381623463": {
       "type": "gp-section-511770980381623463",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "ggnyy9CPl58_text": "FAQ",
@@ -564,43 +538,6 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
-    },
-    "tp_preparo_7fdL9w": {
-      "type": "tp-preparo",
-      "blocks": {
-        "bullets_nVXXAA": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "1.",
-            "bullet__desc": "Coloque 200ml de água beeeem gelada em um copo."
-          }
-        },
-        "bullets_EW3JAq": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "2.",
-            "bullet__desc": "Adicione 1 dose (10g) de Jui"
-          }
-        },
-        "bullets_R7hg8P": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "3.",
-            "bullet__desc": "Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente"
-          }
-        }
-      },
-      "block_order": [
-        "bullets_nVXXAA",
-        "bullets_EW3JAq",
-        "bullets_R7hg8P"
-      ],
-      "settings": {
-        "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/576b576004624fcdaee0187ed5e5c941.mp4",
-        "preparo__color": "#E375DA",
-        "preparo__title": "Como preparar meu Jui?",
-        "preparo__url-cta": "#"
-      }
     }
   },
   "order": [
@@ -613,18 +550,16 @@
     "gp_section_513864092595782682",
     "image_with_text_XXYWym",
     "reviews_by_turbo_ceKrGQ",
+    "tp_preparo_7fdL9w",
     "gp_section_512853366297068749",
     "gp_section_514853679853994823",
     "gp_section_516895934638982307",
     "gp_section_513772542951949467",
     "1722461618979fbe75",
     "gp_section_513797264515269478",
-    "multirow_TdyKYV",
     "1718743964e2a4b132",
-    "image_with_text_7Uj8GJ",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012",
-    "tp_preparo_7fdL9w"
+    "gp_section_514710608571008012"
   ]
 }
