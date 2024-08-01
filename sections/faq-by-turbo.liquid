@@ -68,10 +68,7 @@
                             </span>
                         </div>
                         <div id="faq-answer-{{ forloop.index0 }}" class="answer">
-                            <div class="answer-content">
-                                {{ block.settings.faq_resposta }}
-                                <a href="#" class="button">Adicionar ao carrinho</a>
-                            </div>
+                            {{ block.settings.faq_resposta }}
                         </div>
                     </div>
                 {% endfor %}
@@ -107,7 +104,6 @@
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    height: 300px;
 }
 .question {
     display: flex;
@@ -118,10 +114,7 @@
     color: #B3D825;
     cursor: pointer;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
+    position: relative;
 }
 .question .icon-expand {
     display: flex;
@@ -136,39 +129,28 @@
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    transition: transform 0.3s ease, height 0.3s ease;
+    transition: transform 0.3s ease;
     transform: translateY(100%);
     border-radius: 1rem;
-    z-index: 1;
 }
 .faq-container__faq.open .answer {
-    transform: translateY(0);
+    display: block;
     padding: 1.6rem;
     background: white;
     border: 2px solid #B3D825;
     color: black;
+    transform: translateY(0);
     height: auto;
-    z-index: 3;
 }
 .faq-container__faq.open .question {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
-.answer-content {
-    background: white;
-    padding: 1rem;
-    border-radius: 0 0 1rem 1rem;
-}
-
-.button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #ff007f;
-    color: white;
-    border-radius: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-    text-decoration: none;
+.faq-container__faq.open {
+    background-image: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 @media screen and (min-width: 728px) {
@@ -215,20 +197,27 @@
         bottom: 0;
         width: 100%;
         box-sizing: border-box;
-        transition: transform 0.3s ease, height 0.3s ease;
+        transition: transform 0.3s ease;
         transform: translateY(100%);
     }
     .faq-container__faq.open .answer {
-        transform: translateY(0);
+        display: block;
         padding: 1.6rem;
         background: white;
         border: 2px solid #B3D825;
         color: black;
+        transform: translateY(0);
         height: auto;
-        z-index: 3;
     }
     .faq-container__faq.open .question {
         background-color: rgba(0, 0, 0, 0.7);
+    }
+    .faq-container__faq.open {
+        background-image: inherit;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
     }
 }
 {% endstyle %}
