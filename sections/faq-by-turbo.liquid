@@ -1,146 +1,151 @@
 {% schema %}
-    {
-        "name": "TP- Faq",
-        "settings": [
+{
+    "name": "TP- Faq",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Título",
+            "default": "Benefícios Combinados"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Cor do Fundo",
+            "default": "#00AF85"
+        },
+        {
+            "type": "text",
+            "id": "description",
+            "label": "Descrição",
+            "default": "O efeito de seus ingredientes exclusivamente combinados é o grande segredo do novo Morning Shot."
+        }
+    ],
+    "blocks": [
+        {
+            "type": "faq",
+            "name": "FAQ",
+            "settings": [
                 {
                     "type": "text",
-                    "id": "title",
-                    "label": "Título",
-                    "default": "Perguntas Frequentes"
+                    "id": "faq_pergunta",
+                    "label": "Pergunta",
+                    "default": "A b.Box possui garantia?"
                 },
                 {
-                    "type": "color",
-                    "id": "background_color",
-                    "label": "Background Color",
-                    "default": "#00AF85"
+                    "type": "richtext",
+                    "id": "faq_resposta",
+                    "label": "Resposta"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "faq_bg",
+                    "label": "Background do Bloco"
                 }
-            ],
-        "blocks": [
-            {
-                "type": "faq",
-                "name": "FAQ",
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "faq_pergunta",
-                        "label": "Pergunta",
-                        "default": "A b.Box possui garantia?"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "faq_resposta",
-                        "label": "Resposta"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "faq_bg",
-                        "label": "Background do Block"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {"name": "TP- Faq"}
-        ]
-    }
-    {% endschema %}
-    
-    <div class="faq-container" style="background-color:{{ section.settings.background_color }};">
-        <div class="page-width">
-            <div class="faq-container__content">
-                <div class="faq-container__title">
-                    <h1 class="faq-title">{{ section.settings.title }}</h1>
-                </div>
-                <div class="faq-container__faqs">
-                    {% for block in section.blocks %}
-                        <div class="faq-container__faq" style="background-image: url({{ block.settings.faq_bg | image_url }}); background-position: center; background-size: cover;  background-repeat: no-repeat;">
-                            <div class="question" onclick="toggleFAQ('faq-answer-{{ forloop.index0 }}')" style="background-color: transparent; color: black;">
-                                <span style="margin-top: 0.5rem;">{{ block.settings.faq_pergunta }}</span>
-                                <span style="font-size: 2.4rem;">+</span>
-                            </div>
-                            <div id="faq-answer-{{ forloop.index0 }}" class="answer">
-                                {{ block.settings.faq_resposta }}
-                            </div>
+            ]
+        }
+    ],
+    "presets": [
+        {"name": "TP- Faq"}
+    ]
+}
+{% endschema %}
+
+<div class="faq-container" style="background-color:{{ section.settings.background_color }};">
+    <div class="page-width">
+        <div class="faq-container__content">
+            <div class="faq-container__title">
+                <h1 class="faq-title">{{ section.settings.title }}</h1>
+                <p class="faq-description">{{ section.settings.description }}</p>
+            </div>
+            <div class="faq-container__faqs">
+                {% for block in section.blocks %}
+                    <div class="faq-container__faq" style="background-image: url({{ block.settings.faq_bg | image_url }}); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                        <div class="question" onclick="toggleFAQ('faq-answer-{{ forloop.index0 }}')">
+                            <span>{{ block.settings.faq_pergunta }}</span>
+                            <span style="font-size: 2.4rem;">+</span>
                         </div>
-                    {% endfor %}
-                </div>
+                        <div id="faq-answer-{{ forloop.index0 }}" class="answer">
+                            {{ block.settings.faq_resposta }}
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-    
-    {% style %}
-    .faq-container{
-        padding: 2rem 1.6rem 20rem 1.6rem;
-    }
-    .faq-container__title h1{
-        color: #C7FD04;
-        font-size: 3.2rem;
-        font-weight: bold;
-        margin: 3rem 0;
-        text-align: center;
-    }
-    .faq-container__faqs{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .faq-container__faq{
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .question {
-        font-weight: bold;
-        font-size: 1.2em;
-        padding: 1.2rem 3rem;
-        border-radius: 1rem 1rem 0 0;
-        display: flex;
-        justify-content: space-between;
-        height: 100% !important;
-        Width: 100% !important; 
-    }
-    .answer {
-        display: none;
-        color: #666;
-        padding: 1.6rem;
-    }
+</div>
 
-    @media screen and (min-width: 728px){
-        .faq-container__content{
-            display: flex;
-            gap: 128px;
-        }
-        .faq-container__title{
-            width: 35%;
-        }
-        .faq-container__faqs{
-            width: 75%;
-        }
-        .faq-container__title h1{
-            color: white;
-            font-size: 5rem;
-            font-weight: bold;
-            margin: 0;
-            text-align: left;
-         }
-         .faq-container{
-            padding: 8rem 0rem 24rem 0rem;
-        }
+{% style %}
+.faq-container {
+    padding: 2rem 1.6rem;
+    color: white;
+}
+.faq-container__title {
+    text-align: center;
+}
+.faq-container__title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.faq-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.faq-container__faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.faq-container__faq {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.answer {
+    display: none;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+@media screen and (min-width: 728px) {
+    .faq-container {
+        padding: 4rem 2rem;
     }
-    {% endstyle %}
-    
+    .faq-container__title h1 {
+        font-size: 3rem;
+    }
+    .faq-description {
+        font-size: 1.5rem;
+    }
+    .faq-container__faqs {
+        gap: 1.5rem;
+    }
+}
+{% endstyle %}
+
 <script>
-    function toggleFAQ(answerId) {
-        var answer = document.getElementById(answerId);
-        var question = answer.previousElementSibling; // Pega o elemento da pergunta diretamente antes da resposta
-        
-        // Alterna a visibilidade da resposta
-        var isAnswerOpen = answer.style.display === 'block';
-        answer.style.display = isAnswerOpen ? 'none' : 'block';
-        
-        // Alterna a cor de fundo da pergunta
-        //question.style.backgroundColor = isAnswerOpen ? 'transparent' : '#17382D';
-        question.style.color = isAnswerOpen ? 'black' : 'white';
-    }
+function toggleFAQ(answerId) {
+    var answer = document.getElementById(answerId);
+    var question = answer.previousElementSibling; // Pega o elemento da pergunta diretamente antes da resposta
+
+    // Alterna a visibilidade da resposta
+    var isAnswerOpen = answer.style.display === 'block';
+    answer.style.display = isAnswerOpen ? 'none' : 'block';
+
+    // Alterna a cor de fundo da pergunta
+    question.style.backgroundColor = isAnswerOpen ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.7)';
+    question.style.color = isAnswerOpen ? 'white' : 'yellow';
+}
 </script>
