@@ -1,76 +1,156 @@
 {% schema %}
 {
-    "name": "TP - Preparo2",
+    "name": "TP2- inimigo agr e outro",
     "settings": [
             {
                 "type": "url",
-                "id": "preparo__url-video",
-                "label": "URL do Vídeo"
+                "id": "info__url-image",
+                "label": "URL da Imagem"
             },
             {
                 "type": "color",
-                "id": "preparo__color",
+                "id": "info__color",
                 "label": "Cor do Fundo",
                 "default": "#E375DA"
             },
             {
                 "type": "text",
-                "id": "preparo__title",
+                "id": "info__title",
                 "label": "Título da Seção",
-                "default": "Como preparar meu Jui?"
+                "default": "Informações nutricionais"
+            },
+            {
+                "type": "textarea",
+                "id": "info__text",
+                "label": "Texto Informativo",
+                "default": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia."
             },
             {
                 "type": "url",
-                "id": "preparo__url-cta",
+                "id": "info__url-cta",
                 "label": "URL do Botão"
+            },
+            {
+                "type": "text",
+                "id": "info__cta-text",
+                "label": "Texto do Botão",
+                "default": "Comprar agora"
+            },
+            {
+                "type": "select",
+                "id": "image_layout",
+                "label": "Posição da Imagem",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Imagem à Esquerda"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Imagem à Direita"
+                    }
+                ],
+                "default": "right"
             }
         ],
-    "blocks": [
-        {
-            "type": "bullets",
-            "name": "bullet",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "bullet__number",
-                    "label": "Número",
-                    "default": "1."
-                },
-                {
-                    "type": "text",
-                    "id": "bullet__desc",
-                    "label": "Descrição",
-                    "default": "Coloque 200ml de água beeeem gelada em um copo."
-                }
-            ]
-        }
-    ],
     "presets": [
         {
-            "name": "TP - Preparo"
+            "name": "TP - Informações Nutricionais"
         }
     ]
 }
 {% endschema %}
 
+{% liquid
+  if section.settings.image_layout == 'right'
+    assign image_class = 'order-2'
+    assign text_class = 'order-1'
+  else
+    assign image_class = 'order-1'
+    assign text_class = 'order-2'
+  endif
+%}
 
 <div class="{{ section.id }} page-width">
-    <div class="{{ section.id }}__column1">
-        <div class="{{ section.id }}__video">
-            <video src="{{ section.settings.preparo__url-video }}"></video>
+    <div class="{{ section.id }}__content">
+        <div class="{{ section.id }}__column1 {{ image_class }}">
+            <div class="{{ section.id }}__image">
+                <img src="{{ section.settings.info__url-image }}" alt="Imagem de Informação Nutricional">
+            </div>
+            <div class="{{ section.id }}__image-bg"></div>
         </div>
-        <div class="{{ section.id }}__video-bg">.</div>
-    </div>
-    <div class="{{ section.id }}__column2">
-        <h2>{{ section.settings.preparo__title }}</h2>
-        <ul class="{{ section.id }}__list">
-            {% for block in section.blocks %}
-                <li>
-                    <span>{{ block.settings.bullet__number }}</span>
-                    <p>{{ block.settings.bullet__desc }}</p>
-                </li>
-            {% endfor %}
-        </ul>
-        <a href="{{ section.settings.preparo__url-cta }}">Quero provar!</a>
+        <div class="{{ section.id }}__column2 {{ text_class }}">
+            <h2>{{ section.settings.info__title }}</h2>
+            <div class="{{ section.id }}__text">
+                <p>{{ section.settings.info__text }}</p>
+            </div>
+            <a href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
+        </div>
     </div>
 </div>
+
+{% style %}
+    
+    .{{ section.id }}__content {
+        display: flex;
+        align-items: center;
+        padding-block: 5rem;
+    }
+    .{{ section.id }}__column1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+    }
+    .{{ section.id }}__image {
+        z-index: 1;
+        display: flex;
+    }
+    .{{ section.id }}__image > img {
+        width: 320px;
+        border-radius: 5.114px;
+        margin: 0 auto;
+    }
+    .{{ section.id }}__image-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: {{ section.settings.info__color }};
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        z-index: 0;
+    }
+    .{{ section.id }}__column2 {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .{{ section.id }}__column2 > h2 {
+        font-size: 3rem;
+        margin: 1.6rem 0;
+    }
+    .{{ section.id }}__text > p {
+        margin: 0;
+    }
+    .button {
+        display: flex;
+        padding: 18px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        border-radius: 3;
+        background: #b3d825;
+        color: white;
+        text-decoration: none;
+    }
+    @media screen and (min-width: 728px) {
+        .{{ section.id }}__content {
+            gap: 1.6rem;
+        }
+    }
+{% endstyle %}
