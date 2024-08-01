@@ -23,6 +23,22 @@
                 "type": "url",
                 "id": "preparo__url-cta",
                 "label": "URL do Botão"
+            },
+            {
+                "type": "select",
+                "id": "image_layout",
+                "label": "Posição do Vídeo",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Vídeo à Esquerda"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Vídeo à Direita"
+                    }
+                ],
+                "default": "left"
             }
         ],
     "blocks": [
@@ -53,24 +69,127 @@
 }
 {% endschema %}
 
+{% liquid
+  if section.settings.image_layout == 'right'
+    assign video_class = 'order-2'
+    assign text_class = 'order-1'
+  else
+    assign video_class = 'order-1'
+    assign text_class = 'order-2'
+  endif
+%}
 
 <div class="{{ section.id }} page-width">
-    <div class="{{ section.id }}__column1">
-        <div class="{{ section.id }}__video">
-            <video src="{{ section.settings.preparo__url-video }}"></video>
+    <div class="{{ section.id }}__content">
+        <div class="{{ section.id }}__column1 {{ video_class }}">
+            <div class="{{ section.id }}__video">
+                <video loop="true" autoplay="autoplay" controls muted>
+                    <source src="{{ section.settings.preparo__url-video }}" type="video/mp4" />
+                </video>
+            </div>
+            <div class="{{ section.id }}__video-bg"></div>
         </div>
-        <div class="{{ section.id }}__video-bg">.</div>
-    </div>
-    <div class="{{ section.id }}__column2">
-        <h2>{{ section.settings.preparo__title }}</h2>
-        <ul class="{{ section.id }}__list">
-            {% for block in section.blocks %}
-                <li>
-                    <span>{{ block.settings.bullet__number }}</span>
-                    <p>{{ block.settings.bullet__desc }}</p>
-                </li>
-            {% endfor %}
-        </ul>
-        <a href="{{ section.settings.preparo__url-cta }}">Quero provar!</a>
+        <div class="{{ section.id }}__column2 {{ text_class }}">
+            <h2>{{ section.settings.preparo__title }}</h2>
+            <ul class="{{ section.id }}__list">
+                {% for block in section.blocks %}
+                    <li>
+                        <span>{{ block.settings.bullet__number }}</span>
+                        <p>{{ block.settings.bullet__desc }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+            <a href="{{ section.settings.preparo__url-cta }}" class="button">Quero provar!</a>
+        </div>
     </div>
 </div>
+
+{% style %}
+    
+    .{{ section.id }}__content {
+        padding-block: 5rem;
+    }
+    .{{ section.id }}__column1 {
+        position: relative; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .{{ section.id }}__video {
+        width: 100%;
+        z-index: 1;
+        display: flex;
+    }
+    .{{ section.id }}__video > video {
+        width: 320px;
+        border-radius: 5.114px;
+        border: 0.639px #000;
+        margin: 0 auto;
+    }
+    .{{ section.id }}__video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: {{ section.settings.preparo__color }};
+        width: 350px;
+        height: 350px;
+        border-radius: 32px;
+        z-index: 0;
+    }
+    .{{ section.id }}__column2 > h2 {
+        font-size: 3rem;
+        margin: 1.6rem 0;
+    }
+    .{{ section.id }}__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .{{ section.id }}__list > li {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .{{ section.id }}__list > li > p {
+        margin: 0;
+    }
+    .{{ section.id }}__list > li > span {
+        color: #B3D825;
+    }
+    .button {
+        display: flex;
+        padding: 18px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 32px;
+        background: #b3d825;
+        color: white;
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 728px) {
+        .{{ section.id }}__content {
+            display: flex;
+            gap: 1.6rem;
+        }
+        .{{ section.id }}__column1, .{{ section.id }}__column2 {
+            width: 48%;
+        }
+        .{{ section.id }}__column2 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .{{ section.id }}__video > video {
+            width: 380px;
+        }
+        .{{ section.id }}__video-bg {
+            width: 400px;
+            height: 400px;
+            left: 5%;
+        }
+    }
+{% endstyle %}
