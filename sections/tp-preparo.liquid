@@ -1,0 +1,54 @@
+{% schema %}
+{
+    "name": "TP - Preparo",
+    "settings": [
+            {
+                "type": "url",
+                "id": "preparo__url-video",
+                "label": "URL do Vídeo"
+            },
+            {
+                "type": "color",
+                "id": "preparo__color",
+                "label": "Cor do Fundo",
+                "default": "#E375DA"
+            },
+            {
+                "type": "text",
+                "id": "preparo__title",
+                "label": "Título da Seção",
+                "default": "Como preparar meu Jui?"
+            },
+            {
+                "type": "url",
+                "id": "preparo__url-cta",
+                "label": "URL do Botão"
+            }
+        ],
+    "blocks": [
+        {
+            "type": "bullets",
+            "name": "bullet",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "bullet__number",
+                    "label": "Número",
+                    "default": "1."
+                },
+                {
+                    "type": "text",
+                    "id": "bullet__desc",
+                    "label": "Descrição",
+                    "default": "Coloque 200ml de água beeeem gelada em um copo."
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP - Preparo"
+        }
+    ]
+}
+{% endschema %}
