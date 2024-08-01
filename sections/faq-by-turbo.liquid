@@ -12,7 +12,7 @@
             "type": "color",
             "id": "background_color",
             "label": "Cor do Fundo",
-            "default": "#00AF85"
+            "default": "#FFFFFF"
         },
         {
             "type": "text",
@@ -63,10 +63,15 @@
                     <div class="faq-container__faq" style="background-image: url({{ block.settings.faq_bg | image_url }}); background-position: center; background-size: cover; background-repeat: no-repeat;">
                         <div class="question" onclick="toggleFAQ('faq-answer-{{ forloop.index0 }}')">
                             <span>{{ block.settings.faq_pergunta }}</span>
-                            <span style="font-size: 2.4rem;">+</span>
+                            <span class="icon-expand">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:#fff;opacity:0;}</style></defs><rect class="a" width="24" height="24"></rect><path d="M12.4,8.4a.8.8,0,0,0,.8-.8V4.4a.8.8,0,1,0-1.6,0V7.6A.8.8,0,0,0,12.4,8.4Z"></path><path d="M20.17,16.64l-1.71-1.72L20,13.87a.8.8,0,0,0-.28-1.45l-8-1.6a.78.78,0,0,0-.94.94l1.6,8a.82.82,0,0,0,.62.63h.16a.8.8,0,0,0,.67-.36l1.05-1.58,1.71,1.71a.81.81,0,0,0,1.14,0l2.4-2.4a.81.81,0,0,0,.23-.57A.77.77,0,0,0,20.17,16.64Zm-3,1.83-1.83-1.83a.8.8,0,0,0-.57-.24h-.08a.84.84,0,0,0-.59.36l-.52.79-1-4.93,4.93,1-.79.52a.84.84,0,0,0-.36.59.82.82,0,0,0,.23.65l1.84,1.83Z"></path><path d="M15.79,9.81a.8.8,0,0,0,.57-.24l2.26-2.26a.8.8,0,1,0-1.13-1.13L15.23,8.44a.8.8,0,0,0,0,1.13A.77.77,0,0,0,15.79,9.81Z"></path><path d="M8.44,15.23,6.18,17.49a.8.8,0,0,0,0,1.13.77.77,0,0,0,.56.24.8.8,0,0,0,.57-.24l2.26-2.26a.8.8,0,0,0-1.13-1.13Z"></path><path d="M8.4,12.4a.8.8,0,0,0-.8-.8H4.4a.8.8,0,1,0,0,1.6H7.6A.8.8,0,0,0,8.4,12.4Z"></path><path d="M7.31,6.18A.8.8,0,1,0,6.18,7.31L8.44,9.57A.8.8,0,0,0,9,9.81a.77.77,0,0,0,.56-.24.8.8,0,0,0,0-1.13Z"></path></svg>
+                            </span>
                         </div>
                         <div id="faq-answer-{{ forloop.index0 }}" class="answer">
-                            {{ block.settings.faq_resposta }}
+                            <div class="answer-content">
+                                {{ block.settings.faq_resposta }}
+                                <a href="#" class="button">Adicionar ao carrinho</a>
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
@@ -78,7 +83,7 @@
 {% style %}
 .faq-container {
     padding: 2rem 1.6rem;
-    color: white;
+    color: #B3D825;
 }
 .faq-container__title {
     text-align: center;
@@ -101,6 +106,8 @@
 .faq-container__faq {
     border-radius: 1rem;
     overflow: hidden;
+    position: relative;
+    height: 300px;
 }
 .question {
     display: flex;
@@ -108,15 +115,60 @@
     align-items: center;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #B3D825;
     cursor: pointer;
     font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+.question .icon-expand {
+    display: flex;
+    align-items: center;
 }
 .answer {
     display: none;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, height 0.3s ease;
+    transform: translateY(100%);
+    border-radius: 1rem;
+    z-index: 1;
+}
+.faq-container__faq.open .answer {
+    transform: translateY(0);
+    padding: 1.6rem;
+    background: white;
+    border: 2px solid #B3D825;
+    color: black;
+    height: auto;
+    z-index: 3;
+}
+.faq-container__faq.open .question {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.answer-content {
+    background: white;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff007f;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 728px) {
@@ -130,7 +182,53 @@
         font-size: 1.5rem;
     }
     .faq-container__faqs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
+    }
+    .faq-container__faq {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    .question {
+        background-color: transparent;
+        padding: 1rem;
+        font-size: 1.2rem;
+        color: #B3D825;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .answer {
+        display: block;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        transition: transform 0.3s ease, height 0.3s ease;
+        transform: translateY(100%);
+    }
+    .faq-container__faq.open .answer {
+        transform: translateY(0);
+        padding: 1.6rem;
+        background: white;
+        border: 2px solid #B3D825;
+        color: black;
+        height: auto;
+        z-index: 3;
+    }
+    .faq-container__faq.open .question {
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
 {% endstyle %}
@@ -139,13 +237,14 @@
 function toggleFAQ(answerId) {
     var answer = document.getElementById(answerId);
     var question = answer.previousElementSibling; // Pega o elemento da pergunta diretamente antes da resposta
+    var faqItem = question.parentElement;
 
     // Alterna a visibilidade da resposta
-    var isAnswerOpen = answer.style.display === 'block';
-    answer.style.display = isAnswerOpen ? 'none' : 'block';
-
-    // Alterna a cor de fundo da pergunta
-    question.style.backgroundColor = isAnswerOpen ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.7)';
-    question.style.color = isAnswerOpen ? 'white' : 'yellow';
+    var isAnswerOpen = faqItem.classList.contains('open');
+    if (isAnswerOpen) {
+        faqItem.classList.remove('open');
+    } else {
+        faqItem.classList.add('open');
+    }
 }
 </script>
