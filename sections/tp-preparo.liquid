@@ -52,3 +52,25 @@
     ]
 }
 {% endschema %}
+
+
+<div class="{{ section.id }} page-width">
+    <div class="{{ section.id }}__column1">
+        <div class="{{ section.id }}__video">
+            <video src="{{ section.settings.preparo__url-video }}"></video>
+        </div>
+        <div class="{{ section.id }}__video-bg">.</div>
+    </div>
+    <div class="{{ section.id }}__column2">
+        <h2>{{ section.settings.preparo__title }}</h2>
+        <ul class="{{ section.id }}__list">
+            {% for block in section.blocks %}
+                <li>
+                    <span>{{ block.settings.bullet__number }}</span>
+                    <p>{{ block.settings.bullet__desc }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ section.settings.preparo__url-cta }}">Quero provar!</a>
+    </div>
+</div>
