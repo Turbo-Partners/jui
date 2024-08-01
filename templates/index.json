@@ -564,6 +564,43 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
+    },
+    "tp_preparo_7fdL9w": {
+      "type": "tp-preparo",
+      "blocks": {
+        "bullets_nVXXAA": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "1.",
+            "bullet__desc": "Coloque 200ml de água beeeem gelada em um copo."
+          }
+        },
+        "bullets_EW3JAq": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "2.",
+            "bullet__desc": "Adicione 1 dose (10g) de Jui"
+          }
+        },
+        "bullets_R7hg8P": {
+          "type": "bullets",
+          "settings": {
+            "bullet__number": "3.",
+            "bullet__desc": "Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente"
+          }
+        }
+      },
+      "block_order": [
+        "bullets_nVXXAA",
+        "bullets_EW3JAq",
+        "bullets_R7hg8P"
+      ],
+      "settings": {
+        "preparo__url-video": "",
+        "preparo__color": "#E375DA",
+        "preparo__title": "Como preparar meu Jui?",
+        "preparo__url-cta": "#"
+      }
     }
   },
   "order": [
@@ -587,6 +624,7 @@
     "image_with_text_7Uj8GJ",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012"
+    "gp_section_514710608571008012",
+    "tp_preparo_7fdL9w"
   ]
 }
