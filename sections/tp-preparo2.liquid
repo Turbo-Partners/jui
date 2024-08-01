@@ -1,0 +1,76 @@
+{% schema %}
+{
+    "name": "TP - Preparo2",
+    "settings": [
+            {
+                "type": "url",
+                "id": "preparo__url-video",
+                "label": "URL do Vídeo"
+            },
+            {
+                "type": "color",
+                "id": "preparo__color",
+                "label": "Cor do Fundo",
+                "default": "#E375DA"
+            },
+            {
+                "type": "text",
+                "id": "preparo__title",
+                "label": "Título da Seção",
+                "default": "Como preparar meu Jui?"
+            },
+            {
+                "type": "url",
+                "id": "preparo__url-cta",
+                "label": "URL do Botão"
+            }
+        ],
+    "blocks": [
+        {
+            "type": "bullets",
+            "name": "bullet",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "bullet__number",
+                    "label": "Número",
+                    "default": "1."
+                },
+                {
+                    "type": "text",
+                    "id": "bullet__desc",
+                    "label": "Descrição",
+                    "default": "Coloque 200ml de água beeeem gelada em um copo."
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP - Preparo"
+        }
+    ]
+}
+{% endschema %}
+
+
+<div class="{{ section.id }} page-width">
+    <div class="{{ section.id }}__column1">
+        <div class="{{ section.id }}__video">
+            <video src="{{ section.settings.preparo__url-video }}"></video>
+        </div>
+        <div class="{{ section.id }}__video-bg">.</div>
+    </div>
+    <div class="{{ section.id }}__column2">
+        <h2>{{ section.settings.preparo__title }}</h2>
+        <ul class="{{ section.id }}__list">
+            {% for block in section.blocks %}
+                <li>
+                    <span>{{ block.settings.bullet__number }}</span>
+                    <p>{{ block.settings.bullet__desc }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ section.settings.preparo__url-cta }}">Quero provar!</a>
+    </div>
+</div>
