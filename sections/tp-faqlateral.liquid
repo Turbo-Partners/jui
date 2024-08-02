@@ -1,0 +1,74 @@
+{% schema %}
+{
+    "name": "TP - Faq Lateral",
+    "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Título do FAQ",
+                "default": "Porque tomar Jui?"
+            },
+            {
+                "type": "text",
+                "id": "description",
+                "label": "Descrição do FAQ",
+                "default": "Benefícios que você pode realmente sentir"
+            }
+        ],
+    "max_blocks": 4,
+    "blocks": [
+        {
+            "type": "card",
+            "name": "card",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "card__background",
+                    "label": "Background do FAQ"
+                },
+                {
+                    "type": "text",
+                    "id": "card__title",
+                    "label": "Título do FAQ"
+                },
+                {
+                    "type": "text",
+                    "id": "card__description",
+                    "label": "Descrição do FAQ"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP - Faq Lateral"
+        }
+    ]
+}
+{% endschema %}
+
+
+<div class="{{ section.id }} page-width">
+    
+    <div class="{{ section.id }}__title">
+        <h1>{{ section.settings.title }}</h1>
+        <p>{{ section.settings.description }}</p>
+    </div>
+
+    <div class="{{ section.id }}__content">
+        {% for block in section.blocks %}
+            <div class="item">
+                <div class="photo">
+                    <img src="{{ block.settings.card__background | image_url }}" alt="">
+                </div>
+                <div class="overlay"></div>
+                <div class="title">
+                    <h2>{{ block.settings.card__title }}</h2>
+                    <p>{{ block.settings.card__description }}</p>
+                    {% render 'icon-click' %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
