@@ -1,6 +1,6 @@
 {% schema %}
 {
-    "name": "TP2- inimigo agr e outro",
+    "name": "TP - Info Nutricionais",
     "settings": [
             {
                 "type": "url",
@@ -93,22 +93,24 @@
     
     .{{ section.id }}__content {
         display: flex;
-        align-items: center;
         padding-block: 5rem;
+        flex-direction: column;
     }
     .{{ section.id }}__column1 {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 48%;
+        width: 100%;
+        padding-top:3.4rem;
     }
     .{{ section.id }}__image {
         z-index: 1;
         display: flex;
     }
     .{{ section.id }}__image > img {
-        width: 320px;
+        display: flex;
+        width: 358px;
         border-radius: 5.114px;
         margin: 0 auto;
     }
@@ -124,7 +126,7 @@
         z-index: 0;
     }
     .{{ section.id }}__column2 {
-        width: 48%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -133,9 +135,11 @@
     .{{ section.id }}__column2 > h2 {
         font-size: 3rem;
         margin: 1.6rem 0;
+        text-align:center;
     }
     .{{ section.id }}__text > p {
         margin: 0;
+        text-align:center;
     }
     .button {
         display: flex;
@@ -151,6 +155,21 @@
     @media screen and (min-width: 728px) {
         .{{ section.id }}__content {
             gap: 1.6rem;
+            align-items: flex-start;
+            flex-direction:row-reverse;
         }
+        .{{ section.id }}__image > img {
+            width: 560px;
+        }
+        .{{ section.id }}__column2 {
+            padding-top:6.4rem;
+        }
+        .{{ section.id }}__column2 > h2 {
+        text-align:left;
+    }
+    .{{ section.id }}__text > p {
+        text-align:left;
+    }
+
     }
 {% endstyle %}
