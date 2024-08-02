@@ -274,8 +274,7 @@
         "review_cbJGeG"
       ],
       "custom_css": [
-        ".review-card-wrapper {background: none; box-shadow: unset;}",
-        ".reviews-wrapper {display: flex; width: 100%; flex-direction: column; align-items: flex-start; gap: 9.278;}",
+        ".reviews-wrapper {display: flex; width: 100%; gap: 9.278;}",
         ".review-card {margin-top: -71px;}",
         ".reviews {background: linear-gradient(180deg, #fff 50%, #b3d825 50%);}",
         ".client-photo {border-radius: 6%; border: 1px solid black;}",
