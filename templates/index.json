@@ -118,8 +118,69 @@
         "gg_p3NNeBzx_label": "Vai de Jui!"
       }
     },
+    "featured_product_AcjiFr": {
+      "type": "featured-product",
+      "blocks": {
+        "title_eDrqcM": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "bullets_image_LCGNPL": {
+          "type": "bullets_image",
+          "settings": {
+            "bullets__text1": "Vegano",
+            "bullets__text2": "Vegano",
+            "bullets__text3": "Vegano",
+            "bullets__text4": "Vegano"
+          }
+        },
+        "variant_picker2_bJFNkR": {
+          "type": "variant_picker2",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons_ND46A6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "verificado_ULxiwC": {
+          "type": "verificado",
+          "settings": {
+            "verificado__texto": "Compra 100% segura!"
+          }
+        }
+      },
+      "block_order": [
+        "title_eDrqcM",
+        "bullets_image_LCGNPL",
+        "variant_picker2_bJFNkR",
+        "buy_buttons_ND46A6",
+        "verificado_ULxiwC"
+      ],
+      "settings": {
+        "product": "jui-suco-verde-em-po-sabor-limao",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "gp_section_511770980348069031": {
       "type": "gp-section-511770980348069031",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "ggr4zjLC1h4_text": "<p><span style=\"background-color:rgb(254,254,254);color:rgb(61,67,38);font-size:15px;\">Seus verdes diários têm um sabor melhor do que você imagina. Feitos com mais de 25 ingredientes, incluindo frutas e vegetais com propriedades antioxidantes, prebióticas e mais para apoiar a saúde intestinal, aumentar a vitalidade e aliviar o desconforto do inchaço.<\/span><\/p>",
@@ -603,6 +664,7 @@
     "tp_faqlateral_CYUqVP",
     "gp_section_511770980398400679",
     "gp_section_511770980364911783",
+    "featured_product_AcjiFr",
     "gp_section_511770980348069031",
     "gp_section_511770980314514599",
     "gp_section_514655966772331532",
