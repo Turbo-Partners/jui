@@ -46,54 +46,6 @@
         "pagination": ""
       }
     },
-    "faq_by_turbo_WLAPEC": {
-      "type": "faq-by-turbo",
-      "blocks": {
-        "faq_JLbheV": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Vitalidade para corpo e mente",
-            "faq_resposta": "<p>Combinação de micronutrientes e fitonutrientes essenciais para promover vitalidade física e mental.<\/p>",
-            "faq_bg": "shopify:\/\/shop_images\/a7bb03b943aec902cf947a591150c3a7.jpg"
-          }
-        },
-        "faq_kLwzEw": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Adeus ao Inchaço",
-            "faq_resposta": "<p>Fibras prebióticas e uma fórmula FODMAP free para equilibrar o microbioma intestinal, reduzindo gases e auxiliando na redução do inchaço abdominal.<\/p>",
-            "faq_bg": "shopify:\/\/shop_images\/cea47b53d286e3e32a338b1569ad6c0e.jpg"
-          }
-        },
-        "faq_JMtRgM": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Digestão Saudável",
-            "faq_resposta": "<p>Mix de fibras que melhoram a consistência das 💩, facilitando o trânsito intestinal e aliviando a constipação.<\/p>",
-            "faq_bg": "shopify:\/\/shop_images\/class-doing-yoga_1.jpg"
-          }
-        },
-        "faq_A9pUEF": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Redução da Fome",
-            "faq_resposta": "<p> Fórmula rica em nutrientes e fibras, com baixo teor calórico, que ajuda a satisfazer as necessidades nutricionais, prolongar a saciedade e controlar a ingestão calórica.<\/p>",
-            "faq_bg": "shopify:\/\/shop_images\/c869cb935f9e868c824cca89149a4ffb.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "faq_JLbheV",
-        "faq_kLwzEw",
-        "faq_JMtRgM",
-        "faq_A9pUEF"
-      ],
-      "settings": {
-        "title": "Porque tomar Jui?",
-        "background_color": "#ffffff",
-        "description": "Benefícios que você pode realmente sentir"
-      }
-    },
     "tp_faqlateral_CYUqVP": {
       "type": "tp-faqlateral",
       "blocks": {
@@ -417,6 +369,18 @@
         "padding_bottom": 0
       }
     },
+    "tp_preparo2_tNFqPC": {
+      "type": "tp-preparo2",
+      "settings": {
+        "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/nutri.webp?v=1722543787",
+        "info__color": "#E375DA",
+        "info__title": "Informações nutricionais",
+        "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
+        "info__url-cta": "",
+        "info__cta-text": "Comprar agora",
+        "image_layout": "left"
+      }
+    },
     "tp_preparo_7fdL9w": {
       "type": "tp-preparo",
       "blocks": {
@@ -636,7 +600,6 @@
   },
   "order": [
     "tp_banner_Ph7QwD",
-    "faq_by_turbo_WLAPEC",
     "tp_faqlateral_CYUqVP",
     "gp_section_511770980398400679",
     "gp_section_511770980364911783",
@@ -646,6 +609,7 @@
     "gp_section_513864092595782682",
     "image_with_text_XXYWym",
     "reviews_by_turbo_ceKrGQ",
+    "tp_preparo2_tNFqPC",
     "tp_preparo_7fdL9w",
     "gp_section_512853366297068749",
     "gp_section_514853679853994823",
