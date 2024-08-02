@@ -275,7 +275,7 @@
       ],
       "custom_css": [
         ".review-card-wrapper {background: none; box-shadow: unset;}",
-        ".reviews-wrapper {display: flex; width: 1936px; padding: 140px 0px 96px 64px; flex-direction: column; align-items: flex-start; gap: 9.278;}",
+        ".reviews-wrapper {display: flex; width: 100%; padding: 140px 0px 96px 64px; flex-direction: column; align-items: flex-start; gap: 9.278;}",
         ".client-name {color: rgba(0, 0, 0, 0.8); font-size: 16px; font-weight: 500; line-height: 150%; letter-spacing: 0.48px;}",
         ".review-card {margin-top: -71px;}",
         ".reviews {background: linear-gradient(180deg, #fff 50%, #b3d825 50%);}",
@@ -290,7 +290,7 @@
         "view_all_link": "",
         "color_scheme": "",
         "swiper_on": true,
-        "center_slides": true,
+        "center_slides": false,
         "initial_slide": 2,
         "fixed_width": true,
         "fixed_width_mobile": true,
