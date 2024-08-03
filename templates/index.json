@@ -130,10 +130,14 @@
         "bullets_image_LCGNPL": {
           "type": "bullets_image",
           "settings": {
+            "bullets__image1": "shopify:\/\/shop_images\/509069249558348903-f77239c3-3ddd-47bb-81f0-a2d40b005fe1_svg.png",
             "bullets__text1": "Vegano",
-            "bullets__text2": "Vegano",
-            "bullets__text3": "Vegano",
-            "bullets__text4": "Vegano"
+            "bullets__image2": "shopify:\/\/shop_images\/509069249558348903-128e23f3-7ba8-41e1-b4db-2940d4dd1d67_svg.png",
+            "bullets__text2": "Sem lactose",
+            "bullets__image3": "shopify:\/\/shop_images\/509069249558348903-bfe1d7e5-22e4-4ef0-b978-c0c7006c614c_svg.png",
+            "bullets__text3": "Sem glúten",
+            "bullets__image4": "shopify:\/\/shop_images\/509069249558348903-2582c1b0-d3ff-40b5-bcdd-b4bfc975ac4f_svg.png",
+            "bullets__text4": "Sem açucar"
           }
         },
         "variant_picker2_bJFNkR": {
@@ -152,7 +156,8 @@
         "verificado_ULxiwC": {
           "type": "verificado",
           "settings": {
-            "verificado__texto": "Compra 100% segura!"
+            "verificado__texto": "Compra 100% segura!",
+            "verificado__icon": "shopify:\/\/shop_images\/ph_seal-check-fill.png"
           }
         }
       },
@@ -371,6 +376,15 @@
             "job": "<h4><strong>Mix de Greens & Superfoods<\/strong><\/h4>",
             "message": "<p>Limão, espinafre, couve, gengibre e chá verde.<\/p>"
           }
+        },
+        "review_RJpgMG": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/picture_c266f1b2-1d24-4d43-8bd4-11f7ae75add2.webp",
+            "name": "",
+            "job": "<h4>Blend de Fibras<\/h4>",
+            "message": "<p>Inulina FOS, Psyllium, Polidextrose, Tapioca IMO,<\/p>"
+          }
         }
       },
       "block_order": [
@@ -379,7 +393,8 @@
         "review_GTTAPW",
         "review_hWcRXN",
         "review_3FBTUw",
-        "review_cbJGeG"
+        "review_cbJGeG",
+        "review_RJpgMG"
       ],
       "custom_css": [
         ".review-card-wrapper {background: none; box-shadow: unset;}",
