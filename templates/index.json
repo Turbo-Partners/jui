@@ -108,6 +108,7 @@
     },
     "gp_section_511770980364911783": {
       "type": "gp-section-511770980364911783",
+      "disabled": true,
       "custom_css": [
         "section {padding-top: 6rem;}"
       ],
@@ -452,7 +453,7 @@
         "info__color": "#E375DA",
         "info__title": "Informações nutricionais",
         "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
-        "info__url-cta": "",
+        "info__url-cta": "https:\/\/vivajui.com.br\/#variant-radios-template--18363015954671__featured_product_AcjiFr",
         "info__cta-text": "Comprar agora",
         "image_layout": "left"
       }
@@ -491,7 +492,7 @@
         "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f6ae067f350c4891985b8626c62fe080.webm",
         "preparo__color": "#e375da",
         "preparo__title": "Como preparar meu Jui?",
-        "preparo__url-cta": "#",
+        "preparo__url-cta": "https:\/\/vivajui.com.br\/#variant-radios-template--18363015954671__featured_product_AcjiFr",
         "image_layout": "left"
       }
     },
