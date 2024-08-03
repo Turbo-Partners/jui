@@ -18,7 +18,7 @@
             "color_scheme": "accent-1",
             "image": "shopify:\/\/shop_images\/background.webp",
             "image_mobile": "shopify:\/\/shop_images\/backgroundmobile.webp",
-            "bannerlink": "https:\/\/vivajui.com.br\/#variant-radios-template--18363015954671__featured_product_AcjiFr",
+            "bannerlink": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
             "max_width": 400,
             "desktop_content_position": "middle-center",
             "text_alignment": "center",
@@ -453,7 +453,7 @@
         "info__color": "#E375DA",
         "info__title": "Informações nutricionais",
         "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
-        "info__url-cta": "https:\/\/vivajui.com.br\/#variant-radios-template--18363015954671__featured_product_AcjiFr",
+        "info__url-cta": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
         "info__cta-text": "Comprar agora",
         "image_layout": "left"
       }
