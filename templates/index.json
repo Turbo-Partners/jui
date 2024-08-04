@@ -122,26 +122,31 @@
     "tp_carrossel_3gn7tV": {
       "type": "tp-carrossel",
       "blocks": {
-        "carrossel2_card_fyGqjf": {
-          "type": "carrossel2_Card",
+        "image_GE3RME": {
+          "type": "image",
           "settings": {
-            "image_carrossel2": "shopify:\/\/shop_images\/gempages_509069249558348903-d9e3772f-412c-4b32-a597-3ca32b26d769.jpg",
-            "bannerlink": ""
+            "image": "shopify:\/\/shop_images\/Copy_of_Jui11_2.jpg",
+            "full_height": true
           }
         },
-        "carrossel2_card_wAcBWd": {
-          "type": "carrossel2_Card",
+        "image_XUHBfF": {
+          "type": "image",
           "settings": {
-            "image_carrossel2": "shopify:\/\/shop_images\/Copy_of_Jui17_1.jpg",
-            "bannerlink": ""
+            "image": "shopify:\/\/shop_images\/Copy_of_Jui17_1.jpg",
+            "full_height": true
           }
         }
       },
       "block_order": [
-        "carrossel2_card_fyGqjf",
-        "carrossel2_card_wAcBWd"
+        "image_GE3RME",
+        "image_XUHBfF"
       ],
       "settings": {
+        "height": 500,
+        "padding": 0,
+        "marquee-color": "",
+        "margin": 36,
+        "text-size": 16
       }
     },
     "featured_product_AcjiFr": {
