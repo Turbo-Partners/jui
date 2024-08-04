@@ -1,131 +1,206 @@
-<style>
-  .carrossel2-section {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+{% style %}
+  @keyframes faixa {
+    from {transform: translateX(0);}
+    to {transform: translateX(-50%);}
   }
 
-  .carrossel2 {
-    position: relative;
-    max-width: calc(100vw - 2rem;);
-    width: 100%;
-    margin: 7rem auto;
-  }
-
-  .carrossel2-wrapper {
+  .faixa {
+    background: {{ section.settings.marquee-color }};
+    height: {{ section.settings.height }}px;
+    padding: {{ section.settings.padding }}px 0;
+    font-size: {{ section.settings.text-size }}px;
+    line-height: {{ section.settings.text-size }}px;
     overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
   }
 
-  .carrossel2-cards {
+  .faixa_wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    gap: {{ section.settings.margin }}px;
+    width: max-content;
+    animation: faixa 16s linear infinite;
+  }
+  .icon-text_wrapper{
+    display:flex;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
+  }
+  .marquee_image {
+    max-height: 100%;
+    width: auto;
   }
 
-  .carrossel2_slider > .swiper-wrapper {
-    transition-timing-function: linear;
+  .marquee_image-wrapper {
+    display: flex;
+    height: 100%;
   }
+{% endstyle %}
 
-  .carrossel2-card_image{
-    width: 100%;
-    height: 443px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .carrossel2 {
-      position: relative;
-      max-width: 768px;
-      width: 100%;
-      margin: 5rem auto;
-    }
-
-    .carrossel2-card {
-      width: 30.15rem;
-    }
-    {% comment %} .carrossel2-card_image{
-      height: 220px;
-    } {% endcomment %}
-  }
-</style>
-
-<section>
-  <div class="carrossel2-section">
-    <div class="carrossel2">
-      <div class="carrossel2-wrapper carrossel2_slider">
-        <div class="carrossel2-cards swiper-wrapper">
-          {% for block in section.blocks %}
-            <div class="carrossel2-card swiper-slide">
-              <a href="{{ block.settings.bannerlink }}" style="width: 100%">
-              <div class="carrossel2-card_image-wrapper">
-                <img src="{{ block.settings.image_carrossel2 | image_url }}" alt="Marca" class="carrossel2-card_image" width="" height="" loading="lazy"/>
-              </div>
-              </a>
+<div class="faixa">
+  <div class="faixa_wrapper">
+    {% for i in (1..2) %}
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'icon-text' %}
+            <div class="icon-text_wrapper">
+              <span
+                style="color: {{ block.settings.text-color }};"
+              >
+                {{ block.settings.text }}
+              </span>
+              {% if block.settings.icon != blank %}
+                <img height="" width=""
+                  src="{{ block.settings.icon | image_url }}"
+                  class="marquee_image"
+                  loading="lazy"
+                >
+              {% endif %}
             </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
+          {% when 'image' %}
+            <img height="" width=""
+              class="marquee_image"
+              src="{{ block.settings.image | image_url }}"
+              loading="lazy"
+              style="{% if block.settings.full_height %}height: 100%;{% endif %}"
+            >
+          {% when 'partner' %}
+            <a href="{{ block.settings.link }}" class="marquee_image-wrapper">
+              <img height="" width=""
+                class="marquee_image"
+                src="{{ block.settings.image | image_url }}"
+                loading="lazy"
+                style="{% if block.settings.full_height %}height: 100%;{% endif %}"
+              >
+            </a>
+        {% endcase %}
+      {% endfor %}
+    {% endfor %}
   </div>
-</section>
-
-<script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper('.carrossel2_slider', {
-
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1.2,
-    spaceBetween: 4,
-    centeredSlides: true,
-
-    breakpoints: {
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 4,
-        centeredSlides: false,
-      }
-    }
-  });
-</script>
+</div>
 
 {% schema %}
-  {
-    "name": "carrossel Collection",
-    "tag": "section",
-    "class": "section",
-    "settings": [],
-    "blocks": [
-      {
-        "type": "carrossel2_Card",
-        "name": "carrossel2",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image_carrossel2",
-            "label": "Foto"
-          },
-          {
-            "type": "url",
-            "id": "bannerlink",
-            "label": "url"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "carrossel Collection",
-        "category": "Banner",
-        "blocks": [
-          {
-            "type": "carrossel2_Card"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Faixa continua by Turbo",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "height",
+      "min": 20,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Altura do letreiro",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Preenchimento vertical do letreiro",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "marquee-color",
+      "label": "Cor do fundo do letreiro"
+    },
+    {
+      "type": "range",
+      "id": "margin",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espaço entre os blocos do letreiro",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "text-size",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Tamanho da letra",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon-text",
+      "name": "Frase com ícone",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Frase do letreiro"
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Cor da frase"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Ícone da frase"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Imagem",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Escolha a imagem"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_height",
+          "label": "Preencher altura total do banner",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "partner",
+      "name": "Parceria",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Escolha a imagem"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link da parceria"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_height",
+          "label": "Preencher altura total do banner",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faixa continua by Turbo",
+      "blocks": [
+        {
+          "type": "icon-text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
