@@ -4,7 +4,7 @@
     to {transform: translateX(-50%);}
   }
 
-  .faixa {
+  .faixa-{{ section.id }} {
     background: {{ section.settings.marquee-color }};
     height: {{ section.settings.height }}px;
     padding: {{ section.settings.padding }}px 0;
@@ -13,18 +13,25 @@
     overflow: hidden;
   }
 
-  .faixa_wrapper {
+  .faixa-{{ section.id }} .faixa_wrapper {
     display: flex;
     gap: {{ section.settings.margin }}px;
     width: max-content;
-    animation: faixa 16s linear infinite;
+    animation: faixa 64s linear infinite;
+    height: 100%;
   }
-  .icon-text_wrapper{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+
+  .icon-text_wrapper {
+    display: flex;
+    gap: 8px;
   }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .marquee_image {
     max-height: 100%;
     width: auto;
@@ -36,18 +43,13 @@
   }
 {% endstyle %}
 
-<div class="faixa">
-  <div class="faixa_wrapper">
+<div class="faixa-{{ section.id }}">
+  <div class=" faixa_wrapper">
     {% for i in (1..2) %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'icon-text' %}
             <div class="icon-text_wrapper">
-              <span
-                style="color: {{ block.settings.text-color }};"
-              >
-                {{ block.settings.text }}
-              </span>
               {% if block.settings.icon != blank %}
                 <img height="" width=""
                   src="{{ block.settings.icon | image_url }}"
@@ -55,14 +57,22 @@
                   loading="lazy"
                 >
               {% endif %}
+              <span
+                class="text-wrapper"
+                style="color: {{ block.settings.text-color }};"
+              >
+                {{ block.settings.text }}
+              </span>
             </div>
           {% when 'image' %}
-            <img height="" width=""
-              class="marquee_image"
-              src="{{ block.settings.image | image_url }}"
-              loading="lazy"
-              style="{% if block.settings.full_height %}height: 100%;{% endif %}"
-            >
+            <div class="marquee_image-wrapper">
+              <img height="" width=""
+                class="marquee_image"
+                src="{{ block.settings.image | image_url }}"
+                loading="lazy"
+                style="{% if block.settings.full_height %}height: 100%;{% endif %}"
+              >
+            </div>
           {% when 'partner' %}
             <a href="{{ block.settings.link }}" class="marquee_image-wrapper">
               <img height="" width=""
@@ -80,7 +90,7 @@
 
 {% schema %}
 {
-  "name": "Faixa continua by Turbo",
+  "name": "Quem usa by Turbo",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -88,7 +98,7 @@
       "type": "range",
       "id": "height",
       "min": 20,
-      "max": 400,
+      "max": 500,
       "step": 10,
       "unit": "px",
       "label": "Altura do letreiro",
@@ -136,7 +146,7 @@
       "name": "Frase com ícone",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
           "label": "Frase do letreiro"
         },
@@ -194,7 +204,7 @@
   ],
   "presets": [
     {
-      "name": "Faixa continua by Turbo",
+      "name": "Quem usa by Turbo",
       "blocks": [
         {
           "type": "icon-text"
