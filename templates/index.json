@@ -135,11 +135,27 @@
             "image": "shopify:\/\/shop_images\/Copy_of_Jui17_1.jpg",
             "full_height": true
           }
+        },
+        "image_RAmHtn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo.gif",
+            "full_height": true
+          }
+        },
+        "image_YRKXQt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/class-doing-yoga_1.jpg",
+            "full_height": true
+          }
         }
       },
       "block_order": [
         "image_GE3RME",
-        "image_XUHBfF"
+        "image_XUHBfF",
+        "image_RAmHtn",
+        "image_YRKXQt"
       ],
       "settings": {
         "height": 500,
