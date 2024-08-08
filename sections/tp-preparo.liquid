@@ -104,6 +104,31 @@
     </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var video = document.querySelector("video");
+    
+    if (video) {
+        // Verifique se está em um dispositivo móvel
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Adicionar o atributo playsinline para garantir que o vídeo não seja exibido em tela cheia
+            video.setAttribute("playsinline", "");
+            
+            // Garantir que o vídeo seja mostrado no mobile
+            video.style.display = "block";
+            video.style.maxWidth = "100%";
+            video.style.height = "auto";
+            
+            // Forçar a reprodução automática, se aplicável
+            video.play().catch(function(error) {
+                console.warn("Autoplay falhou:", error);
+            });
+        }
+    }
+});
+
+</script>
+
 {% style %}
     
     .{{ section.id }}__content {
