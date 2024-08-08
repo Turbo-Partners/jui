@@ -620,27 +620,24 @@
     "1722461618979fbe75": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_homepage_dqmVaM": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "product": "jui-suco-verde-em-po-sabor-limao"
-          }
-        },
         "judge_me_reviews_all_reviews_text_jLwRtt": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
-        "judge_me_reviews_verified_badge_pQFAqN": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/verified_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "judge_me_reviews_review_widget_homepage_dqmVaM": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
+            "product": "jui-suco-verde-em-po-sabor-limao"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_homepage_dqmVaM",
         "judge_me_reviews_all_reviews_text_jLwRtt",
-        "judge_me_reviews_verified_badge_pQFAqN"
+        "judge_me_reviews_review_widget_homepage_dqmVaM"
+      ],
+      "custom_css": [
+        "section {padding: 1rem 0;}"
       ],
       "settings": {
         "include_margins": true
@@ -648,6 +645,7 @@
     },
     "gp_section_513797264515269478": {
       "type": "gp-section-513797264515269478",
+      "disabled": true,
       "settings": {
         "section_preload": "false"
       }
