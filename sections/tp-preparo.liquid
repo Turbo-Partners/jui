@@ -4,7 +4,7 @@
     "settings": [
             {
                 "type": "url",
-                "id": "preparo__url-video",
+                "id": "preparo__url-image2",
                 "label": "URL do Vídeo"
             },
             {
@@ -82,10 +82,10 @@
 <div class="{{ section.id }} page-width">
     <div class="{{ section.id }}__content">
         <div class="{{ section.id }}__column1 {{ video_class }}">
-            <div class="{{ section.id }}__video">
-                <video loop="true" autoplay="autoplay" controls playsinline muted>
-                    <source src="https://cdn.shopify.com/videos/c/o/v/f6ae067f350c4891985b8626c62fe080.webm" type="video/mp4" />
-                </video>
+            <div class="{{ section.id }}__image">
+              <div class="{{ section.id }}__image">
+                <img src="{{ section.settings.info__url-image2 }}" alt="Imagem de Informação Nutricional">
+              </div>
             </div>
             <div class="{{ section.id }}__video-bg">&#160;</div>
         </div>
@@ -104,31 +104,6 @@
     </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var video = document.querySelector("video");
-    
-    if (video) {
-        // Verifique se está em um dispositivo móvel
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // Adicionar o atributo playsinline para garantir que o vídeo não seja exibido em tela cheia
-            video.setAttribute("playsinline", "");
-            
-            // Garantir que o vídeo seja mostrado no mobile
-            video.style.display = "block";
-            video.style.maxWidth = "100%";
-            video.style.height = "auto";
-            
-            // Forçar a reprodução automática, se aplicável
-            video.play().catch(function(error) {
-                console.warn("Autoplay falhou:", error);
-            });
-        }
-    }
-});
-
-</script>
-
 {% style %}
     
     .{{ section.id }}__content {
@@ -140,12 +115,12 @@
         align-items: center;
         justify-content: center;
     }
-    .{{ section.id }}__video {
+    .{{ section.id }}__image {
         width: 100%;
         z-index: 1;
         display: flex;
     }
-    .{{ section.id }}__video > video {
+    .{{ section.id }}__image > image {
         width: 320px;
         border-radius: 5.114px;
         border: 1px solid #000;
