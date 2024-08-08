@@ -83,9 +83,9 @@
     <div class="{{ section.id }}__content">
         <div class="{{ section.id }}__column1 {{ video_class }}">
             <div class="{{ section.id }}__video">
-              <div class="{{ section.id }}__image">
-                <img src="{{ section.settings.info__url-image }}" alt="Imagem de Informação Nutricional">
-              </div>
+                <video loop="true" autoplay="autoplay" controls playsinline muted>
+                    <source src="https://cdn.shopify.com/videos/c/o/v/f6ae067f350c4891985b8626c62fe080.webm" type="video/mp4" />
+                </video>
             </div>
             <div class="{{ section.id }}__video-bg">&#160;</div>
         </div>
@@ -115,12 +115,12 @@
         align-items: center;
         justify-content: center;
     }
-    .{{ section.id }}__image {
+    .{{ section.id }}__video {
         width: 100%;
         z-index: 1;
         display: flex;
     }
-    .{{ section.id }}__image > img {
+    .{{ section.id }}__video > video {
         width: 320px;
         border-radius: 5.114px;
         border: 1px solid #000;
