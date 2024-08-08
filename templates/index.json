@@ -18,7 +18,7 @@
             "color_scheme": "accent-1",
             "image": "shopify:\/\/shop_images\/backgrounddesktop.webp",
             "image_mobile": "shopify:\/\/shop_images\/backgroundmobilee.webp",
-            "bannerlink": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
+            "bannerlink": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
             "max_width": 400,
             "desktop_content_position": "middle-center",
             "text_alignment": "center",
@@ -198,6 +198,13 @@
             "heading_size": "h1"
           }
         },
+        "text_RUgfA7": {
+          "type": "text",
+          "settings": {
+            "text": "Suco verde em pó simples e prático com mais de 25 vitaminas, bioativos e minerais",
+            "text_style": "body"
+          }
+        },
         "bullets_image_LCGNPL": {
           "type": "bullets_image",
           "settings": {
@@ -234,6 +241,7 @@
       },
       "block_order": [
         "title_eDrqcM",
+        "text_RUgfA7",
         "bullets_image_LCGNPL",
         "variant_picker2_bJFNkR",
         "buy_buttons_ND46A6",
@@ -519,14 +527,14 @@
     "tp_preparo2_tNFqPC": {
       "type": "tp-preparo2",
       "custom_css": [
-        ".button {color:black; margin-top: 1.4rem;}"
+        ".button {color: black; margin-top: 1.4rem;}"
       ],
       "settings": {
         "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/tebelamobile.webp?v=1723156305",
         "info__color": "#e375da",
         "info__title": "Informações nutricionais",
         "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
-        "info__url-cta": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
+        "info__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
         "info__cta-text": "Comprar agora",
         "image_layout": "left"
       }
@@ -568,7 +576,7 @@
         "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f6ae067f350c4891985b8626c62fe080.webm",
         "preparo__color": "#e375da",
         "preparo__title": "Como preparar meu Jui?",
-        "preparo__url-cta": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
+        "preparo__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
         "image_layout": "left"
       }
     },
