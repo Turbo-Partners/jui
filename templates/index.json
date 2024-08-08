@@ -637,7 +637,7 @@
         "judge_me_reviews_review_widget_homepage_dqmVaM"
       ],
       "custom_css": [
-        "section {padding: 1rem 0;}"
+        ".scroll-trigger {padding: 5rem 1rem;}"
       ],
       "settings": {
         "include_margins": true
