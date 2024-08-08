@@ -16,8 +16,8 @@
           "type": "slider",
           "settings": {
             "color_scheme": "accent-1",
-            "image": "shopify:\/\/shop_images\/background.webp",
-            "image_mobile": "shopify:\/\/shop_images\/backgroundmobile.webp",
+            "image": "shopify:\/\/shop_images\/backgrounddesktop.webp",
+            "image_mobile": "shopify:\/\/shop_images\/backgroundmobilee.webp",
             "bannerlink": "https:\/\/vivajui.com.br\/#ProductInfo-template--18363015954671__featured_product_AcjiFr",
             "max_width": 400,
             "desktop_content_position": "middle-center",
@@ -146,7 +146,28 @@
         "image_YRKXQt": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/class-doing-yoga_1.jpg",
+            "image": "shopify:\/\/shop_images\/jui_clean_31_1.webp",
+            "full_height": true
+          }
+        },
+        "image_faU7Xi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto_dsc05205_1.webp",
+            "full_height": true
+          }
+        },
+        "image_EQ8cdT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jui_clean_20_1.webp",
+            "full_height": true
+          }
+        },
+        "image_nGi8Ce": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jui_clean_24_1.webp",
             "full_height": true
           }
         }
@@ -155,7 +176,10 @@
         "image_GE3RME",
         "image_XUHBfF",
         "image_RAmHtn",
-        "image_YRKXQt"
+        "image_YRKXQt",
+        "image_faU7Xi",
+        "image_EQ8cdT",
+        "image_nGi8Ce"
       ],
       "settings": {
         "height": 500,
@@ -494,8 +518,11 @@
     },
     "tp_preparo2_tNFqPC": {
       "type": "tp-preparo2",
+      "custom_css": [
+        "section {padding: 0 1rem;}"
+      ],
       "settings": {
-        "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/nutri.webp?v=1722543787",
+        "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/tebelamobile.webp?v=1723156305",
         "info__color": "#e375da",
         "info__title": "Informações nutricionais",
         "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
