@@ -42,11 +42,11 @@
       "type": "header",
       "custom_css": [
         ".header__icon--search {display: none;}",
-        "#menu-drawer {width:80%;}"
+        "#menu-drawer {width: 80%;}"
       ],
       "settings": {
         "logo_position": "middle-left",
-        "menu": "",
+        "menu": "header",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
