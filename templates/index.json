@@ -519,7 +519,7 @@
     "tp_preparo2_tNFqPC": {
       "type": "tp-preparo2",
       "custom_css": [
-        "section {padding: 0 1rem;}"
+        ".button {color:black; margin-top: 1.4rem;}"
       ],
       "settings": {
         "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/tebelamobile.webp?v=1723156305",
@@ -560,6 +560,9 @@
         "bullets_nVXXAA",
         "bullets_EW3JAq",
         "bullets_R7hg8P"
+      ],
+      "custom_css": [
+        ".button {color: black; margin-top: 1.4rem;}"
       ],
       "settings": {
         "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f6ae067f350c4891985b8626c62fe080.webm",
