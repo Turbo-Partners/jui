@@ -84,7 +84,7 @@
         <div class="{{ section.id }}__column1 {{ video_class }}">
             <div class="{{ section.id }}__image">
               <div class="{{ section.id }}__image">
-                <img src="https://cdn.shopify.com/s/files/1/0696/0988/1839/files/Passo_a_passo_1.gif?v=1723161515" alt="Imagem de Informação Nutricional" style="width:85%;">
+                <img class="gif" src="https://cdn.shopify.com/s/files/1/0696/0988/1839/files/Passo_a_passo_1.gif?v=1723161515" alt="Imagem de Informação Nutricional">
               </div>
             </div>
             <div class="{{ section.id }}__video-bg">&#160;</div>
@@ -169,6 +169,9 @@
         color: white;
         text-decoration: none;
     }
+  .gif {
+    width:85%;
+  }
 
     @media screen and (min-width: 728px) {
         .{{ section.id }}__content {
@@ -193,5 +196,8 @@
             left: 15%;
             top:15%;
         }
+      .gif {
+        width:60%;
+      }
     }
 {% endstyle %}
