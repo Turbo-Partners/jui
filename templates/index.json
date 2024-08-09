@@ -571,7 +571,7 @@
       ],
       "custom_css": [
         ".button {color: black; margin-top: 1.4rem;}",
-        "@media screen and (min-width:768px;) {.template--18363015954671__tp_preparo_7fdL9w {margin-top:-10rem; }}"
+        "@media screen and (min-width: 768px) {.template--18363015954671__tp_preparo_7fdL9w {margin-top: -10rem; }}"
       ],
       "settings": {
         "preparo__url-image2": "",
