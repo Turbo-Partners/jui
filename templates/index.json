@@ -570,10 +570,11 @@
         "bullets_R7hg8P"
       ],
       "custom_css": [
-        ".button {color: black; margin-top: 1.4rem;}"
+        ".button {color: black; margin-top: 1.4rem;}",
+        "@media screen and (min-width:768px;) {.template--18363015954671__tp_preparo_7fdL9w {margin-top:-10rem; }}"
       ],
       "settings": {
-        "preparo__url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f6ae067f350c4891985b8626c62fe080.webm",
+        "preparo__url-image2": "",
         "preparo__color": "#e375da",
         "preparo__title": "Como preparar meu Jui?",
         "preparo__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
