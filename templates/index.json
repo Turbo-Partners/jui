@@ -201,7 +201,7 @@
         "text_RUgfA7": {
           "type": "text",
           "settings": {
-            "text": "Suco verde em pó simples e prático com mais de 25 vitaminas, bioativos e minerais",
+            "text": "Suco verde em pó simples e prático com mais de 20 vitaminas, bioativos e minerais",
             "text_style": "body"
           }
         },
@@ -533,7 +533,7 @@
         "info__url-image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0696\/0988\/1839\/files\/tebelamobile.webp?v=1723156305",
         "info__color": "#e375da",
         "info__title": "Informações nutricionais",
-        "info__text": "Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
+        "info__text": "Com uma composição nutricional de fitonutrientes, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
         "info__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
         "info__cta-text": "Comprar agora",
         "image_layout": "left"
