@@ -10,6 +10,14 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
+
+{% style %}
+  .price-button-{{ section.id }} {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+{% endstyle%}
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
