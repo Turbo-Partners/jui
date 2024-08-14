@@ -60,8 +60,7 @@
         <input
           type="hidden"
           name="id"
-          value="{{ product.selected_or_first_available_variant.id }}"
-          disabled
+          value="{{ product.variants | where: 'option1', '1 Lata' | first.id }}"
           class="product-variant-id"
         >
 
