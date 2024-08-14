@@ -1,8 +1,4 @@
 {% style %}
-  @keyframes faixa {
-    from {transform: translateX(0);}
-    to {transform: translateX(-50%);}
-  }
 
   .faixa-{{ section.id }} {
     background: {{ section.settings.marquee-color }};
@@ -44,49 +40,86 @@
 {% endstyle %}
 
 <div class="faixa-{{ section.id }}">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <div class=" faixa_wrapper">
-    {% for i in (1..2) %}
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'icon-text' %}
-            <div class="icon-text_wrapper">
-              {% if block.settings.icon != blank %}
-                <img height="" width=""
-                  src="{{ block.settings.icon | image_url }}"
-                  class="marquee_image"
-                  loading="lazy"
-                >
-              {% endif %}
-              <span
-                class="text-wrapper"
-                style="color: {{ block.settings.text-color }};"
-              >
-                {{ block.settings.text }}
-              </span>
-            </div>
-          {% when 'image' %}
-            <div class="marquee_image-wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'icon-text' %}
+          <div class="icon-text_wrapper">
+            {% if block.settings.icon != blank %}
               <img height="" width=""
+                src="{{ block.settings.icon | image_url }}"
                 class="marquee_image"
-                src="{{ block.settings.image | image_url }}"
                 loading="lazy"
-                style="{% if block.settings.full_height %}height: 100%;{% endif %}"
               >
-            </div>
-          {% when 'partner' %}
-            <a href="{{ block.settings.link }}" class="marquee_image-wrapper">
-              <img height="" width=""
-                class="marquee_image"
-                src="{{ block.settings.image | image_url }}"
-                loading="lazy"
-                style="{% if block.settings.full_height %}height: 100%;{% endif %}"
-              >
-            </a>
-        {% endcase %}
-      {% endfor %}
+            {% endif %}
+            <span
+              class="text-wrapper"
+              style="color: {{ block.settings.text-color }};"
+            >
+              {{ block.settings.text }}
+            </span>
+          </div>
+        {% when 'image' %}
+          <div class="marquee_image-wrapper">
+            <img height="" width=""
+              class="marquee_image"
+              src="{{ block.settings.image | image_url }}"
+              loading="lazy"
+              style="{% if block.settings.full_height %}height: 100%;{% endif %}"
+            >
+          </div>
+        {% when 'partner' %}
+          <a href="{{ block.settings.link }}" class="marquee_image-wrapper">
+            <img height="" width=""
+              class="marquee_image"
+              src="{{ block.settings.image | image_url }}"
+              loading="lazy"
+              style="{% if block.settings.full_height %}height: 100%;{% endif %}"
+            >
+          </a>
+      {% endcase %}
     {% endfor %}
   </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+
+{% javascript %}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slickSlider = $('.faixa_wrapper').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 5,
+    infinite: false,
+    centerMode: false,
+    autoplay: true, // Corrected from autoPlay to autoplay
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
+{% endjavascript %}
 
 {% schema %}
 {
