@@ -11,15 +11,15 @@
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
 <style> 
-  {% comment %} .button-gradiente{
-    border-radius: 32px;
-    background: var(--Yellow-Gradient, linear-gradient(286deg, #BD4500 -34.64%, #FDA200 55.26%, #FDA200 55.26%));
-    color: #FCFDFC;
-    font-size: 18px;
-    font-weight: 700;
-  } {% endcomment %}
-</style>
+{% comment %} .button-gradiente{
+  border-radius: 32px;
+  background: var(--Yellow-Gradient, linear-gradient(286deg, #BD4500 -34.64%, #FDA200 55.26%, #FDA200 55.26%));
+  color: #FCFDFC;
+  font-size: 18px;
+  font-weight: 700;
+} {% endcomment %}
 
+</style>
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -79,7 +79,7 @@
             endif
           -%}
           <button
-            id="ProductSubmitButton-{{ section_id }}"
+            id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
             style="background: #B3D825; border-radius: 99rem; border: none;"
@@ -96,11 +96,10 @@
               {%- endif -%}
             </span>
             {% if product.selected_or_first_available_variant.available %}
-              {% assign selected_variant = product.variants | where: 'option1', '1 Lata' | first %}
               <span id="price-button-{{ section.id }}" style="color: black; font-size: 1.2rem;">
                 &nbsp;-
-                <s>{{ selected_variant.compare_at_price | money }}</s>
-                {{ selected_variant.price | money }}
+                <s>{{ product.selected_variant.compare_at_price | money }}</s>
+                {{  product.selected_or_first_available_variant.price | money }}
               </span>
             {% endif %}
             <div class="loading-overlay__spinner hidden">
