@@ -79,7 +79,7 @@
               disabled
             {% endif %}
           >
-            <span style="font-family: 'Athletics', sans-serif; font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
+            <span style="font-family: 'Athletics'; font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
