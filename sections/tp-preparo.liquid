@@ -105,6 +105,31 @@
 </div>
 
 {% style %}
+
+    @font-face {
+    font-family: 'Athletics', sans-serif;
+    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf'),
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Manrope', sans-serif;
+    src: url('{{ 'Manrope-Regular.ttf' | asset_url }}') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  p {
+    font-family: Manrope, sans-serif !important;
+  }
+  
+
+  h2 {
+    font-family: Athletics, sans-serif !important;
+  }
     
     .{{ section.id }}__content {
         padding-block: 5rem;
