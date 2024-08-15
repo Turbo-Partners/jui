@@ -119,7 +119,7 @@
               {%- endif -%}
             </span>
             {% if product.selected_or_first_available_variant.available %}
-              <span id="price-button-{{ section.id }}">
+              <span  style="font-family: 'Athletics Bold';" id="price-button-{{ section.id }}">
                 &nbsp;
                 <s>{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>
                 {{  product.selected_or_first_available_variant.price | money }}
