@@ -10,25 +10,7 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
-<style> 
-{% comment %} .button-gradiente{
-  border-radius: 32px;
-  background: var(--Yellow-Gradient, linear-gradient(286deg, #BD4500 -34.64%, #FDA200 55.26%, #FDA200 55.26%));
-  color: #FCFDFC;
-  font-size: 18px;
-  font-weight: 700;
-} {% endcomment %}
-    @font-face {
-    font-family: 'Athletics', sans-serif;
-    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  .product-form__submit > span {
-    font-family: 'Athletics', sans-serif !important;
-  }
-</style>
+
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -97,7 +79,7 @@
               disabled
             {% endif %}
           >
-            <span style="font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
+            <span style="font-family: 'Athletics', sans-serif; font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
