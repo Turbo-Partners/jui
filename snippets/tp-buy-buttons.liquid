@@ -18,7 +18,16 @@
   font-size: 18px;
   font-weight: 700;
 } {% endcomment %}
-
+    @font-face {
+    font-family: 'Athletics', sans-serif;
+    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .product-form__submit {
+    font-family: 'Athletics', sans-serif;
+  }
 </style>
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
