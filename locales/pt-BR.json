@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "password_page": {
@@ -215,6 +224,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Página não encontrada",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Não foram encontrados resultados para “{{ terms }}”. Verifique a ortografia ou use uma palavra ou frase diferente.",
       "results_with_count": {
@@ -263,10 +276,6 @@
         "error_heading": "Ajuste o seguinte:",
         "title": "Formulário de contato"
       }
-    },
-    "404": {
-      "title": "Página não encontrada",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -535,37 +544,37 @@
   },
   "gempages": {
     "Carousel": {
-      "no_slider": ""
+      "no_slider": "No Slider"
     },
     "Newsletter": {
-      "err_msg_default": "",
-      "success_msg_default": ""
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for contacting us. We'll get back to you as soon as possible."
     },
     "IconListV2": {
-      "icons_not_found": ""
+      "icons_not_found": "Icons not found"
     },
     "IconList": {
-      "icons_not_found": ""
+      "icons_not_found": "Icons not found"
     },
     "IconListHoz": {
-      "icons_not_found": ""
+      "icons_not_found": "Icons not found"
     },
     "Product": {
-      "product_not_found": ""
+      "product_not_found": "Product not found"
     },
     "ProductList": {
-      "product_not_found": "",
-      "no_products_found": "",
-      "no_related_products": ""
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
     },
     "ProductTitle": {
-      "product_not_found": ""
+      "product_not_found": "Product Not Found"
     },
     "ProductVariants": {
-      "please_select": ""
+      "please_select": "Please select an option"
     },
     "StockCounter": {
-      "let_buy_now": ""
+      "let_buy_now": "<mark>HURRY!<\/mark> LET BUY NOW"
     }
   }
 }
