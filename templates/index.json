@@ -136,13 +136,6 @@
             "full_height": true
           }
         },
-        "image_RAmHtn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gif-passo-a-passo_1_1.gif",
-            "full_height": true
-          }
-        },
         "image_YRKXQt": {
           "type": "image",
           "settings": {
@@ -167,7 +160,7 @@
         "image_nGi8Ce": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jui_clean_24_1.webp",
+            "image": "shopify:\/\/shop_images\/jui_clean_24_1_1.jpg",
             "full_height": true
           }
         }
@@ -175,7 +168,6 @@
       "block_order": [
         "image_GE3RME",
         "image_XUHBfF",
-        "image_RAmHtn",
         "image_YRKXQt",
         "image_faU7Xi",
         "image_EQ8cdT",
