@@ -111,7 +111,7 @@
               disabled
             {% endif %}
           >
-            <span style="text-transform: uppercase; color: #3D4326; font-weight: 700;">
+            <span style="font-family: 'Athletics Bold'; text-transform: uppercase; color: #3D4326; font-weight: 700;">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
