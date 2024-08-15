@@ -111,7 +111,7 @@
             </span>
             {% if product.selected_or_first_available_variant.available %}
               <span id="price-button-{{ section.id }}">
-                &nbsp;-
+                &nbsp;
                 <s>{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>
                 {{  product.selected_or_first_available_variant.price | money }}
               </span>
