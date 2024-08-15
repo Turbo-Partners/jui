@@ -12,20 +12,6 @@
 {% endcomment %}
 
 {% style %}
-  #price-button-{{ section.id }} {
-    color: #3D4326;
-    font-weight: 700;
-  }
-
-  #ProductSubmitButton-{{ section_id }} {
-    font-size: 1.3rem;
-  }
-
-  @media only screen and (min-width: 768px) {
-    #ProductSubmitButton-{{ section_id }} {
-      font-size: 1.5rem;
-    }
-  }
   @font-face {
     font-family: 'Athletics';
     src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf'),
@@ -33,6 +19,22 @@
     font-style: normal;
     font-display: swap;
   }
+  #price-button-{{ section.id }} {
+    color: #3D4326;
+    font-weight: 700;
+  }
+
+  #ProductSubmitButton-{{ section_id }} {
+    font-size: 1.3rem;
+    font-family: Athletics
+  }
+
+  @media only screen and (min-width: 768px) {
+    #ProductSubmitButton-{{ section_id }} {
+      font-size: 1.5rem;
+    }
+  }
+
   
 {% endstyle %}
 <div {{ block.shopify_attributes }}>
