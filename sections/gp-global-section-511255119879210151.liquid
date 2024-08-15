@@ -1,21 +1,21 @@
-{% render 'gp-head', isThemeSection: true %}
-  <style> @import url('https://fonts.googleapis.com/css?family=Assistant:400&display=swap'); </style>
-  <style> .gps-511255119879210151 .-gp-rotate-90,.gps-511255119879210151 .gp-rotate-180,.gps-511255119879210151 .gp-rotate-90{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-511255119879210151 .gp-g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-511255119879210151 .gp-relative{position:relative}.gps-511255119879210151 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-511255119879210151 .gp-mb-0{margin-bottom:0}.gps-511255119879210151 .gp-flex{display:flex}.gps-511255119879210151 .gp-inline-flex{display:inline-flex}.gps-511255119879210151 .gp-grid{display:grid}.gps-511255119879210151 .\!gp-hidden{display:none!important}.gps-511255119879210151 .gp-hidden{display:none}.gps-511255119879210151 .gp-min-h-0{min-height:0}.gps-511255119879210151 .gp-w-full{width:100%}.gps-511255119879210151 .gp-max-w-full{max-width:100%}.gps-511255119879210151 .-gp-rotate-90{--tw-rotate:-90deg}.gps-511255119879210151 .-gp-rotate-90,.gps-511255119879210151 .gp-rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-511255119879210151 .gp-rotate-180{--tw-rotate:180deg}.gps-511255119879210151 .gp-rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-511255119879210151 .gp-cursor-pointer{cursor:pointer}.gps-511255119879210151 .gp-flex-col{flex-direction:column}.gps-511255119879210151 .gp-items-center{align-items:center}.gps-511255119879210151 .gp-justify-center{justify-content:center}.gps-511255119879210151 .gp-gap-y-0{row-gap:0}.gps-511255119879210151 .gp-overflow-hidden{overflow:hidden}.gps-511255119879210151 .gp-overflow-clip{overflow:clip}.gps-511255119879210151 .gp-transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-511255119879210151 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-511255119879210151 .gp-duration-200{transition-duration:.2s}.gps-511255119879210151 .gp-duration-500{transition-duration:.5s}.gps-511255119879210151 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1023px){.gps-511255119879210151 .tablet\:\!gp-hidden{display:none!important}.gps-511255119879210151 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-511255119879210151 .mobile\:\!gp-hidden{display:none!important}.gps-511255119879210151 .mobile\:gp-hidden{display:none}}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-h-\[var\(--height-configIconSize\)\]>svg{height:var(--height-configIconSize)!important}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-h-\[var\(--height-iconCollapseSize\)\]>svg{height:var(--height-iconCollapseSize)!important}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-w-auto>svg{width:auto!important}.gps-511255119879210151 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-511255119879210151 .\[\&_p\]\:gp-inline p{display:inline}.gps-511255119879210151 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-511255119879210151 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)} </style>
-  
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-511255119879210151.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-511255119879210151.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-511255119879210151.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-511255119879210151.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-511255119879210151.gps.gpsil [style*="--hvr-bgc:"]:hover{background-color:var(--hvr-bgc)}.gps-511255119879210151.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-511255119879210151.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-511255119879210151.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-511255119879210151.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-511255119879210151.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-511255119879210151.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-511255119879210151.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-511255119879210151.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-511255119879210151.gps.gpsil [style*="--hvr-bc:"]:hover{border-color:var(--hvr-bc)}.gps-511255119879210151.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-511255119879210151.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-511255119879210151.gps.gpsil [style*="--radius:"]{border-radius:var(--radius)}.gps-511255119879210151.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-511255119879210151.gps.gpsil [style*="--hvr-bs:"]:hover{border-style:var(--hvr-bs)}.gps-511255119879210151.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-511255119879210151.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-511255119879210151.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-511255119879210151.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-511255119879210151.gps.gpsil [style*="--hvr-bw:"]:hover{border-width:var(--hvr-bw)}.gps-511255119879210151.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-511255119879210151.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-511255119879210151.gps.gpsil [style*="--hvr-c:"]:hover{color:var(--hvr-c)}.gps-511255119879210151.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-511255119879210151.gps.gpsil [style*="--fd:"]{flex-direction:var(--fd)}.gps-511255119879210151.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-511255119879210151.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-511255119879210151.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-511255119879210151.gps.gpsil [style*="--gg:"]{grid-gap:var(--gg)}.gps-511255119879210151.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-511255119879210151.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-511255119879210151.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-511255119879210151.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-511255119879210151.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-511255119879210151.gps.gpsil [style*="--ml:"]{margin-left:var(--ml)}.gps-511255119879210151.gps.gpsil [style*="--mr:"]{margin-right:var(--mr)}.gps-511255119879210151.gps.gpsil [style*="--mt:"]{margin-top:var(--mt)}.gps-511255119879210151.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-511255119879210151.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-511255119879210151.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-511255119879210151.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-511255119879210151.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-511255119879210151.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-511255119879210151.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-511255119879210151.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-511255119879210151.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-511255119879210151.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-511255119879210151.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-511255119879210151.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1023px){.gps-511255119879210151.gps.gpsil [style*="--cg-tablet:"]{-moz-column-gap:var(--cg-tablet);column-gap:var(--cg-tablet)}.gps-511255119879210151.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-511255119879210151.gps.gpsil [style*="--gtc-tablet:"]{grid-template-columns:var(--gtc-tablet)}.gps-511255119879210151.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-511255119879210151.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-511255119879210151.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-511255119879210151.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-511255119879210151.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-511255119879210151.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-511255119879210151.gps.gpsil [style*="--gg-mobile:"]{grid-gap:var(--gg-mobile)}.gps-511255119879210151.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-511255119879210151.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-511255119879210151.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-511255119879210151.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-511255119879210151.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-511255119879210151.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-511255119879210151 .-gp-rotate-90,.gps-511255119879210151 .gp-rotate-180,.gps-511255119879210151 .gp-rotate-90{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-511255119879210151 .gp-g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-511255119879210151 .gp-relative{position:relative}.gps-511255119879210151 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-511255119879210151 .gp-mb-0{margin-bottom:0}.gps-511255119879210151 .gp-flex{display:flex}.gps-511255119879210151 .gp-inline-flex{display:inline-flex}.gps-511255119879210151 .gp-grid{display:grid}.gps-511255119879210151 .\!gp-hidden{display:none!important}.gps-511255119879210151 .gp-hidden{display:none}.gps-511255119879210151 .gp-min-h-0{min-height:0}.gps-511255119879210151 .gp-w-full{width:100%}.gps-511255119879210151 .gp-max-w-full{max-width:100%}.gps-511255119879210151 .-gp-rotate-90{--tw-rotate:-90deg}.gps-511255119879210151 .-gp-rotate-90,.gps-511255119879210151 .gp-rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-511255119879210151 .gp-rotate-180{--tw-rotate:180deg}.gps-511255119879210151 .gp-rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-511255119879210151 .gp-cursor-pointer{cursor:pointer}.gps-511255119879210151 .gp-flex-col{flex-direction:column}.gps-511255119879210151 .gp-items-center{align-items:center}.gps-511255119879210151 .gp-justify-center{justify-content:center}.gps-511255119879210151 .gp-gap-y-0{row-gap:0}.gps-511255119879210151 .gp-overflow-hidden{overflow:hidden}.gps-511255119879210151 .gp-overflow-clip{overflow:clip}.gps-511255119879210151 .gp-transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-511255119879210151 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-511255119879210151 .gp-duration-200{transition-duration:.2s}.gps-511255119879210151 .gp-duration-500{transition-duration:.5s}.gps-511255119879210151 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1023px){.gps-511255119879210151 .tablet\:\!gp-hidden{display:none!important}.gps-511255119879210151 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-511255119879210151 .mobile\:\!gp-hidden{display:none!important}.gps-511255119879210151 .mobile\:gp-hidden{display:none}}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-h-\[var\(--height-configIconSize\)\]>svg{height:var(--height-configIconSize)!important}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-h-\[var\(--height-iconCollapseSize\)\]>svg{height:var(--height-iconCollapseSize)!important}.gps-511255119879210151 .\[\&\>svg\]\:\!gp-w-auto>svg{width:auto!important}.gps-511255119879210151 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-511255119879210151 .\[\&_p\]\:gp-inline p{display:inline}.gps-511255119879210151 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-511255119879210151 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
       
       
             <section
-              class="gp-mx-auto gp-max-w-full"
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
               style="--w:100%;--w-tablet:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--w-mobile:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--pl:0px;--pl-tablet:var(--g-ct-p, 15px);--pl-mobile:var(--g-ct-p, 15px);--pr:0px;--pr-tablet:var(--g-ct-p, 15px);--pr-mobile:var(--g-ct-p, 15px)"
             >
               
     <div
-      pageContext id="i2l4fe55f9fad"
+      id="i2l4fe55f9fad"
         style="--mt:0px;--ml:auto;--mb:0px;--mr:auto;--pt:30px;--pl:0px;--pb:88px;--pr:0px;--cg:32px;--cg-tablet:32px;--pc:center;--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:rgb(245, 243, 235)"
         class="i2l4fe55f9fad gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
-      pageContext label="Block" tag="Col" type="component"
+      label="Block" tag="Col" type="component"
       style="--jc:start"
       class="c-w-i2l4fe55f9fad gp-relative gp-flex gp-flex-col"
     >
@@ -23,12 +23,12 @@
       
       
     <div
-      pageContext parentTag="Col" id="w-i2l4fe55f9fad"
+      parentTag="Col" id="w-i2l4fe55f9fad"
         style="--mt:0px;--ml:auto;--mb:0px;--mr:auto;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:32px;--cg-tablet:32px;--pc:center;--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
         class="w-i2l4fe55f9fad gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
-      pageContext label="Block" tag="Col" type="component"
+      label="Block" tag="Col" type="component"
       style="--jc:start"
       class="i2lb7e09d647c gp-relative gp-flex gp-flex-col"
     >
@@ -36,34 +36,37 @@
       
       
     <div
-      pageContext parentTag="Col" id="sp-i2lcdb8f249ae"
+      parentTag="Col" id="sp-i2lcdb8f249ae"
         style="--mt:0px;--ml:auto;--mr:auto;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:32px;--cg-tablet:32px;--pc:center;--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
         class="sp-i2lcdb8f249ae gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
-      pageContext label="Block" tag="Col" type="component"
+      label="Block" tag="Col" type="component"
       style="--jc:start"
       class="i2lcdb8f249ae gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="DQmixpwMtpXz "
         style="--ta:center;--mt:0px;--ml:0px;--mb:30px;--mr:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px"
       >
       <div class="gp-flex" style="--jc:center">
         <h2
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
-          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-heading, heading);--lh:130%;--size:34px;--size-tablet:41px;--size-mobile:36px;--weight:bold;--c:rgb(61, 67, 38);word-break:break-word;overflow:hidden"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-heading, heading);--size:34px;--size-tablet:41px;--size-mobile:36px;--weight:bold;--c:rgb(61, 67, 38);word-break:break-word;overflow:hidden"
         >FAQ</h2>
       </div>
     </div><div style="--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]" class="goqubz7goT ">
       
     <gp-accordion
-     uid="goqubz7goT"
+      uid="goqubz7goT"
       class="gp-flex gp-w-full gp-flex-col "
-      style="--gg:16px;--bgr:function repeat() { [native code] }"
+      style="--gg:16px;--bgr:function (n) {
+                return new Array(1 + n).join(this);
+            };border-radius:inherit;overflow:hidden"
       gp-data='{"setting":{"iconSvg":"<svg width=\"17\" height=\"16\" viewBox=\"0 0 17 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <path d=\"M5.64645 2.64645C5.84171 2.45118 6.15829 2.45118 6.35355 2.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L6.35355 13.3536C6.15829 13.5488 5.84171 13.5488 5.64645 13.3536C5.45118 13.1583 5.45118 12.8417 5.64645 12.6464L10.2929 8L5.64645 3.35355C5.45118 3.15829 5.45118 2.84171 5.64645 2.64645Z\" fill=\"currentColor\"/>\n                  </svg>","isIconPlus":false,"activeKey":"1","expanded":false,"expandItem":true,"iconPosition":"right","iconGlobalSize":{"desktop":{"gap":"10px"},"mobile":{"gap":"10px","shape":"","shapeValue":"","customShapeValue":"","width":"","height":""}},"iconCollapse":"<svg height=\"20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 256 256\" fill=\"currentColor\" data-id=\"508817550821556584\">\n              <path fill=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" fill=\"currentColor\" d=\"M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z\" /></svg>","iconExpand":"<svg height=\"20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 256 256\" fill=\"currentColor\" data-id=\"508817550821884264\">\n              <path fill=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" fill=\"currentColor\" d=\"M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-100.49a12,12,0,0,1-17,17L140,117v51a12,12,0,0,1-24,0V117l-11.51,11.52a12,12,0,0,1-17-17l32-32a12,12,0,0,1,17,0Z\" /></svg>","iconCollapseSize":15,"layoutHeader":"before-text","expandedMode":"single","configIconSize":31,"parentUid":"goqubz7goT","childListNumber":["0"],"chidlrenUid":["gzHsLqXCqf","gUvk131cfC","guIlMce_gz","g59GbxFkVp","gCioQ-_FsV","gWxRjFKS5c","gZbZPpz3s2","gAcCbQXf5p","gPuMMUEhP0","gNSiohXLVr"]},"styles":{"bgColor":{"normal":"#B3D825","hover":"#B3D825","active":"#B3D825"},"color":{"normal":"#121212","hover":"#121212","active":"#121212"},"headerBorder":{"normal":{"border":"none","width":"0px 0px 1px 0px","position":"bottom","color":"#121212","isCustom":true,"borderWidth":"Mixed"},"hover":{"border":"solid","width":"0px 0px 1px 0px","position":"bottom","color":"#121212","isCustom":true,"borderWidth":"Mixed"},"active":{"border":"solid","width":"0px 0px 1px 0px","position":"bottom","color":"#121212","isCustom":true,"borderWidth":"Mixed"}},"textColor":{"normal":"#121212","hover":"#121212","active":"#121212"},"iconColor":{"normal":"#121212","hover":"#121212","active":"#121212"},"contentSizePadding":{"desktop":{"padding":{"type":"custom","top":"0px","left":"0px","bottom":"0px","right":"0px"},"gap":"16px"}},"headerContentPadding":{"desktop":{"padding":{"type":"custom","top":"8px","left":"24px","bottom":"8px","right":"24px"},"gap":""}},"widthHeightSize":{"desktop":{"height":"auto","width":"100%"}}},"uid":"goqubz7goT"}'
     >
     <div class="gp-hidden gp-rotate-90 -gp-rotate-90 gp-rotate-180"></div>
@@ -86,13 +89,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-0 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--bs:solid;--bw:0px 0px 1px 0px;--bc:#121212;--c:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-0:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-0:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -102,11 +105,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821884264">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-100.49a12,12,0,0,1-17,17L140,117v51a12,12,0,0,1-24,0V117l-11.51,11.52a12,12,0,0,1-17-17l32-32a12,12,0,0,1,17,0Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;width:31px;height:31px">
@@ -130,13 +133,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>1) O que é Jui?</strong></span></p></span>
       </div>
     </div>
@@ -146,6 +150,7 @@
       <div
         uid="gzHsLqXCqf"
         data-index="0"
+        data-show="true"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:1fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -154,18 +159,19 @@
         data-index="0"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px;--pt:0px;--pb:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gM_Ju0THbz gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="g7s7VWBPKj "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -198,13 +204,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-1 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-1:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-1:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -214,11 +220,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -242,13 +248,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>2) Como o Jui contribui para uma digestão saudável?</strong></span></p></span>
       </div>
     </div>
@@ -258,6 +265,7 @@
       <div
         uid="gUvk131cfC"
         data-index="1"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -266,18 +274,19 @@
         data-index="1"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gXu2VwEmlN gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="gPMLZO_gx6 "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -310,13 +319,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-2 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-2:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-2:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -326,11 +335,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -354,13 +363,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>3) Quem pode se beneficiar do Jui?</strong></span></p></span>
       </div>
     </div>
@@ -370,6 +380,7 @@
       <div
         uid="guIlMce_gz"
         data-index="2"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -378,18 +389,19 @@
         data-index="2"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="guB9WWr_eq gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="g_4yvKG-6q "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -422,13 +434,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-3 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-3:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-3:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -438,11 +450,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -466,13 +478,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>4) O Jui contém cafeína?</strong></span></p></span>
       </div>
     </div>
@@ -482,6 +495,7 @@
       <div
         uid="g59GbxFkVp"
         data-index="3"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -490,18 +504,19 @@
         data-index="3"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gdq7EicCDV gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="g8oraH0NlE "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -534,13 +549,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-4 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-4:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-4:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -550,11 +565,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -578,13 +593,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>5) Qual é o melhor momento para tomar Jui?</strong></span></p></span>
       </div>
     </div>
@@ -594,6 +610,7 @@
       <div
         uid="gCioQ-_FsV"
         data-index="4"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -602,18 +619,19 @@
         data-index="4"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="g4TerZOlff gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="g8nK3r__KA "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -646,13 +664,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-5 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-5:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-5:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -662,11 +680,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -690,13 +708,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>6) O Jui é adequado para veganos?</strong></span></p></span>
       </div>
     </div>
@@ -706,6 +725,7 @@
       <div
         uid="gWxRjFKS5c"
         data-index="5"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -714,18 +734,19 @@
         data-index="5"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="ggavdwh5E- gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="g4NRzBujpo "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -758,13 +779,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-6 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-6:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-6:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -774,11 +795,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -802,13 +823,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>7) Existem contraindicações para o Jui?</strong></span></p></span>
       </div>
     </div>
@@ -818,6 +840,7 @@
       <div
         uid="gZbZPpz3s2"
         data-index="6"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -826,18 +849,19 @@
         data-index="6"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gtyjpQDwmu gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="gldU15IInh "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -870,13 +894,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-7 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-7:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-7:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -886,11 +910,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -914,13 +938,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>8) O Jui é considerado um medicamento?</strong></span></p></span>
       </div>
     </div>
@@ -930,6 +955,7 @@
       <div
         uid="gAcCbQXf5p"
         data-index="7"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -938,18 +964,19 @@
         data-index="7"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="ggfBfdK9yY gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="gI4ea-dF3s "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -982,13 +1009,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-8 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-8:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-8:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -998,11 +1025,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -1026,13 +1053,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>9) Posso tomar Jui diariamente?</strong></span></p></span>
       </div>
     </div>
@@ -1042,6 +1070,7 @@
       <div
         uid="gPuMMUEhP0"
         data-index="8"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -1050,18 +1079,19 @@
         data-index="8"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gohmSa_ltX gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="gYClRH1wHJ "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -1094,13 +1124,13 @@
         class="goqubz7goT gp-accordion-item-goqubz7goT-9 gp-flex gp-items-center gp-accordion-item_header gp-cursor-pointer"
         style="--pl:24px;--pr:24px;--pt:8px;--pb:8px;--h:auto;--h-tablet:auto;--h-mobile:auto;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:#B3D825;--hvr-bgc:#B3D825;--c:#121212;--hvr-c:#121212;--bs:none;--hvr-bs:solid;--bw:0px 0px 1px 0px;--hvr-bw:0px 0px 1px 0px;--bc:#121212;--hvr-bc:#121212"
       >
-       <style class="accordion-style">.gp-accordion-item-goqubz7goT-9:hover { 
-              .gp-collapsible-icon { 
-                  color: #121212 
+       <style class="accordion-style">.gp-accordion-item-goqubz7goT-9:hover {
+              .gp-collapsible-icon {
+                  color: #121212
               }
 
-              .gp-icon { 
-                  color: #121212 
+              .gp-icon {
+                  color: #121212
               }
           }</style>
         <div class="gp-inline-flex">
@@ -1110,11 +1140,11 @@
             class="goqubz7goT gp-accordion-item_icon gp-collapsible-icon gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden gp-transition-all gp-duration-200 [&>svg]:!gp-h-[var(--height-iconCollapseSize)] [&>svg]:!gp-w-auto"
           ><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817550821556584">
               <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z" /></svg></span>
-          
+
         </div>
       <div class="gp-flex gp-items-center gp-w-full" style="--gg:10px;--gg-mobile:10px;--jc:left">
         
-            <div class="gp-inline-flex" style="">
+            <div class="gp-inline-flex" >
             <span
               class="gp-icon gp-inline-flex header-icon gp-items-center gp-justify-center gp-overflow-hidden  [&>svg]:!gp-h-[var(--height-configIconSize)] [&>svg]:!gp-w-auto"
               style="--c:#121212;--hvr-c:#121212;width:31px;height:31px">
@@ -1138,13 +1168,14 @@
     <div
       
         class=" "
-        style=""
+        
       >
-      <div class="" style="">
+      <div  >
         <span
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-overflow-hidden"
-          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--lh:180%;--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
+          style="--w:100%;--ff:var(--g-font-Assistant, 'Assistant'), var(--g-font-body, body);--size:15px;--size-tablet:16px;--size-mobile:14px;--weight:bold;word-break:break-word;overflow:hidden"
         ><p><span style="background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;"><strong>10) Qual é a dose recomendada de Jui por dia para obter os melhores resultados?</strong></span></p></span>
       </div>
     </div>
@@ -1154,6 +1185,7 @@
       <div
         uid="gNSiohXLVr"
         data-index="9"
+        data-show="false"
         class="goqubz7goT gp-accordion-item_body gp-transition-all gp-grid gp-duration-500 gp-overflow-hidden"
         style="grid-template-rows:0fr;grid-template-columns:minmax(auto, 100%)"
       >
@@ -1162,18 +1194,19 @@
         data-index="9"
         class="goqubz7goT gp-accordion-item_body-inner gp-min-h-0 gp-transition-all gp-duration-500"  style="--pl:0px;--pr:0px" >
             <div
-      pageContext tag="Col" label="Block" type="component"
-      style=""
+      tag="Col" label="Block" type="component"
+      
       class="gWV34Ypx5E gp-relative gp-flex gp-flex-col"
     >
       
     <div
-      pageContext parentTag="Col"
+      parentTag="Col"
         class="gJ_T3J0Ci0 "
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--animation:[object Object]"
       >
       <div class="gp-flex" style="--jc:left">
         <div
+         
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-paragraph-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:15px;--pr:15px;--pt:8px;--pb:8px;overflow:hidden"
@@ -1189,7 +1222,7 @@
               </div>
             
     </gp-accordion>
-    <script src="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-accordion.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-accordion.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
   
       </div>
     </div>
@@ -1206,28 +1239,50 @@
             </section>
           
     
-  {% schema %}
-    {
-      "presets": [
-              {
-                "name": "faq"
-              }
-            ],
-      "name": "faq",
-      "tag": "section",
-      "class": "gps-511255119879210151 gps gpsi",
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/97a454-43/apps/bold/app/shopify/edit?pageType=THEME_SECTION&editorId=511255119879210151)"
-        },
-        {
-          "type": "text",
-          "label": "section_preload",
-          "id": "section_preload",
-          "default": "false"
-        }
-      ],
-      "blocks": [{"type": "@app"}]
-    }
-  {% endschema %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link" type="text/disabled-css" {% endif %}>@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGaV2Q.woff) format('woff');
+}
+/* hebrew */
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGSV2YOrrM95Dylg.woff) format('woff');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGiV2YOrrM95Dylg.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGaV2YOrrM95Dw.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+{% schema %}
+  {
+    "presets": [{ "name": "faq" }],
+    "name": "faq",
+    "tag": "section",
+    "class": "gps-511255119879210151 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/97a454-43/apps/bold/app/shopify/edit?pageType=THEME_SECTION&editorId=511255119879210151)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"pt-BR":{}}
+  }
+{% endschema %}
