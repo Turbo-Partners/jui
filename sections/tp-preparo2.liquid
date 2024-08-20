@@ -84,8 +84,9 @@
             <div class="{{ section.id }}__text">
                 <p>{{ section.settings.info__text }}</p>
             </div>
-            <a href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
+            <a id="tp-preparo2__button--{{ section.id }}--desktop" href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
         </div>
+        <a id="tp-preparo2__button--{{ section.id }}--mobile" href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
     </div>
 </div>
 
@@ -119,7 +120,7 @@
     .{{ section.id }}__content {
         display: flex;
         padding-block: 5rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .{{ section.id }}__column1 {
         position: relative;
@@ -177,6 +178,10 @@
         color: white;
         text-decoration: none;
     }
+
+    #tp-preparo2__button--{{ section.id }}--desktop {
+        display: none;
+    }
     @media screen and (min-width: 728px) {
         .{{ section.id }}__content {
             gap: 1.6rem;
@@ -194,6 +199,14 @@
     }
     .{{ section.id }}__text > p {
         text-align:left;
+    }
+
+    #tp-preparo2__button--{{ section.id }}--mobile {
+        display: none;
+    }
+
+    #tp-preparo2__button--{{ section.id }}--desktop {
+        display: flex;
     }
 
     }
