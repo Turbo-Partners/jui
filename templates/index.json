@@ -692,7 +692,7 @@
     "gp_section_511770980398466215": {
       "type": "gp-section-511770980398466215",
       "custom_css": [
-        "section {padding-bottom: 10rem;}"
+        "section {padding-bottom: 5rem;}"
       ],
       "settings": {
         "section_preload": "false",
