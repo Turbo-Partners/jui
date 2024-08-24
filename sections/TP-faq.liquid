@@ -1,0 +1,141 @@
+{% schema %}
+    {
+        "name": "TP- Faq",
+        "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Título",
+                    "default": "Perguntas Frequentes"
+                },
+                {
+                    "type": "color",
+                    "id": "background_color",
+                    "label": "Background Color",
+                    "default": "#00AF85"
+                }
+            ],
+        "max_blocks": 5,
+        "blocks": [
+            {
+                "type": "faq",
+                "name": "FAQ",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "faq_pergunta",
+                        "label": "Pergunta",
+                        "default": "A b.Box possui garantia?"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "faq_resposta",
+                        "label": "Resposta"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {"name": "TP- Faq"}
+        ]
+    }
+    {% endschema %}
+    
+    <div class="faq-container" style="background-color:{{ section.settings.background_color }};">
+        <div class="page-width">
+            <div class="faq-container__content">
+                <div class="faq-container__title">
+                    <h1 class="faq-title">{{ section.settings.title }}</h1>
+                </div>
+                <div class="faq-container__faqs">
+                    {% for block in section.blocks %}
+                        <div class="faq-container__faq">
+                            <div class="question" onclick="toggleFAQ('faq-answer-{{ forloop.index0 }}')" style="background-color: transparent; color: black;">
+                                <span style="margin-top: 0.5rem;">{{ block.settings.faq_pergunta }}</span>
+                                <span style="font-size: 2.4rem;">+</span>
+                            </div>
+                            <div id="faq-answer-{{ forloop.index0 }}" class="answer">
+                                {{ block.settings.faq_resposta }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% style %}
+    .faq-container{
+        padding: 2rem 1.6rem 20rem 1.6rem;
+    }
+    .faq-container__title h1{
+        color: white;
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin: 3rem 0;
+        text-align: center;
+    }
+    .faq-container__faqs{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .faq-container__faq{
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .question {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 1.2rem 3rem;
+        border-radius: 1rem 1rem 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .answer {
+        display: none;
+        color: #666;
+        padding: 1.6rem;
+    }
+
+    @media screen and (min-width: 728px){
+        .faq-container__content{
+            display: flex;
+            gap: 128px;
+        }
+        .faq-container__title{
+            width: 35%;
+        }
+        .faq-container__faqs{
+            width: 75%;
+        }
+        .faq-container__title h1{
+            color: white;
+            font-size: 5rem;
+            font-weight: bold;
+            margin: 0;
+            text-align: left;
+         }
+         .faq-container{
+            padding: 8rem 0rem 24rem 0rem;
+        }
+    }
+    {% endstyle %}
+    
+<script>
+    function toggleFAQ(answerId) {
+        var answer = document.getElementById(answerId);
+        var question = answer.previousElementSibling; // Pega o elemento da pergunta diretamente antes da resposta
+        
+        // Alterna a visibilidade da resposta
+        var isAnswerOpen = answer.style.display === 'block';
+        answer.style.display = isAnswerOpen ? 'none' : 'block';
+        
+        // Alterna a cor de fundo da pergunta
+        question.style.backgroundColor = isAnswerOpen ? 'transparent' : '#17382D';
+        question.style.color = isAnswerOpen ? 'black' : 'white';
+    }
+</script>
