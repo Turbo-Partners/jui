@@ -750,6 +750,28 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
+    },
+    "tp_faq_iiYfyA": {
+      "type": "TP-faq",
+      "blocks": {
+        "faq_cCHJa7": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "O que é Jui?",
+            "faq_resposta": "<p>Jui é um suco verde em pó funcional elaborado com ingredientes criteriosamente selecionados, incluindo superfoods, antioxidantes, fibras prebióticas e uma variedade de vitaminas e minerais essenciais, como a Biotina. Nossos blends oferecem uma combinação única de nutrientes para promover uma vida mais saudável que promovem uma digestão saudável, ajudando a aliviar o inchaço e o desconforto abdominal.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_cCHJa7"
+      ],
+      "custom_css": [
+        "h1 {color: #3d4326;}"
+      ],
+      "settings": {
+        "title": "Perguntas Frequentes",
+        "background_color": "#f2edda"
+      }
     }
   },
   "order": [
@@ -776,6 +798,7 @@
     "1718743964e2a4b132",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012"
+    "gp_section_514710608571008012",
+    "tp_faq_iiYfyA"
   ]
 }
