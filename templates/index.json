@@ -703,6 +703,7 @@
     },
     "gp_section_511770980381623463": {
       "type": "gp-section-511770980381623463",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "ggnyy9CPl58_text": "FAQ",
@@ -726,29 +727,6 @@
         "gg6EOzyB0Oc_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Não, o Jui é um suplemento alimentar, não um medicamento.<\/span><\/p>",
         "ggUsxRVRs6m_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Sim, o Jui pode ser consumido diariamente como parte de uma rotina saudável. No entanto, recomenda-se seguir as instruções de dosagem no rótulo do produto.<\/span><\/p>",
         "ggvwrQ0Dxkf_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">A dose recomendada de Jui pode variar de acordo com as necessidades individuais, mas geralmente é de até 40g por dia, dividida em várias doses, conforme necessário. Consulte um profissional de saúde para orientação personalizada.<\/span><\/p>"
-      }
-    },
-    "gp_section_514710608571008012": {
-      "type": "gp-section-514710608571008012",
-      "settings": {
-        "section_preload": "false",
-        "ggsnbXg4iZN_label": "Segue a gente no instagram!",
-        "ggYB0lVfSRb_text": "<p><strong>Viver bem é tudo de Jui<\/strong><\/p><p><strong>+55 (21) 97255-8155<\/strong><\/p><p><a href=\"mailto:contato@vivajui.com\"><strong>contato@vivajui.com<\/strong><\/a><\/p>",
-        "ggxFb3o-v53_text": "AJUDA E SUPORTE",
-        "ggurI4V2Boh_label": "CONHECA A JUI",
-        "ggCwR9hPXYp_label": "VAI DE JUI",
-        "ggkO1sk_JvT_label": "BLOG",
-        "ggWrzE3TZfa_label": "POLÍTICA DE PRIVACIDADE",
-        "ggiaC1KkTMd_text": "<strong>INSTITUCIONAL<\/strong>",
-        "ggv00kxgdMn_label": "FALE CONOSCO",
-        "ggkV21uPE_Z_label": "ENTREGA",
-        "gguYCbknrbk_label": "DUVIDAS",
-        "ggQpVMkDrIs_label": "POLITICA DE TROCA CANCELAMENTOS E DEVOLUÇÕES",
-        "ggi_4XFw6Ew_text": "<strong>Newsletter<\/strong>",
-        "gghdvszz-Jx_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "gghdvszz-Jx_errorMessage": "Can’t send email. Please try again later.",
-        "gg0-HWcUmaF_placeholder": "Email",
-        "ggLcjyWLxd5_label": "Inscreva-se"
       }
     },
     "tp_faq_iiYfyA": {
@@ -792,8 +770,50 @@
         "faq_qET8nh": {
           "type": "faq",
           "settings": {
-            "faq_pergunta": "A b.Box possui garantia?",
-            "faq_resposta": ""
+            "faq_pergunta": "O Jui contém cafeína?",
+            "faq_resposta": "<p>Não, o Jui é livre de cafeína, tornando-o adequado para consumo a qualquer hora do dia, inclusive para aqueles sensíveis à cafeína.<\/p>"
+          }
+        },
+        "faq_NTQhwd": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Qual é o melhor momento para tomar Jui?",
+            "faq_resposta": "<p>Jui pode ser consumido a qualquer momento do dia, como parte de uma dieta equilibrada. Muitas pessoas optam por tomá-lo pela manhã em jejum para uma dose inicial de nutrientes.<\/p>"
+          }
+        },
+        "faq_8qJnyJ": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "O Jui é adequado para veganos?",
+            "faq_resposta": "<p>Sim, Jui é vegano, sem glúten e sem lactose, atendendo às necessidades de uma variedade de preferências alimentares.<\/p>"
+          }
+        },
+        "faq_JURrXA": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Existem contraindicações para o Jui?",
+            "faq_resposta": "<p>Não. Jui pode ser consumido por todos, até mesmo por crianças.<\/p>"
+          }
+        },
+        "faq_jbAVam": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "O Jui é considerado um medicamento?",
+            "faq_resposta": "<p>Não, Jui é uma mistura em pó para preparo de bebida.<\/p>"
+          }
+        },
+        "faq_wF33gj": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Posso tomar Jui diariamente?",
+            "faq_resposta": "<p>Sim, Jui pode ser consumido diariamente como parte de uma rotina saudável. <\/p>"
+          }
+        },
+        "faq_MwUTXG": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Quantas vezes ao dia posso tomar Jui?",
+            "faq_resposta": "<p>Jui não possui nenhuma restrição referente a quantidade de doses diárias por ser uma mistura em pó para preparo de bebida. <\/p>"
           }
         }
       },
@@ -803,7 +823,13 @@
         "faq_FmabAP",
         "faq_ifYnDR",
         "faq_9LzmVr",
-        "faq_qET8nh"
+        "faq_qET8nh",
+        "faq_NTQhwd",
+        "faq_8qJnyJ",
+        "faq_JURrXA",
+        "faq_jbAVam",
+        "faq_wF33gj",
+        "faq_MwUTXG"
       ],
       "custom_css": [
         "h1 {color: #3d4326;}"
@@ -811,6 +837,29 @@
       "settings": {
         "title": "Perguntas Frequentes",
         "background_color": "#f2edda"
+      }
+    },
+    "gp_section_514710608571008012": {
+      "type": "gp-section-514710608571008012",
+      "settings": {
+        "section_preload": "false",
+        "ggsnbXg4iZN_label": "Segue a gente no instagram!",
+        "ggYB0lVfSRb_text": "<p><strong>Viver bem é tudo de Jui<\/strong><\/p><p><strong>+55 (21) 97255-8155<\/strong><\/p><p><a href=\"mailto:contato@vivajui.com\"><strong>contato@vivajui.com<\/strong><\/a><\/p>",
+        "ggxFb3o-v53_text": "AJUDA E SUPORTE",
+        "ggurI4V2Boh_label": "CONHECA A JUI",
+        "ggCwR9hPXYp_label": "VAI DE JUI",
+        "ggkO1sk_JvT_label": "BLOG",
+        "ggWrzE3TZfa_label": "POLÍTICA DE PRIVACIDADE",
+        "ggiaC1KkTMd_text": "<strong>INSTITUCIONAL<\/strong>",
+        "ggv00kxgdMn_label": "FALE CONOSCO",
+        "ggkV21uPE_Z_label": "ENTREGA",
+        "gguYCbknrbk_label": "DUVIDAS",
+        "ggQpVMkDrIs_label": "POLITICA DE TROCA CANCELAMENTOS E DEVOLUÇÕES",
+        "ggi_4XFw6Ew_text": "<strong>Newsletter<\/strong>",
+        "gghdvszz-Jx_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "gghdvszz-Jx_errorMessage": "Can’t send email. Please try again later.",
+        "gg0-HWcUmaF_placeholder": "Email",
+        "ggLcjyWLxd5_label": "Inscreva-se"
       }
     }
   },
@@ -838,7 +887,7 @@
     "1718743964e2a4b132",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012",
-    "tp_faq_iiYfyA"
+    "tp_faq_iiYfyA",
+    "gp_section_514710608571008012"
   ]
 }
