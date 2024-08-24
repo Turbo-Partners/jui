@@ -728,6 +728,60 @@
         "ggvwrQ0Dxkf_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">A dose recomendada de Jui pode variar de acordo com as necessidades individuais, mas geralmente é de até 40g por dia, dividida em várias doses, conforme necessário. Consulte um profissional de saúde para orientação personalizada.<\/span><\/p>"
       }
     },
+    "tp_faq_iiYfyA": {
+      "type": "TP-faq",
+      "blocks": {
+        "faq_cCHJa7": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "O que é Jui?",
+            "faq_resposta": "<p>Jui é um suco verde em pó funcional elaborado com ingredientes criteriosamente selecionados, incluindo superfoods, antioxidantes, fibras prebióticas e uma variedade de vitaminas e minerais essenciais, como a Biotina. Nossos blends oferecem uma combinação única de nutrientes para promover uma vida mais saudável que promovem uma digestão saudável, ajudando a aliviar o inchaço e o desconforto abdominal.<\/p>"
+          }
+        },
+        "faq_4Ed88n": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Como o Jui contribui para uma digestão saudável?",
+            "faq_resposta": "<p>O suco verde em pó Jui é formulado com uma combinação única de ingredientes incluindo fibras prebióticas que ajudam a promover uma digestão saudável. As fibras prebióticas aumentam o volume e a umidade das 💩, facilitando o movimento através do intestino. Isso pode aliviar a constipação, um dos fatores que contribui para o inchaço abdominal.<\/p>"
+          }
+        },
+        "faq_FmabAP": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Jui ajuda a reduzir a fome?",
+            "faq_resposta": "<p>Nossa formulação é rica em nutrientes, fibras e possui baixo teor calórico, o que ajuda:<\/p><ul><li>A seu corpo a receber os nutrientes necessários para funcionar corretamente, e satisfazer as necessidades nutricionais, reduzindo a vontade de comer mais.<\/li><li>A regular o trânsito intestinal e retardar o esvaziamento gástrico, prolongando a sensação de plenitude após uma refeição. <\/li><li>A consumir Jui sem exceder suas necessidades calóricas, contribuindo para uma sensação de saciedade sem excesso de calorias.<br\/><\/li><\/ul>"
+          }
+        },
+        "faq_ifYnDR": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Como Jui reduz o inchaço abdominal?",
+            "faq_resposta": "<p>O blend de fibras prebióticas junto com uma formulação FODMAP free equilibra o microbioma intestinal, o que reduz a produção de gases intestinais associados à fermentação de alimentos não digeridos, que por sua vez diminui a sensação de inchaço.<\/p>"
+          }
+        },
+        "faq_9LzmVr": {
+          "type": "faq",
+          "settings": {
+            "faq_pergunta": "Quem pode se beneficiar do Jui?",
+            "faq_resposta": "<p>Jui é ideal para pessoas em busca de uma solução natural para melhorar sua saúde e bem-estar. Também é indicado para aqueles interessados em melhorar seus problemas digestivos, como inchaço e desconforto abdominal.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_cCHJa7",
+        "faq_4Ed88n",
+        "faq_FmabAP",
+        "faq_ifYnDR",
+        "faq_9LzmVr"
+      ],
+      "custom_css": [
+        "h1 {color: #3d4326;}"
+      ],
+      "settings": {
+        "title": "Perguntas Frequentes",
+        "background_color": "#f2edda"
+      }
+    },
     "gp_section_514710608571008012": {
       "type": "gp-section-514710608571008012",
       "settings": {
@@ -749,28 +803,6 @@
         "gghdvszz-Jx_errorMessage": "Can’t send email. Please try again later.",
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
-      }
-    },
-    "tp_faq_iiYfyA": {
-      "type": "TP-faq",
-      "blocks": {
-        "faq_cCHJa7": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "O que é Jui?",
-            "faq_resposta": "<p>Jui é um suco verde em pó funcional elaborado com ingredientes criteriosamente selecionados, incluindo superfoods, antioxidantes, fibras prebióticas e uma variedade de vitaminas e minerais essenciais, como a Biotina. Nossos blends oferecem uma combinação única de nutrientes para promover uma vida mais saudável que promovem uma digestão saudável, ajudando a aliviar o inchaço e o desconforto abdominal.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_cCHJa7"
-      ],
-      "custom_css": [
-        "h1 {color: #3d4326;}"
-      ],
-      "settings": {
-        "title": "Perguntas Frequentes",
-        "background_color": "#f2edda"
       }
     }
   },
@@ -798,7 +830,7 @@
     "1718743964e2a4b132",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "gp_section_514710608571008012",
-    "tp_faq_iiYfyA"
+    "tp_faq_iiYfyA",
+    "gp_section_514710608571008012"
   ]
 }
