@@ -150,39 +150,32 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "11532412952436166569": {
         "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6478312753674380289": {
         "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4918592460924562117": {
         "type": "shopify://apps/optimonk-popup-cro-a-b-test/blocks/app-embed/0b488be1-fc0a-4fe6-8793-f2bef383dba8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4651250007506174373": {
         "type": "shopify://apps/mageplaza-insta-feed/blocks/app_embed/2e85b90f-5da9-4654-967e-051f1942340c",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
