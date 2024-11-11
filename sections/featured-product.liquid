@@ -18,6 +18,12 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .{{ section.id }}__tag {
+    padding: 4px;
+    font-family: 'Manrope';
+    background: #B3D825
+  }
+
   @font-face {
     font-family: 'Athletics', sans-serif;
     src: url('{{ 'Athletics Regular.otf' | asset_url }}') format('otf'),
@@ -28,7 +34,7 @@
 
   @font-face {
     font-family: 'Manrope', sans-serif;
-    src: url('{{ 'Manrope-Regular.ttf' | asset_url }}') format('ttf'),
+    src: url('{{ 'Manrope-Regular.ttf' | asset_url }}') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -513,7 +519,7 @@
                   update_url: false
                 %}
               {% when 'tag' %}
-                <div class="tag">SABOR LIMÃO</div>
+                <div class="{{ section.id }}__tag">SABOR LIMÃO</div>
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
