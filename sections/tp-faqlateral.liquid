@@ -47,209 +47,205 @@
 }
 {% endschema %}
 
+<div class="{{ section.id }} page-width" id="tp-faqlateral">
+  <div class="{{ section.id }}__title">
+    <h1>{{ section.settings.title }}</h1>
+    <p>{{ section.settings.description }}</p>
+  </div>
 
-<div class="{{ section.id }} page-width">
-
-    <div class="{{ section.id }}__title">
-        <h1>{{ section.settings.title }}</h1>
-        <p>{{ section.settings.description }}</p>
-    </div>
-
-    <div class="{{ section.id }}__content">
-        {% for block in section.blocks %}
-            <div class="item">
-                <div class="photo">
-                    <img src="{{ block.settings.card__background | image_url }}" alt="">
-                    <div class="overlay">&nbsp;</div>
-                </div>
-                <div class="title">
-                    <h2>{{ block.settings.card__title }}</h2>
-                    <p>{{ block.settings.card__description }}</p>
-                    <div class="icon">
-                    {% render 'icon-click' %}
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-
+  <div class="{{ section.id }}__content">
+    {% for block in section.blocks %}
+      <div class="item">
+        <div class="photo">
+          <img src="{{ block.settings.card__background | image_url }}" alt="">
+          <div class="overlay">&nbsp;</div>
+        </div>
+        <div class="title">
+          <h2>{{ block.settings.card__title }}</h2>
+          <p>{{ block.settings.card__description }}</p>
+          <div class="icon">
+            {% render 'icon-click' %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 <script>
-    document.querySelectorAll('.item').forEach(function(div) {
-        div.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    });
+  document.querySelectorAll('.item').forEach(function(div) {
+      div.addEventListener('click', function() {
+          this.classList.toggle('active');
+      });
+  });
 </script>
 
-
 {% style %}
-    .{{ section.id }}{
-        padding-block: 4rem;
-    }
-    .{{ section.id }}__title{
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
-    .{{ section.id }}__title > h1{
-        margin: 0;
-    }
-    .{{ section.id }}__content{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        position: relative;
-        padding-block: 2rem;
+  .{{ section.id }}{
+      padding-block: 4rem;
+  }
+  .{{ section.id }}__title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .{{ section.id }}__title > h1{
+      margin: 0;
+  }
+  .{{ section.id }}__content{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+      padding-block: 2rem;
 
-        height: 60%;
-    }
-    .{{ section.id }}__content  .item:first-child {
-        border-radius: 1.6rem 0rem 0rem 0.8rem;
-    }
-    .{{ section.id }}__content  .item:last-child {
-        border-radius: 0rem 1.6rem 0rem 0rem;
-    }
+      height: 60%;
+  }
+  .{{ section.id }}__content  .item:first-child {
+      border-radius: 1.6rem 0rem 0rem 0.8rem;
+  }
+  .{{ section.id }}__content  .item:last-child {
+      border-radius: 0rem 1.6rem 0rem 0rem;
+  }
 
-    .item {
-        flex: 0 0 20%;
-        position: relative;
-        overflow: hidden;
+  .item {
+      flex: 0 0 20%;
+      position: relative;
+      overflow: hidden;
 
-        transition: 0.5s;
-        cursor: pointer;
-    }
-    .photo{
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    .photo > img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
+      transition: 0.5s;
+      cursor: pointer;
+  }
+  .photo{
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+  .photo > img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
 
-        filter: blur(0.1px);
-        transition: 0.5s;
-    }
-    .title{
-        position: absolute;
-        z-index: 2;
-        bottom: 32px;
+      filter: blur(0.1px);
+      transition: 0.5s;
+  }
+  .title{
+      position: absolute;
+      z-index: 2;
+      bottom: 32px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        width: 70%;
-        margin: 0 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      width: 70%;
+      margin: 0 15%;
 
-        background-color: transparent;
-        transition: 0.5s;
-    }
-    .title > h2{
-        margin: 0;
-        padding: 0;
-        color: #B3D825;
-        text-align: center;
-        font-size: 2.4rem;
-        transition: 0.5s;
-    }
-    .title > p {
-        margin: 0;
-        padding: 0;
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        color: white;
-        text-align: center;
+      background-color: transparent;
+      transition: 0.5s;
+  }
+  .title > h2{
+      margin: 0;
+      padding: 0;
+      color: #B3D825;
+      text-align: center;
+      font-size: 2.4rem;
+      transition: 0.5s;
+  }
+  .title > p {
+      margin: 0;
+      padding: 0;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: white;
+      text-align: center;
 
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .overlay{
-        background: rgb(255,255,255);
-        background: linear-gradient(176deg, rgba(255,255,255,0.05085784313725494) 0%, rgba(2,18,22,1) 120%);
-        width: 100%;
-        height: 98.4%;
-        position: absolute;
-        top: 0;
-    }
-    .item.active {
-        flex: 1;
-        background-color: white;
-    }
-    .title > .icon{
-        display: block;
-    }
-    .item.active > .title{
-        background: rgba(255, 255, 255, 0.14);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4.7px);
-        -webkit-backdrop-filter: blur(4.7px);
-        width: 70%;
-    }
-    .item.active > .title > .icon{
-        display: none;
-    }
-    .item.active > .title > h2{
-        padding: 0 1rem;
-    }
-    .item.active .title > p {
-        display: block;
-        opacity: 1;
-        padding: 0 1rem;
-    }
+      display: none;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .overlay{
+      background: rgb(255,255,255);
+      background: linear-gradient(176deg, rgba(255,255,255,0.05085784313725494) 0%, rgba(2,18,22,1) 120%);
+      width: 100%;
+      height: 98.4%;
+      position: absolute;
+      top: 0;
+  }
+  .item.active {
+      flex: 1;
+      background-color: white;
+  }
+  .title > .icon{
+      display: block;
+  }
+  .item.active > .title{
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.7px);
+      -webkit-backdrop-filter: blur(4.7px);
+      width: 70%;
+  }
+  .item.active > .title > .icon{
+      display: none;
+  }
+  .item.active > .title > h2{
+      padding: 0 1rem;
+  }
+  .item.active .title > p {
+      display: block;
+      opacity: 1;
+      padding: 0 1rem;
+  }
 
-    @media screen and (max-width: 728px){
-        .{{ section.id }}__content{
-            flex-direction: column;
-            gap: 0px;
-        }
-        .{{ section.id }}__content  .item:first-child {
-            border-radius: 1.6rem 1.6rem 0rem 0rem;
-        }
-        .{{ section.id }}__content  .item:last-child {
-            border-radius: 0rem 0rem 1.6rem 1.6rem;
-        }
-        .overlay{
-            height: 100%;
-        }
-        .item{
-            width: 100%;
-            height: 100%;
-            margin-bottom: -8px;
-        }
-        .photo{
-            width: 100%;
-            height: 100%;
-        }
-        .title{
-            margin-bottom: 0rem;
-            bottom: 8px;
-        }
-        .title > h2{
-            font-size: 1.8rem;
-        }
-        .title > p{
-            font-size: 1rem;
-        }
-        .photo > img {
-            width: 100%;
-            height: 115px;
-            object-fit: cover;
+  @media screen and (max-width: 728px){
+      .{{ section.id }}__content{
+          flex-direction: column;
+          gap: 0px;
+      }
+      .{{ section.id }}__content  .item:first-child {
+          border-radius: 1.6rem 1.6rem 0rem 0rem;
+      }
+      .{{ section.id }}__content  .item:last-child {
+          border-radius: 0rem 0rem 1.6rem 1.6rem;
+      }
+      .overlay{
+          height: 100%;
+      }
+      .item{
+          width: 100%;
+          height: 100%;
+          margin-bottom: -8px;
+      }
+      .photo{
+          width: 100%;
+          height: 100%;
+      }
+      .title{
+          margin-bottom: 0rem;
+          bottom: 8px;
+      }
+      .title > h2{
+          font-size: 1.8rem;
+      }
+      .title > p{
+          font-size: 1rem;
+      }
+      .photo > img {
+          width: 100%;
+          height: 115px;
+          object-fit: cover;
 
-            filter: blur(0.1px);
-            transition: 0.5s;
-        }
-        .item.active .title{
-            bottom: 32px;
-        }
-        .item.active .photo > img{
-            height: 400px;
-        }
-    }
+          filter: blur(0.1px);
+          transition: 0.5s;
+      }
+      .item.active .title{
+          bottom: 32px;
+      }
+      .item.active .photo > img{
+          height: 400px;
+      }
+  }
 {% endstyle %}
