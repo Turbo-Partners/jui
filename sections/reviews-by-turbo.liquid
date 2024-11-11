@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -297,7 +297,7 @@
   @media screen and (max-width: 749px) {
     .section__reviews {
       gap: 3.2rem;
-    }  
+    }
 
     .review-swiper-{{ section.id }} {
       padding-bottom: 0;
@@ -310,13 +310,13 @@
     .swiper-slide-active .review-card {
       gap: var(--gap-active-mobile);
     }
-    
+
     .review-swiper-{{ section.id }} .swiper-slide {
       height: var(--heightMB);
       align-self: var(--alignMB);
       width: var(--width2MB);
     }
-    
+
     .reviews-wrapper {
       gap: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
     }
@@ -359,16 +359,16 @@
     .photo-wrapper {
       min-height: var(--height-mobile);
     }
-  
+
     .review-swiper-{{ section.id }} .swiper-slide-active .photo-wrapper {
       min-height: var(--height-mobile-scaled);
     }
-  
+
     .client-photo {
       width: {{ section.settings.photo-size-mobile }}px;
       height: {{ section.settings.photo-height-mobile }}px;
     }
-  
+
     .review-swiper-{{ section.id }} .swiper-slide-active .client-photo {
       width: var(--sizeMB);
       height: var(--heightMB);
@@ -376,7 +376,7 @@
   }
 {%- endstyle -%}
 
-{%  liquid 
+{% liquid
   assign scale_slide = section.settings.scale_slide | to_i
   assign scale_active_slide = section.settings.scale_active_slide | to_i
   assign scale_slide_mobile = section.settings.scale_slide_mobile | to_i
@@ -400,7 +400,7 @@
     assign height = 'auto'
     assign font_active = font_inactive
     assign gap_active = gap_inactive
-  endif 
+  endif
   if scale_active_slide_mobile > 100
     assign align_mobile = 'center'
     assign height_mobile = 'fit-content'
@@ -411,16 +411,16 @@
     assign height_mobile = 'auto'
     assign font_active_mobile = font_inactive
     assign gap_active_mobile = gap_inactive
-  endif 
+  endif
 %}
 
-{% javascript %} 
+{% javascript %}
   window.onload = () => {
     const reviewCards = document.querySelectorAll('.review-card');
     reviewCards.forEach((card) => {
       const order3 = card.querySelector('.order-3');
       const order2 = card.querySelector('.order-2');
-      
+
       if(order3 && ((order3.classList.contains('client-review') && order2.classList.contains('client-info')) || (order3.classList.contains('client-info') && order2.classList.contains('client-review')))) {
         order2.style.marginTop = 'auto';
       } else if(order3 && !order3.classList.contains('client-message')) {
@@ -428,7 +428,7 @@
       } else {
         if(!order2.classList.contains('client-message')) {
           order2.style.marginTop = 'auto';
-        }  
+        }
       };
     });
 
@@ -436,7 +436,7 @@
     const parent = child.parentNode;
     const children = Array.from(parent.children);
     const index = Array.prototype.indexOf.call(children, child);
-    
+
     children.forEach((child2) => {
       const childIndex = Array.prototype.indexOf.call(children, child2);
       if(childIndex > index) {
@@ -450,11 +450,12 @@
   };
 {% endjavascript %}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="reviews section__reviews section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+<div class="color-{{ section.settings.color_scheme }} gradient" id="reviews-by-turbo">
+  <div
+    class="reviews section__reviews section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
-    {% endif %}  
+    {% endif %}
   >
     {%- unless section.settings.title == blank -%}
       <div class="title__reviews page-width">
@@ -465,11 +466,19 @@
               href="{{ section.settings.view_all_link }}"
               id="ViewAll-{{ section.id }}"
               class="view_all_button link underlined-link"
-              aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">
-                <span>Ver todos</span>
-                <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" width="29" height="18" viewBox="0 0 29 18" fill="none">
-                    <path d="M0 8.85593H29M29 8.85593C23.911 8.85593 21.1419 3.28531 21.1419 0.5M29 8.85593C22.9381 8.85593 21.2355 14.6186 21.1419 17.5" stroke="currentColor" stroke-width="1.5"/>
-                </svg>
+              aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
+            >
+              <span>Ver todos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="icon-arrow"
+                width="29"
+                height="18"
+                viewBox="0 0 29 18"
+                fill="none"
+              >
+                <path d="M0 8.85593H29M29 8.85593C23.911 8.85593 21.1419 3.28531 21.1419 0.5M29 8.85593C22.9381 8.85593 21.2355 14.6186 21.1419 17.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
             </a>
           {%- endif -%}
         </div>
@@ -478,7 +487,7 @@
             {% if section.settings.star != blank %}
               <div class="stars-review">
                 {% for i in (1..5) %}
-                  <img src="{{ section.settings.star | image_url }}" />
+                  <img src="{{ section.settings.star | image_url }}">
                 {% endfor %}
               </div>
             {% endif %}
@@ -487,10 +496,11 @@
         {% endif %}
       </div>
     {%- endunless -%}
-    <div class="slider-container{% unless section.settings.full_width %}{% if section.settings.swiper_on %} page-width-desktop page-width-tablet{% else %} page-width{% endif %}{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    <div
+      class="slider-container{% unless section.settings.full_width %}{% if section.settings.swiper_on %} page-width-desktop page-width-tablet{% else %} page-width{% endif %}{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
         data-cascade
-      {% endif %}    
+      {% endif %}
     >
       <!-- Slider main container -->
       <div class="reviews-wrapper {% if section.settings.swiper_on %}review-swiper-{{ section.id }}{% else %}reviews-container{% endif %}">
@@ -498,43 +508,77 @@
         <div class="{% if section.settings.swiper_on %}swiper-wrapper{% else %}reviews-wrapper{% endif %}">
           <!-- Slides -->
           {% for block in section.blocks %}
-            <div class="{% if section.settings.swiper_on %}swiper-slide{% else %}review-item{% endif %}" style="--width: {{ width }}; --width2: {% if section.settings.fixed_width %}{{ section.settings.slides_width }}px{% else %}100%{% endif %}; --widthMB: {{ width_mobile }}; --width2MB: {% if section.settings.fixed_width_mobile %}{{ section.settings.slides_width_mobile }}px{% else %}100%{% endif %};--height: {{ height }}; --align: {{ align }};--heightMB: {{ height_mobile }}; --alignMB: {{ align_mobile }};"
+            <div
+              class="{% if section.settings.swiper_on %}swiper-slide{% else %}review-item{% endif %}"
+              style="--width: {{ width }}; --width2: {% if section.settings.fixed_width %}{{ section.settings.slides_width }}px{% else %}100%{% endif %}; --widthMB: {{ width_mobile }}; --width2MB: {% if section.settings.fixed_width_mobile %}{{ section.settings.slides_width_mobile }}px{% else %}100%{% endif %};--height: {{ height }}; --align: {{ align }};--heightMB: {{ height_mobile }}; --alignMB: {{ align_mobile }};"
               {{ block.shopify_attributes }}
             >
-              <div class="review-card-wrapper" style="--padding: {{ section.settings.vertical-padding | times: scale_active_slide | divided_by: scale_slide }}px {{ section.settings.horizontal-padding | times: scale_active_slide | divided_by: scale_slide }}px; --scale: {{ scale_slide }}%; --scaleActive: {{ scale_active_slide }}%; --borderRadius: {{ section.settings.border-radius | times: scale_active_slide | divided_by: scale_slide }}px; --paddingMB: {{ section.settings.vertical-padding | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px {{ section.settings.horizontal-padding | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px; --scaleMB: {{ scale_slide_mobile }}%; --scaleActiveMB: {{ scale_active_slide_mobile }}%; --borderRadiusMB: {{ section.settings.border-radius | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;">
-                {% if section.settings.photo-cover and block.settings.image != blank %}
-                  <div class="photo-wrapper" style="--height: {{ section.settings.photo-height }}px; --height-mobile: {{ section.settings.photo-height-mobile }}px; --height-scaled: {{ section.settings.photo-height | times: scale_active_slide | divided_by: scale_slide }}px; --height-mobile-scaled: {{ section.settings.photo-height-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;">
-                    <img class="client-photo" src="{{ block.settings.image | image_url }}" style="--size: {{ section.settings.photo-size | times: scale_active_slide | divided_by: scale_slide }}px; --sizeMB: {{ section.settings.photo-size-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;"/>
+              <div
+                class="review-card-wrapper"
+                style="--padding: {{ section.settings.vertical-padding | times: scale_active_slide | divided_by: scale_slide }}px {{ section.settings.horizontal-padding | times: scale_active_slide | divided_by: scale_slide }}px; --scale: {{ scale_slide }}%; --scaleActive: {{ scale_active_slide }}%; --borderRadius: {{ section.settings.border-radius | times: scale_active_slide | divided_by: scale_slide }}px; --paddingMB: {{ section.settings.vertical-padding | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px {{ section.settings.horizontal-padding | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px; --scaleMB: {{ scale_slide_mobile }}%; --scaleActiveMB: {{ scale_active_slide_mobile }}%; --borderRadiusMB: {{ section.settings.border-radius | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;"
+              >
+                {% if section.settings['photo-cover'] and block.settings.image != blank %}
+                  <div
+                    class="photo-wrapper"
+                    style="--height: {{ section.settings.photo-height }}px; --height-mobile: {{ section.settings.photo-height-mobile }}px; --height-scaled: {{ section.settings.photo-height | times: scale_active_slide | divided_by: scale_slide }}px; --height-mobile-scaled: {{ section.settings.photo-height-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;"
+                  >
+                    <img
+                      class="client-photo"
+                      src="{{ block.settings.image | image_url }}"
+                      style="--size: {{ section.settings.photo-size | times: scale_active_slide | divided_by: scale_slide }}px; --sizeMB: {{ section.settings.photo-size-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;"
+                    >
                   </div>
                 {% endif %}
-                <div class="review-card{% if section.settings.text_absolute %} text-absolute{% endif %}" style="{% unless section.settings.text-align %}align-items: start;{% endunless %} --font-inactive: {{ font_inactive }}px; --font-active: {{ font_active }}px; --font-active-MB: {{ font_active_mobile }}px; --gap-inactive: {{ gap_inactive }}px; --gap-active: {{ gap_active }}px; --gap-active-mobile: {{ gap_active_mobile }}px;">
-                  <div class="client-info order order-{{ text_order[0] }}" style="{% if section.settings.info-flex %}flex-direction: column; text-align: center; {% endif %}">
-                    {% if block.settings.image != blank and section.settings.photo-cover == false %}
-                      <img class="client-photo" src="{{ block.settings.image | image_url }}" style="--size: {{ section.settings.photo-size | times: scale_active_slide | divided_by: scale_slide }}px; --sizeMB: {{ section.settings.photo-size-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px; --height: {{ section.settings.photo-height | times: scale_active_slide | divided_by: scale_slide }}px; --heightMB: {{ section.settings.photo-height-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;" loading="lazy"/>
+                <div
+                  class="review-card{% if section.settings.text_absolute %} text-absolute{% endif %}"
+                  style="{% unless section.settings.text-align %}align-items: start;{% endunless %} --font-inactive: {{ font_inactive }}px; --font-active: {{ font_active }}px; --font-active-MB: {{ font_active_mobile }}px; --gap-inactive: {{ gap_inactive }}px; --gap-active: {{ gap_active }}px; --gap-active-mobile: {{ gap_active_mobile }}px;"
+                >
+                  <div
+                    class="client-info order order-{{ text_order[0] }}"
+                    style="{% if section.settings.info-flex %}flex-direction: column; text-align: center; {% endif %}"
+                  >
+                    {% if block.settings.image != blank and section.settings['photo-cover'] == false %}
+                      <img
+                        class="client-photo"
+                        src="{{ block.settings.image | image_url }}"
+                        style="--size: {{ section.settings.photo-size | times: scale_active_slide | divided_by: scale_slide }}px; --sizeMB: {{ section.settings.photo-size-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px; --height: {{ section.settings.photo-height | times: scale_active_slide | divided_by: scale_slide }}px; --heightMB: {{ section.settings.photo-height-mobile | times: scale_active_slide_mobile | divided_by: scale_slide_mobile }}px;"
+                        loading="lazy"
+                      >
                     {% endif %}
-                    <div class="info-text" style="text-align: {% if section.settings.text-align %}center{% else %}left{% endif %};">
+                    <div
+                      class="info-text"
+                      style="text-align: {% if section.settings.text-align %}center{% else %}left{% endif %};"
+                    >
                       {% if block.settings.name != blank %}
-                        <div class="client-name" style="--scaleFont: scale({{ scale_active_slide | divided_by: 100.00 }}); --scaleFont-mobile: scale({{ scale_active_slide_mobile | divided_by: 100.00 }});">{{ block.settings.name }}</div>
+                        <div
+                          class="client-name"
+                          style="--scaleFont: scale({{ scale_active_slide | divided_by: 100.00 }}); --scaleFont-mobile: scale({{ scale_active_slide_mobile | divided_by: 100.00 }});"
+                        >
+                          {{ block.settings.name }}
+                        </div>
                       {% endif %}
                       {% if block.settings.job != blank %}
                         <div class="client-job">{{ block.settings.job }}</div>
                       {% endif %}
                     </div>
                   </div>
-                  <div class="client-message order-{{ text_order[1] }}" style="{% if section.settings.text-align %}text-align: center; {% endif %}">
+                  <div
+                    class="client-message order-{{ text_order[1] }}"
+                    style="{% if section.settings.text-align %}text-align: center; {% endif %}"
+                  >
                     {{ block.settings.message }}
                   </div>
                   {% if section.settings.star != blank %}
                     <div class="client-review order-{{ text_order[2] }}">
                       {% for i in (1..5) %}
-                        <img src="{{ section.settings.star | image_url }}" />
+                        <img src="{{ section.settings.star | image_url }}">
                       {% endfor %}
                     </div>
                   {% endif %}
                   {% if section.settings.verified_text != blank %}
                     <div class="verified_text" style="order: 4; display: flex; gap: 8px;">
                       {% if section.settings.verified_icon != blank %}
-                        <img src="{{ section.settings.verified_icon | image_url }}" />
+                        <img src="{{ section.settings.verified_icon | image_url }}">
                       {% endif %}
                       {{ section.settings.verified_text }}
                     </div>
@@ -545,19 +589,27 @@
           {% endfor %}
         </div>
         {% if section.settings.pagination != blank and section.settings.swiper_on %}
-          <div class="swiper-pagination" style="--swiper-pagination-color: {{ section.settings.pagination }}; --swiper-pagination-bullet-inactive-color: {{ section.settings.pagination }}"> </div>
+          <div
+            class="swiper-pagination"
+            style="--swiper-pagination-color: {{ section.settings.pagination }}; --swiper-pagination-bullet-inactive-color: {{ section.settings.pagination }}"
+          ></div>
         {% endif %}
-        {% if section.settings.navigation != blank and section.settings.navigation_left_custom == blank and section.settings.navigation_right_custom == blank and section.settings.swiper_on %}
-          <div class="swiper-button-prev" style="--swiper-navigation-color: {{ section.settings.navigation }}"> </div>
-          <div class="swiper-button-next" style="--swiper-navigation-color: {{ section.settings.navigation }}"> </div>
+        {% if section.settings.navigation != blank
+          and section.settings.navigation_left_custom == blank
+          and section.settings.navigation_right_custom == blank
+          and section.settings.swiper_on
+        %}
+          <div class="swiper-button-prev" style="--swiper-navigation-color: {{ section.settings.navigation }}"></div>
+          <div class="swiper-button-next" style="--swiper-navigation-color: {{ section.settings.navigation }}"></div>
         {% endif %}
         {% if section.settings.navigation_left_custom != blank and section.settings.swiper_on %}
           <img
             src="{{ section.settings.navigation_left_custom | image_url }}"
-            class="swiper-button-prev" />
+            class="swiper-button-prev"
+          >
         {% endif %}
         {% if section.settings.navigation_right_custom != blank and section.settings.swiper_on %}
-          <img src="{{ section.settings.navigation_right_custom | image_url }}" class="swiper-button-next" />
+          <img src="{{ section.settings.navigation_right_custom | image_url }}" class="swiper-button-next">
         {% endif %}
       </div>
     </div>
@@ -573,7 +625,7 @@
     grabCursor: true,
     initialSlide: {{ section.settings.initial_slide }},
     slidesPerView: {% if section.settings.fixed_width %}'auto'{% else %}3{% endif %},
-    
+
     {% if section.settings.pagination != blank %}
       pagination: {
         el: '.swiper-pagination',
@@ -614,7 +666,7 @@
     const parent = child.parentNode;
     const children = Array.from(parent.children);
     const index = Array.prototype.indexOf.call(children, child);
-    
+
     children.forEach((child2) => {
       const childIndex = Array.prototype.indexOf.call(children, child2);
       console.log(index);
