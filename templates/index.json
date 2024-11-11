@@ -191,6 +191,10 @@
             "heading_size": "h1"
           }
         },
+        "tag_nmxFqN": {
+          "type": "tag",
+          "settings": {}
+        },
         "text_RUgfA7": {
           "type": "text",
           "settings": {
@@ -234,6 +238,7 @@
       },
       "block_order": [
         "title_eDrqcM",
+        "tag_nmxFqN",
         "text_RUgfA7",
         "bullets_image_LCGNPL",
         "variant_picker2_bJFNkR",
