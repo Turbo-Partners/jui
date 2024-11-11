@@ -72,26 +72,29 @@
 %}
 
 <div class="{{ section.id }} page-width">
-    <div class="{{ section.id }}__content">
-        <div class="{{ section.id }}__column1 {{ image_class }}">
-            <div class="{{ section.id }}__image">
-                <img src="{{ section.settings.info__url-image }}" alt="Imagem de Informação Nutricional">
-            </div>
-            <div class="{{ section.id }}__image-bg"></div>
-        </div>
-        <div class="{{ section.id }}__column2 {{ text_class }}">
-            <h2>{{ section.settings.info__title }}</h2>
-            <div class="{{ section.id }}__text">
-                <p>{{ section.settings.info__text }}</p>
-            </div>
-            <a id="tp-preparo2__button--{{ section.id }}--desktop" href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
-        </div>
-        <a id="tp-preparo2__button--{{ section.id }}--mobile" href="{{ section.settings.info__url-cta }}" class="button">{{ section.settings.info__cta-text }}</a>
+  <div class="{{ section.id }}__content">
+    <div class="{{ section.id }}__column1 {{ image_class }}">
+      <div class="{{ section.id }}__image">
+        <img src="{{ section.settings.info__url-image }}" alt="Imagem de Informação Nutricional">
+      </div>
+      <div class="{{ section.id }}__image-bg"></div>
     </div>
+    <div class="{{ section.id }}__column2 {{ text_class }}">
+      <h2>{{ section.settings.info__title }}</h2>
+      <div class="{{ section.id }}__text">
+        <p>{{ section.settings.info__text }}</p>
+      </div>
+      <a id="tp-preparo2__button--{{ section.id }}--desktop" href="{{ section.settings.info__url-cta }}" class="button">
+        {{- section.settings['info__cta-text'] -}}
+      </a>
+    </div>
+    <a id="tp-preparo2__button--{{ section.id }}--mobile" href="{{ section.settings.info__url-cta }}" class="button">
+      {{- section.settings['info__cta-text'] -}}
+    </a>
+  </div>
 </div>
 
 {% style %}
-
       @font-face {
     font-family: 'Athletics', sans-serif;
     src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf'),
@@ -108,15 +111,19 @@
     font-display: swap;
   }
 
+  .{{ section.id }}__column2 {
+    color: #3D4326;
+  }
+
   p {
     font-family: Manrope, sans-serif !important;
   }
-  
+
 
   h2 {
     font-family: Athletics, sans-serif !important;
   }
-    
+
     .{{ section.id }}__content {
         display: flex;
         padding-block: 5rem;
