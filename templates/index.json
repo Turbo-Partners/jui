@@ -599,13 +599,45 @@
             "url__video": "",
             "video": "shopify://files/videos/Video sem titulo Clipchamp.webm"
           }
+        },
+        "card_zXAAdP": {
+          "type": "card",
+          "settings": {
+            "url__video": "",
+            "video": "shopify://files/videos/Video 8caa-405d-93e3-70ca28613507.mp4"
+          }
+        },
+        "card_JkJfGC": {
+          "type": "card",
+          "settings": {
+            "url__video": "",
+            "video": "shopify://files/videos/Video 8caa-405d-93e3-70ca28613507.mp4"
+          }
+        },
+        "card_gUn4hq": {
+          "type": "card",
+          "settings": {
+            "url__video": "",
+            "video": "shopify://files/videos/Video 8caa-405d-93e3-70ca28613507.mp4"
+          }
+        },
+        "card_VWGAe7": {
+          "type": "card",
+          "settings": {
+            "url__video": "",
+            "video": "shopify://files/videos/Video 8caa-405d-93e3-70ca28613507.mp4"
+          }
         }
       },
       "block_order": [
         "card_BV4UkL",
         "card_Km4j6k",
         "card_WNaffd",
-        "card_fpredJ"
+        "card_fpredJ",
+        "card_zXAAdP",
+        "card_JkJfGC",
+        "card_gUn4hq",
+        "card_VWGAe7"
       ],
       "settings": {
         "title": "Seu pão nunca foi tão Gostoso e Prático"
