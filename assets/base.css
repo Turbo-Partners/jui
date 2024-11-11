@@ -7,7 +7,7 @@
 
   @font-face {
     font-family: 'Athletics', sans-serif;
-    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf'),
+    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
