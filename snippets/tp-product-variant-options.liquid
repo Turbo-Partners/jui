@@ -112,7 +112,8 @@
             class="discount-percentage"
           >
             {{ discount_percentage | round: 2 }}% OFF
-            <!-- {% if value contains '3' %}+ Frete Grátis{% endif %} -->
+            {% comment %}{% if value contains '3' %}+ Frete Grátis{% endif %}{% endcomment %}
+            + Frete Grátis
           </span>
         {% endif %}
         <div style="display: flex; flex-direction: column; line-height: 110%;">
