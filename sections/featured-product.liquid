@@ -37,10 +37,10 @@
   .product__text {
     font-family: Manrope, sans-serif !important;
   }
-  
+
 
   .product__title {
-    font-family: Athletics, sans-serif !important;
+    font-family: 'Athletics', sans-serif !important;
   }
 
   @media screen and (min-width: 750px) {
@@ -184,25 +184,25 @@
                 {% render block %}
               {%- when 'verificado' -%}
                 <div class="verificado">
-                  <img src="{{ block.settings.verificado__icon | image_url: width: 50 }}" />
+                  <img src="{{ block.settings.verificado__icon | image_url: width: 50 }}">
                   <span>{{ block.settings.verificado__texto }}</span>
                 </div>
               {%- when 'bullets_image' -%}
                 <div class="bullets-image">
                   <div class="bullets-image__card">
-                    <img src="{{ block.settings.bullets__image1 | image_url: width: 100 }}" />
+                    <img src="{{ block.settings.bullets__image1 | image_url: width: 100 }}">
                     <span>{{ block.settings.bullets__text1 }}</span>
                   </div>
                   <div class="bullets-image__card">
-                    <img src="{{ block.settings.bullets__image2 | image_url: width: 100 }}" />
+                    <img src="{{ block.settings.bullets__image2 | image_url: width: 100 }}">
                     <span>{{ block.settings.bullets__text2 }}</span>
                   </div>
                   <div class="bullets-image__card">
-                    <img src="{{ block.settings.bullets__image3 | image_url: width: 100 }}" />
+                    <img src="{{ block.settings.bullets__image3 | image_url: width: 100 }}">
                     <span>{{ block.settings.bullets__text3 }}</span>
                   </div>
                   <div class="bullets-image__card">
-                    <img src="{{ block.settings.bullets__image4 | image_url: width: 100 }}" />
+                    <img src="{{ block.settings.bullets__image4 | image_url: width: 100 }}">
                     <span>{{ block.settings.bullets__text4 }}</span>
                   </div>
                 </div>
@@ -505,9 +505,14 @@
                   product_form_id: product_form_id,
                   update_url: false
                 %}
-                {%- when 'variant_picker2' -%}
-                  {% render 'product-variant-picker2', product: product, block: block, product_form_id: product_form_id, update_url: false %}
-                {%- when 'buy_buttons' -%}
+              {%- when 'variant_picker2' -%}
+                {% render 'product-variant-picker2',
+                  product: product,
+                  block: block,
+                  product_form_id: product_form_id,
+                  update_url: false
+                %}
+              {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
