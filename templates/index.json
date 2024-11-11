@@ -681,41 +681,6 @@
         "section_preload": "false"
       }
     },
-    "1718743964e2a4b132": {
-      "type": "apps",
-      "blocks": {
-        "loox_reviews_loox_card_carousel_section_hhx3aD": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "maxWidth": 1600,
-            "borderRadius": 12,
-            "itemsPerView": 4,
-            "mobileItemsPerView": 2,
-            "maxNumberOfCharacters": 500,
-            "imageRatio": "0.72",
-            "reviewerNameColor": "#000000",
-            "textColor": "#000000",
-            "itemBackgroundColor": "#ffffff",
-            "starsColor": "",
-            "starsBackgroundColor": "#ffffff",
-            "arrows_backgroundColor": "#ffffff",
-            "arrows_iconColor": "#9a9a9a",
-            "shadow": "offset-dark",
-            "border_active": false,
-            "border_width": 2,
-            "border_color": "#000000",
-            "productIds": ""
-          }
-        }
-      },
-      "block_order": [
-        "loox_reviews_loox_card_carousel_section_hhx3aD"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "gp_section_511770980398466215": {
       "type": "gp-section-511770980398466215",
       "custom_css": [],
@@ -886,6 +851,27 @@
         "gg0-HWcUmaF_placeholder": "Email",
         "ggLcjyWLxd5_label": "Inscreva-se"
       }
+    },
+    "173135698940fae428": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_RccNXz": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_RccNXz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -909,10 +895,10 @@
     "tp_video_slides_dwbc9G",
     "1722461618979fbe75",
     "gp_section_513797264515269478",
-    "1718743964e2a4b132",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
     "tp_faq_iiYfyA",
-    "gp_section_514710608571008012"
+    "gp_section_514710608571008012",
+    "173135698940fae428"
   ]
 }
