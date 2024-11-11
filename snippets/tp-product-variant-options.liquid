@@ -1,136 +1,150 @@
 {%- liquid
-    assign variants_available_arr = product.variants | map: 'available'
-    assign variants_option1_arr = product.variants | map: 'option1'
-    assign variants_option2_arr = product.variants | map: 'option2'
-    assign variants_option3_arr = product.variants | map: 'option3'
-  
-    assign product_form_id = 'product-form-' | append: section.id
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+
+{%- for value in option.values -%}
+  {%- liquid
+    assign option_disabled = true
+    assign adjusted_price = 0
+    assign adjusted_compare_at_price = 0
+    assign unit_discount_amount = 0
+    assign discount_percentage = 0
+
+    for option1_name in variants_option1_arr
+      case option.position
+        when 1
+          if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+            if value contains '3 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
+            elsif value contains '2 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 2
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
+            else
+              assign adjusted_price = product.variants[forloop.index0].price
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
+            endif
+            assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
+            assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
+          endif
+        when 2
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+            if value contains '3 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
+            elsif value contains '2 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 2
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
+            else
+              assign adjusted_price = product.variants[forloop.index0].price
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
+            endif
+            assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
+            assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
+          endif
+        when 3
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+            if value contains '3 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
+            elsif value contains '2 Latas'
+              assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 2
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
+            else
+              assign adjusted_price = product.variants[forloop.index0].price
+              assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
+              assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
+            endif
+            assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
+            assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
+          endif
+      endcase
+    endfor
   -%}
-  
-  {%- for value in option.values -%}
-    {%- liquid
-      assign option_disabled = true
-      assign adjusted_price = 0
-      assign adjusted_compare_at_price = 0
-      assign unit_discount_amount = 0
-      assign discount_percentage = 0
-  
-      for option1_name in variants_option1_arr
-        case option.position
-          when 1
-            if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-              assign option_disabled = false
-              if value contains '3 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
-              elsif value contains '2 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price| divided_by: 2
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
-              else
-                assign adjusted_price = product.variants[forloop.index0].price
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
-              endif
-              assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
-              assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
-            endif
-          when 2
-            if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-              assign option_disabled = false
-              if value contains '3 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
-              elsif value contains '2 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 2
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
-              else
-                assign adjusted_price = product.variants[forloop.index0].price
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
-              endif
-              assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
-              assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
-            endif
-          when 3
-            if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-              assign option_disabled = false
-              if value contains '3 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 3
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 3
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 90
-              elsif value contains '2 Latas'
-                assign adjusted_price = product.variants[forloop.index0].price | divided_by: 2
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price | divided_by: 2
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 60
-              else
-                assign adjusted_price = product.variants[forloop.index0].price
-                assign adjusted_compare_at_price = product.variants[forloop.index0].compare_at_price
-                assign unit_discount_amount = product.variants[forloop.index0].price | divided_by: 30
-              endif
-              assign discount_amount = adjusted_compare_at_price | minus: adjusted_price
-              assign discount_percentage = discount_amount | times: 100 | divided_by: adjusted_compare_at_price
-            endif
-        endcase
-      endfor
-    -%}
-  
-    {%- if block.settings.picker_type == 'button' -%}
-      <input
-        type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
-        value="{{ value | escape }}"
-        form="{{ product_form_id }}"
-        {% if option.selected_value == value %}
-          checked
+
+  {%- if block.settings.picker_type == 'button' -%}
+    <input
+      type="radio"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+    >
+
+    <label
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      style="padding-left: 4rem; display: flex; justify-content: space-between; align-items: center; border-radius: 8px; position: relative; height: 6rem;"
+    >
+      <div style="display: flex; flex-direction: column; line-height: 130%;">
+        {{ value -}}
+        <span class="discount-amount" style="font-size: 1.2rem; font-weight: 400; line-height: 1.2rem">
+          {{- unit_discount_amount | money }} por dose</span
+        >
+      </div>
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      {% if value contains 'Lata' %}
+        {% if value contains '1 Lata' %}
+        {% else %}
+          <span
+            style="{% if value contains '3' %}background: #3D4326; color: #B3D825;{% else %}background: #F8FBEB; color: black;{% endif %}border-radius: 4px 4px 0px 0px; position: absolute; top: -24px; right: 16px; padding: 0px 4px; font-size: 1.2rem;"
+            class="discount-percentage"
+          >
+            {{ discount_percentage | round: 2 }}% OFF
+            <!-- {% if value contains '3' %}+ Frete Grátis{% endif %} -->
+          </span>
         {% endif %}
-        {% if option_disabled %}
-          class="disabled"
+        <div style="display: flex; flex-direction: column; line-height: 110%;">
+          <span
+            class="compare-at-price"
+            style="font-size: 1.2rem; font-weight: 400; color: #AEB6B3;  text-decoration-line: line-through; "
+          >
+            {{- adjusted_compare_at_price | money -}}
+          </span>
+          <span style="font-weight: 400;" class="price-adjusted"
+            ><strong>{{ adjusted_price | money }}</strong
+            ><span style="font-size: 1.2rem; margin-right: 0.4rem;">/cada</span></span
+          >
+        </div>
+      {% endif %}
+    </label>
+  {%- elsif block.settings.picker_type == 'dropdown' -%}
+    <option
+      value="{{ value | escape }}"
+      {% if option.selected_value == value %}
+        selected="selected"
+      {% endif %}
+    >
+      {% if option_disabled -%}
+        {{- 'products.product.value_unavailable' | t: option_value: value -}}
+      {%- else -%}
+        {{- value -}}
+        {% if value contains 'unidade' %}
+          ({{ adjusted_price | money }} / {{ adjusted_compare_at_price | money }} -
+          {{ discount_percentage | round: 2 }}% off - {{ unit_discount_amount | money }})
         {% endif %}
-      >
-  
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="padding-left: 4rem; display: flex; justify-content: space-between; align-items: center; border-radius: 8px; position: relative; height: 6rem;">
-          <div style="display: flex; flex-direction: column; line-height: 130%;">
-              {{ value -}}
-              <span class="discount-amount" style="font-size: 1.2rem; font-weight: 400; line-height: 1.2rem">{{ unit_discount_amount | money }} por dose</span>
-          </div>
-        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-        {% if value contains 'Lata' %}
-          {% if value contains '1 Lata' %}
-              {% else %}
-              <span 
-                  style="{% if value contains '3' %}background: #3D4326; color: #B3D825;{% else %}background: #F8FBEB; color: black;{% endif %}border-radius: 4px 4px 0px 0px; position: absolute; top: -24px; right: 16px; padding: 0px 4px; font-size: 1.2rem;" class="discount-percentage"
-              >
-                  {{ discount_percentage | round: 2 }}% OFF
-                  {% if value contains '3' %}+ Frete Grátis{% endif %}
-              </span>
-          {% endif %}
-          <div style="display: flex; flex-direction: column; line-height: 110%;">
-              <span class="compare-at-price" style="font-size: 1.2rem; font-weight: 400; color: #AEB6B3;  text-decoration-line: line-through; ">{{ adjusted_compare_at_price | money }}</span>
-              <span style="font-weight: 400;" class="price-adjusted"><strong>{{ adjusted_price | money }}</strong><span style="font-size: 1.2rem; margin-right: 0.4rem;">/cada</span></span>
-          </div>
-        {% endif %}
-      </label>
-    {%- elsif block.settings.picker_type == 'dropdown' -%}
-      <option
-        value="{{ value | escape }}"
-        {% if option.selected_value == value %}
-          selected="selected"
-        {% endif %}
-      >
-        {% if option_disabled -%}
-          {{- 'products.product.value_unavailable' | t: option_value: value -}}
-        {%- else -%}
-          {{- value -}}
-          {% if value contains 'unidade' %}
-            ({{ adjusted_price | money }} / {{ adjusted_compare_at_price | money }} - {{ discount_percentage | round: 2 }}% off - {{ unit_discount_amount | money }})
-          {% endif %}
-        {%- endif %}
-      </option>
-    {%- endif %}
-  {%- endfor -%}
-  
+      {%- endif %}
+    </option>
+  {%- endif %}
+{%- endfor -%}
