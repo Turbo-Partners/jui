@@ -339,59 +339,6 @@
         "ggXX8IynebC_text": "<p>Limão, espinafre, couve,</p><p>gengibre, chá verde.</p>"
       }
     },
-    "image_with_text_XXYWym": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nTLzpb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Informações nutricionais",
-            "heading_size": "h1"
-          }
-        },
-        "text_zmJnCR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Com uma composição nutricional de energia, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_E8WTWw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Comprar agora",
-            "button_link": "https://vivajui.com.br/#gZQDtb5Fxv",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_nTLzpb",
-        "text_zmJnCR",
-        "button_E8WTWw"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {color: #3d4326; font-family: Athletics, sans-serif; font-size: 44px; font-style: normal; font-weight: 300; line-height: 120%; letter-spacing: 0.454px;}",
-        "p {color: #3d4326; font-family: Manrope; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.6px;}",
-        "a {border-radius: 32px;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/tebela_41c2c138-05c2-4a24-abbc-adde735d9166.webp",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "reviews_by_turbo_ceKrGQ": {
       "type": "reviews-by-turbo",
       "blocks": {
@@ -620,6 +567,44 @@
         "section_preload": "false",
         "ggqpgHXGlRL_text": "<strong>Aval</strong>",
         "ggBObnnWO3n_text": "Aqui o papo é aberto e reto."
+      }
+    },
+    "tp_video_slides_dwbc9G": {
+      "type": "tp-video_slides",
+      "blocks": {
+        "card_BV4UkL": {
+          "type": "card",
+          "settings": {
+            "url__video": ""
+          }
+        },
+        "card_Km4j6k": {
+          "type": "card",
+          "settings": {
+            "url__video": ""
+          }
+        },
+        "card_WNaffd": {
+          "type": "card",
+          "settings": {
+            "url__video": ""
+          }
+        },
+        "card_fpredJ": {
+          "type": "card",
+          "settings": {
+            "url__video": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_BV4UkL",
+        "card_Km4j6k",
+        "card_WNaffd",
+        "card_fpredJ"
+      ],
+      "settings": {
+        "title": "Seu pão nunca foi tão Gostoso e Prático"
       }
     },
     "1722461618979fbe75": {
@@ -872,7 +857,6 @@
     "gp_section_511770980314514599",
     "gp_section_514655966772331532",
     "gp_section_513864092595782682",
-    "image_with_text_XXYWym",
     "reviews_by_turbo_ceKrGQ",
     "tp_preparo2_tNFqPC",
     "tp_preparo_7fdL9w",
@@ -880,6 +864,7 @@
     "gp_section_514853679853994823",
     "gp_section_516895934638982307",
     "gp_section_513772542951949467",
+    "tp_video_slides_dwbc9G",
     "1722461618979fbe75",
     "gp_section_513797264515269478",
     "1718743964e2a4b132",
