@@ -56,6 +56,8 @@
           </div>
         {% endfor %}
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </div>
@@ -64,6 +66,10 @@
   document.addEventListener('DOMContentLoaded', function () {
     const swiperPratica = new Swiper('.{{ section.id }}-swiper', {
       direction: 'horizontal',
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       loop: false,
       slidesPerView: 2,
       spaceBetween: 10,
