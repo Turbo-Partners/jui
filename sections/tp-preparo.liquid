@@ -79,33 +79,36 @@
   endif
 %}
 
-<div class="{{ section.id }} page-width">
-    <div class="{{ section.id }}__content">
-        <div class="{{ section.id }}__column1 {{ video_class }}">
-            <div class="{{ section.id }}__image">
-              <div class="{{ section.id }}__image">
-                <img class="gif" src="https://cdn.shopify.com/s/files/1/0696/0988/1839/files/Passo_a_passo_1.gif?v=1723161515" alt="Imagem de Informação Nutricional">
-              </div>
-            </div>
-            <div class="{{ section.id }}__video-bg">&#160;</div>
+<div class="{{ section.id }} page-width" id="tp-preparo">
+  <div class="{{ section.id }}__content">
+    <div class="{{ section.id }}__column1 {{ video_class }}">
+      <div class="{{ section.id }}__image">
+        <div class="{{ section.id }}__image">
+          <img
+            class="gif"
+            src="https://cdn.shopify.com/s/files/1/0696/0988/1839/files/Passo_a_passo_1.gif?v=1723161515"
+            alt="Imagem de Informação Nutricional"
+          >
         </div>
-        <div class="{{ section.id }}__column2 {{ text_class }}">
-            <h2>{{ section.settings.preparo__title }}</h2>
-            <ul class="{{ section.id }}__list">
-                {% for block in section.blocks %}
-                    <li>
-                        <span>{{ block.settings.bullet__number }}</span>
-                        <p>{{ block.settings.bullet__desc }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-            <a href="{{ section.settings.preparo__url-cta }}" class="button">Quero provar!</a>
-        </div>
+      </div>
+      <div class="{{ section.id }}__video-bg">&#160;</div>
     </div>
+    <div class="{{ section.id }}__column2 {{ text_class }}">
+      <h2>{{ section.settings.preparo__title }}</h2>
+      <ul class="{{ section.id }}__list">
+        {% for block in section.blocks %}
+          <li>
+            <span>{{ block.settings.bullet__number }}</span>
+            <p>{{ block.settings.bullet__desc }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ section.settings.preparo__url-cta }}" class="button">Quero provar!</a>
+    </div>
+  </div>
 </div>
 
 {% style %}
-
     @font-face {
     font-family: 'Athletics', sans-serif;
     src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf'),
@@ -125,17 +128,17 @@
   li {
     font-family: Manrope, sans-serif !important;
   }
-  
+
 
   h2 {
     font-family: Athletics, sans-serif !important;
   }
-    
+
     .{{ section.id }}__content {
         padding-block: 5rem;
     }
     .{{ section.id }}__column1 {
-        position: relative; 
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -144,7 +147,7 @@
         width: 100%;
         z-index: 1;
         display: flex;
-        justify-content:center;      
+        justify-content:center;
     }
     .{{ section.id }}__image > image {
         width: 320px;
