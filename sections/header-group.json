@@ -43,11 +43,11 @@
       "custom_css": [
         ".header__icon--search {display: none;}",
         "#menu-drawer {width: 80%;}",
-        ".header__icons{display:none;}"
+        ".header__icons {display: none;}"
       ],
       "settings": {
         "logo_position": "middle-left",
-        "menu": "header",
+        "menu": "header-blog",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
