@@ -575,25 +575,29 @@
         "card_BV4UkL": {
           "type": "card",
           "settings": {
-            "url__video": ""
+            "url__video": "",
+            "video": "shopify://files/videos/Video 8caa-405d-93e3-70ca28613507.mp4"
           }
         },
         "card_Km4j6k": {
           "type": "card",
           "settings": {
-            "url__video": ""
+            "url__video": "",
+            "video": "shopify://files/videos/Video sem titulo Clipchamp.webm"
           }
         },
         "card_WNaffd": {
           "type": "card",
           "settings": {
-            "url__video": ""
+            "url__video": "",
+            "video": "shopify://files/videos/Video sem titulo Clipchamp.webm"
           }
         },
         "card_fpredJ": {
           "type": "card",
           "settings": {
-            "url__video": ""
+            "url__video": "",
+            "video": "shopify://files/videos/Video sem titulo Clipchamp.webm"
           }
         }
       },
