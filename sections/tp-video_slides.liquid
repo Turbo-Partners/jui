@@ -1,6 +1,119 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "TP - vídeo slides",
+    "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Título",
+                "default": "Seu pão nunca foi tão Gostoso e Prático"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Estrela"
+            }
+        ],
+    "max_blocks": 4,
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "url",
+                    "id": "url__video",
+                    "label": "URL do Vídeo"
+                },
+              {
+                "type": "video",
+                "id": "video",
+                "label": "Video",
+
+              }
+            ]
+        }
+    ],
+    "presets": [
+        {"name": "TP - Prático"}
+    ]
+}
 {% endschema %}
+
+<div class="{{ section.id }}">
+  <div class="page-width">
+    <div class="{{ section.id }}-title">
+      <h1>{{ section.settings.title }}</h1>
+      <img src="{{ section.settings.image | img_url }}" alt="stars">
+    </div>
+
+    <div class="{{ section.id }}-swiper">
+      <div class="{{ section.id }}-swiper-wrapper swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="{{ section.id }}-swiper-slide swiper-slide">
+            {{ block.settings.video | video_tag: controls: true }}
+            {% comment %}<video src="{{ block.settings.url__video }}"></video>{% endcomment %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperPratica = new Swiper('.{{ section.id }}-swiper', {
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        728: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        }
+      }
+    });
+
+    // Add the 'initialized' class once the Swiper is fully initialized
+    swiperPratica.on('init', function () {
+      document.querySelector('.{{ section.id }}-swiper').classList.add('initialized');
+    });
+
+    // Initialize the Swiper to trigger the 'init' event
+    swiperPratica.init();
+  });
+</script>
+
+{% style %}
+  .{{ section.id }}{
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      background: linear-gradient(0deg, rgba(255,255,255,1) 53%, rgba(255,243,220,1) 53%);
+      width: 100%;
+      overflow: hidden;
+  }
+
+
+  .{{ section.id }}-title{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+  }
+  .{{ section.id }}-title > h1 {
+      text-align: center;
+      font-size: 3.2rem;
+  }
+
+  .{{ section.id }}-swiper-slide > video{
+      width: 100%;
+      border-radius: 1rem;
+  }
+{% endstyle %}
