@@ -853,13 +853,14 @@
         "instafeed_app_block_fq4Xkx"
       ],
       "custom_css": [
-        "#insta-feed {padding: 0 0 5rem;}"
+        "#insta-feed {padding: 0 0 5rem;}",
+        "h2 {font-size: 5rem; margin: 0;}"
       ],
       "settings": {
         "include_margins": true,
         "color_scheme": "",
         "title": "<h2>Nos siga nas redes sociais</h2>",
-        "subtitle": "<h2><a href=\"https://www.instagram.com/vivajui/\" target=\"_blank\" title=\"https://www.instagram.com/vivajui/\">@vivajui</a></h2>",
+        "subtitle": "<h3><a href=\"https://www.instagram.com/vivajui/\" target=\"_blank\" title=\"https://www.instagram.com/vivajui/\">@vivajui</a></h3>",
         "center": true,
         "padding_top": 36,
         "padding_bottom": 36
