@@ -671,7 +671,13 @@
         ".scroll-trigger {padding: 5rem 1rem;}"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "color_scheme": "",
+        "title": "",
+        "subtitle": "",
+        "center": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "gp_section_513797264515269478": {
@@ -850,7 +856,13 @@
         "#insta-feed {padding: 0 0 5rem;}"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "color_scheme": "",
+        "title": "<p>Nos siga nas redes sociais</p>",
+        "subtitle": "<p>@vivajui</p>",
+        "center": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "gp_section_514710608571008012": {

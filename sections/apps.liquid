@@ -1,3 +1,41 @@
+{% style %}
+  .app-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    align-items: start;
+  }
+
+  .app-title-wrapper.title-center {
+    text-align: center;
+    align-items: center;
+  }
+
+  .app-title-wrapper a {
+    color: rgba(var(--color-foreground), 1);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .app-title-wrapper a:hover {
+    color: rgba(var(--color-foreground), 0.7);
+    text-decoration: underline;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
 <div class="isolate color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="{% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="app-title-wrapper{% if section.settings.center %} title-center{% endif %}">
