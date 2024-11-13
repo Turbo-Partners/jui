@@ -5,13 +5,14 @@
   --alpha-badge-border: 0.1;
 }
 
-  @font-face {
-    font-family: 'Athletics', sans-serif;
-    src: url('{{ 'Athletics-Regular.otf' | asset_url }}') format('otf');
+@font-face {
+    font-family: 'Athletics';
+    src: url('{{ 'Athletics-Regular.otf' | asset_url }}');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }
+}
+
 
 .product-card-wrapper .card,
 .contains-card--product {
