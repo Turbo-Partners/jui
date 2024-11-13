@@ -858,8 +858,8 @@
       "settings": {
         "include_margins": true,
         "color_scheme": "",
-        "title": "<p>Nos siga nas redes sociais</p>",
-        "subtitle": "<p>@vivajui</p>",
+        "title": "<h2>Nos siga nas redes sociais</h2>",
+        "subtitle": "<h2><a href=\"https://www.instagram.com/vivajui/\" target=\"_blank\" title=\"https://www.instagram.com/vivajui/\">@vivajui</a></h2>",
         "center": true,
         "padding_top": 36,
         "padding_bottom": 36
