@@ -13,6 +13,14 @@
     font-display: swap;
 }
 
+  @font-face {
+      font-family: 'Manrope';
+      src: url('{{ 'Manrope-Regular.ttf' | asset_url }}') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+
 
 .product-card-wrapper .card,
 .contains-card--product {
