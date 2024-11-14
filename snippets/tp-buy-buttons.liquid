@@ -62,7 +62,7 @@
         <div class="product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
-            if product.selected_or_first_available_variant.inventory_management != 'shopify' or  product.selected_or_first_available_variant.inventory_policy == 'continue'
+            if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
               assign check_against_inventory = false
             endif
             if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
@@ -70,7 +70,7 @@
             endif
           -%}
           <button
-            id = "ProductSubmitButton-{{ section_id }}"
+            id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
             style="background: #B3D825; border-radius: 99rem; border: none;"
@@ -79,7 +79,7 @@
               disabled
             {% endif %}
           >
-            <span style="font-family: 'Athletics'; font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
+            <span style="font-family: 'Manrope'; font-weight: 600; text-transform: uppercase; color: black; font-size: 1.4rem;">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
@@ -90,7 +90,7 @@
               <span id="price-button-{{ section.id }}" style="color: black; font-size: 1.2rem;">
                 &nbsp;-
                 <s>{{ product.selected_variant.compare_at_price | money }}</s>
-                {{  product.selected_or_first_available_variant.price | money }}
+                {{ product.selected_or_first_available_variant.price | money }}
               </span>
             {% endif %}
             <div class="loading-overlay__spinner hidden">
