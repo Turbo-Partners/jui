@@ -106,6 +106,12 @@
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       {% if value contains 'Lata' %}
         {% if value contains '1 Lata' %}
+          <span
+            style="background: #F8FBEB; color: black; border-radius: 4px 4px 0px 0px; position: absolute; top: -24px; right: 16px; padding: 0px 4px; font-size: 1.2rem;"
+            class="discount-percentage"
+          >
+            {{ discount_percentage | round: 2 }}% OFF
+          </span>
         {% else %}
           <span
             style="{% if value contains '3' %}background: #3D4326; color: #B3D825;{% else %}background: #F8FBEB; color: black;{% endif %}border-radius: 4px 4px 0px 0px; position: absolute; top: -24px; right: 16px; padding: 0px 4px; font-size: 1.2rem;"
