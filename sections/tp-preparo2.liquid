@@ -189,11 +189,18 @@
         text-decoration: none;
     }
 
+
+
     #tp-preparo2__button--{{ section.id }}--desktop {
         display: none;
     }
 
     @media screen and (min-width: 728px) {
+
+        .tp-preparo2__button--{{ section.id }}--desktop {
+          width: 184px;
+        }
+
         .{{ section.id }}__content {
             gap: 1.6rem;
             align-items: flex-start;
