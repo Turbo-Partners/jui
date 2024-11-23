@@ -626,13 +626,6 @@
             "video": "shopify://files/videos/Reels da Familia Malcweski.mp4"
           }
         },
-        "card_VWGAe7": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels de Adriana Saric_2e4a3a25-91af-4035-850f-e572d4f2f833.mp4"
-          }
-        },
         "card_wWdzik": {
           "type": "card",
           "settings": {
@@ -649,7 +642,6 @@
         "card_zXAAdP",
         "card_JkJfGC",
         "card_gUn4hq",
-        "card_VWGAe7",
         "card_wWdzik"
       ],
       "settings": {
