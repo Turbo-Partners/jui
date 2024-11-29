@@ -1,23 +1,26 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "gp_section_514821526839624948": {
       "type": "gp-section-514821526839624948",
       "settings": {
-        "section_preload": "true"
+        "section_preload": "true",
+        "ggH04JhU8Tx_text": "Política de privacidade"
       }
     },
     "gp_section_511244606201922727": {
       "type": "gp-section-511244606201922727",
       "settings": {
+        "section_preload": "false",
+        "gg_87RbvcHW_text": "<span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">A Jui tem o compromisso de garantir a satisfação e felicidade de seus clientes, produzindo apenas produtos de alta qualidade, com tecnologia avançada e de ponta.</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Para manter a credibilidade e cultivar um bom relacionamento com nossos clientes, criamos uma política de devolução e troca baseada no Código de Defesa do Consumidor.</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">As regras são simples e práticas. Nas compras realizadas pelo site da Jui, caso o cliente deseje cancelar a compra, se arrependa da aquisição ou receba um produto com defeito, ele deve entrar em contato conosco por meio do <strong>SAC: contato@vivajui.com</strong>, no prazo de até <strong>7 dias</strong> corridos a partir da data de recebimento do produto.</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">O cliente deve enviar um e-mail informando seus dados pessoais (nome e CPF), além do número do pedido realizado. </span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Ao iniciar o processo de devolução, o cliente deve escrever no verso da nota fiscal do produto o motivo pelo qual está solicitando a devolução, juntamente com a data de devolução e o nome completo com CPF de quem está realizando a devolução. </span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Observação: não serão aceitas devoluções sem a nota fiscal acompanhada da descrição do motivo e/ou sem a solicitação prévia de devolução. Nesse caso, as seguintes condições devem ser consideradas:</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">O produto não deve apresentar sinais de ter sido aberto ou utilizado;</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">O produto deve ser enviado preferencialmente na embalagem original, acompanhado da nota fiscal, etiquetas e tags de identificação. </span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Endereço de devolução e custos de envio Para realizar a devolução do produto, o cliente deve enviá-lo para o endereço fornecido por e-mail.</span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Nesse caso, os custos do envio da devolução serão cobertos pela Jui. </span><br><br><span style=\"background-color:rgb(255,255,255);color:#3D4326;font-size:20px;\">Mais uma vez, é fundamental que o produto não apresente sinais de ter sido aberto ou utilizado.</span>"
       }
     },
     "gp_global_section_514563501394494476-1": {
@@ -28,17 +31,23 @@
     },
     "gp_section_511244366119961632": {
       "type": "gp-section-511244366119961632",
+      "disabled": true,
       "settings": {
+        "section_preload": "false"
       }
     },
     "gp_section_511253886535730343": {
       "type": "gp-section-511253886535730343",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
+        "ggLaaHOf3n7_text": "Política de<br>pri<span style=\"font-size:48px;\">vacidade</span>"
       }
     },
     "gp_section_511253843116295200": {
       "type": "gp-section-511253843116295200",
       "settings": {
+        "section_preload": "false"
       }
     }
   },
