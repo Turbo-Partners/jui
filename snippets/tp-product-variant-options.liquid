@@ -118,8 +118,8 @@
             class="discount-percentage"
           >
             {{ discount_percentage | round: 2 }}% OFF
-            {% if value contains '3' %} + Ecobag{% endif %}
-            + Frete Grátis
+            {% if value contains '3' %} + Frete Grátis{% endif %}
+            <!-- + Frete Grátis -->
           </span>
         {% endif %}
         <div style="display: flex; flex-direction: column; line-height: 110%;">
