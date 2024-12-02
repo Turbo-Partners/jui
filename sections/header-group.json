@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "SITE TODO COM 20% OFF",
             "link": "#ProductInfo-template--18363015954671__featured_product_AcjiFr"
