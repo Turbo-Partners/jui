@@ -60,6 +60,7 @@
     },
     "gp_global_section_514563501394494476-1": {
       "type": "gp-global-section-514563501394494476",
+      "custom_css": [],
       "settings": {
         "section_preload": "false",
         "checksum": ""
