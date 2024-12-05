@@ -9,907 +9,100 @@
  */
 {
   "sections": {
-    "tp_banner_Ph7QwD": {
-      "type": "TP-banner",
-      "blocks": {
-        "slider_CLhVEF": {
-          "type": "slider",
-          "settings": {
-            "color_scheme": "accent-1",
-            "image": "shopify://shop_images/backgrounddesktop.webp",
-            "image_mobile": "shopify://shop_images/backgroundmobilee.webp",
-            "bannerlink": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
-            "max_width": 400,
-            "desktop_content_position": "middle-center",
-            "text_alignment": "center",
-            "mobile_content_position": "middle-center",
-            "text_alignment_mobile": "center",
-            "slider_text": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slider_CLhVEF"
-      ],
-      "settings": {
-        "full_width": true,
-        "color_scheme": "accent-1",
-        "slides_per_view": 1,
-        "slides_per_view_mobile": "1",
-        "space_between": 4,
-        "adapt_height": false,
-        "slider_height": 700,
-        "autoplay": true,
-        "navigation": "",
-        "pagination": ""
-      }
-    },
-    "tp_faqlateral_CYUqVP": {
-      "type": "tp-faqlateral",
-      "blocks": {
-        "card_ygGQcm": {
-          "type": "card",
-          "settings": {
-            "card__background": "shopify://shop_images/Jui_Sessao_21.jpg",
-            "card__title": "Vitalidade para corpo e mente",
-            "card__description": "Combinação de micronutrientes e fitonutrientes essenciais para promover vitalidade física e mental."
-          }
-        },
-        "card_Acq8Vj": {
-          "type": "card",
-          "settings": {
-            "card__background": "shopify://shop_images/Copy_of_Jui11_2.jpg",
-            "card__title": "Adeus ao Inchaço",
-            "card__description": "Fibras prebióticas e uma fórmula FODMAP free para equilibrar o microbioma intestinal, reduzindo gases e auxiliando na redução do inchaço abdominal."
-          }
-        },
-        "card_Bi7iLn": {
-          "type": "card",
-          "settings": {
-            "card__background": "shopify://shop_images/Jui_Sessao_22-min.jpg",
-            "card__title": "Digestão Saudável",
-            "card__description": "Mix de fibras que melhoram a consistência das 💩, facilitando o trânsito intestinal e aliviando a constipação."
-          }
-        },
-        "card_TMCqdF": {
-          "type": "card",
-          "settings": {
-            "card__background": "shopify://shop_images/Copy_of_Jui17_1.jpg",
-            "card__title": "Redução da Fome",
-            "card__description": "Fórmula rica em nutrientes e fibras, com baixo teor calórico, que ajuda a satisfazer as necessidades nutricionais, prolongar a saciedade e controlar a ingestão calórica."
-          }
-        }
-      },
-      "block_order": [
-        "card_ygGQcm",
-        "card_Acq8Vj",
-        "card_Bi7iLn",
-        "card_TMCqdF"
-      ],
-      "settings": {
-        "title": "Porque tomar Jui?",
-        "description": "Benefícios que você pode realmente sentir"
-      }
-    },
     "gp_section_511770980398400679": {
       "type": "gp-section-511770980398400679",
-      "disabled": true,
       "settings": {
         "section_preload": "true",
-        "gghI7dGctOI_text": "<span style=\"font-size:64px;\">Seu </span><span style=\"color:#B2D824;font-size:64px;\"><strong>novo hábito</strong></span><span style=\"font-size:64px;\"><strong> </strong></span><br><span style=\"font-size:64px;\">saudável!</span>",
-        "gg7lj1s6Juq_text": "Suco verde em pó<br>funcional, só que legal",
-        "ggpjybyIUYh_label": "COMPRAR AGORA",
-        "gglkRkrx5hP_label": "Reduz o Inchaço ",
-        "ggtlikrFiBw_label": "Aumenta a Disposição",
-        "gg0rUyY9O6I_label": "Melhora a Digestão"
+        "checksum": "_1_1"
       }
     },
     "gp_section_511770980364911783": {
       "type": "gp-section-511770980364911783",
-      "disabled": true,
-      "custom_css": [
-        "section {padding-top: 6rem;}"
-      ],
-      "settings": {
-        "section_preload": "false",
-        "gg934NXPhpE_text": "<strong>Suco verde,</strong><br><strong>só que legal.</strong>",
-        "gg0wZHGXDJ8_text": "<p>Jui traz <strong>funcionalidade e </strong></p><p><strong>praticidade</strong> para o dia a dia.</p><p> </p><p>Sabe o que torna a gente diferente? Nosso </p><p>tesão pela vida. Buscamos devolver o estilo </p><p>pro saudável e o sabor para os nutrientes.<br><br>São mais de 25 vitaminas, bioativos e </p><p>minerais para agregar na sua rotina.</p><p> </p><p>Fácil, completo e natural.<strong> Enjui-se!</strong></p>",
-        "gg_p3NNeBzx_label": "Vai de Jui!"
-      }
-    },
-    "tp_carrossel_3gn7tV": {
-      "type": "tp-carrossel",
-      "blocks": {
-        "image_GE3RME": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Copy_of_Jui11_2_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_XUHBfF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Copy_of_Jui17_1_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_YRKXQt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/jui_clean_31_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_faU7Xi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/foto_dsc05205_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_EQ8cdT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/jui_clean_20_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_nGi8Ce": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/jui_clean_24_1_1.jpg",
-            "full_height": true
-          }
-        }
-      },
-      "block_order": [
-        "image_GE3RME",
-        "image_XUHBfF",
-        "image_YRKXQt",
-        "image_faU7Xi",
-        "image_EQ8cdT",
-        "image_nGi8Ce"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": 500,
-        "padding": 0,
-        "marquee-color": "",
-        "margin": 36,
-        "text-size": 16
-      }
-    },
-    "featured_product_AcjiFr": {
-      "type": "featured-product",
-      "blocks": {
-        "title_eDrqcM": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "tag_nmxFqN": {
-          "type": "tag",
-          "settings": {}
-        },
-        "text_RUgfA7": {
-          "type": "text",
-          "settings": {
-            "text": "Suco verde em pó simples e prático com mais de 20 vitaminas, bioativos e minerais",
-            "text_style": "body"
-          }
-        },
-        "bullets_image_LCGNPL": {
-          "type": "bullets_image",
-          "settings": {
-            "bullets__image1": "shopify://shop_images/509069249558348903-f77239c3-3ddd-47bb-81f0-a2d40b005fe1_svg.png",
-            "bullets__text1": "Vegano",
-            "bullets__image2": "shopify://shop_images/509069249558348903-128e23f3-7ba8-41e1-b4db-2940d4dd1d67_svg.png",
-            "bullets__text2": "Sem lactose",
-            "bullets__image3": "shopify://shop_images/509069249558348903-bfe1d7e5-22e4-4ef0-b978-c0c7006c614c_svg.png",
-            "bullets__text3": "Sem glúten",
-            "bullets__image4": "shopify://shop_images/509069249558348903-2582c1b0-d3ff-40b5-bcdd-b4bfc975ac4f_svg.png",
-            "bullets__text4": "Sem açúcar"
-          }
-        },
-        "variant_picker2_bJFNkR": {
-          "type": "variant_picker2",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "buy_buttons_ND46A6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
-        "verificado_ULxiwC": {
-          "type": "verificado",
-          "settings": {
-            "verificado__texto": "Compra 100% segura!",
-            "verificado__icon": "shopify://shop_images/ph_seal-check-fill.png"
-          }
-        }
-      },
-      "block_order": [
-        "title_eDrqcM",
-        "tag_nmxFqN",
-        "text_RUgfA7",
-        "bullets_image_LCGNPL",
-        "variant_picker2_bJFNkR",
-        "buy_buttons_ND46A6",
-        "verificado_ULxiwC"
-      ],
-      "settings": {
-        "product": "jui-suco-verde-em-po-sabor-limao",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "settings": {}
     },
     "gp_section_511770980348069031": {
       "type": "gp-section-511770980348069031",
-      "disabled": true,
       "settings": {
-        "section_preload": "false",
-        "ggr4zjLC1h4_text": "<p><span style=\"background-color:rgb(254,254,254);color:rgb(61,67,38);font-size:15px;\">Seus verdes diários têm um sabor melhor do que você imagina. Feitos com mais de 25 ingredientes, incluindo frutas e vegetais com propriedades antioxidantes, prebióticas e mais para apoiar a saúde intestinal, aumentar a vitalidade e aliviar o desconforto do inchaço.</span></p>",
-        "ggS_zlDwZHT_childItem_0": "<p>Tabela Nutricional</p>",
-        "ggS_zlDwZHT_childItem_1": "<p>Como Preparar</p>",
-        "ggYnW5qMOAV_text": "<p>Com base nas informações nutricionais fornecidas, essa porção de alimento contém:</p><ul>\n<li>\n<strong>28 kcal</strong> de energia</li>\n<li>\n<strong>6,9 g</strong> de carboidratos</li>\n<li>\n<strong>3 g</strong> de fibras alimentares</li>\n<li>Sem quantidades significativas de proteínas, gorduras totais, gorduras saturadas, gorduras trans e sódio.</li>\n</ul><p>Em relação a vitaminas e minerais, esse alimento contém:</p><ul>\n<li>\n<strong>15%</strong> da dose diária recomendada (DIR) de Magnésio</li>\n<li>\n<strong>45%</strong> da DIR de Zinco</li>\n<li>\n<strong>47%</strong> da DIR de Vitamina E</li>\n<li>\n<strong>210%</strong> da DIR de Vitamina C</li>\n<li>\n<strong>46%</strong> da DIR de Vitamina B6</li>\n<li>\n<strong>70%</strong> da DIR de Biotina</li>\n<li>\n<strong>42%</strong> da DIR de Vitamina B12</li>\n</ul>",
-        "ggKboOq5HkN_childItem_0": "<p><span style=\"background-color:rgb(254,254,254);color:rgb(31,33,36);font-size:16px;\"><strong>Ingredientes</strong></span></p>",
-        "ggr2JHUQcMg_label": "Greens &amp; Superfoods:",
-        "ggq9DVkuz3T_text": "<p>Spirulina, Chlorella, Limão, Suco de Espinafre, Suco de couve, Acerola, Cúrcuma.</p>",
-        "ggHnYuYYDkh_label": "Antioxidantes:",
-        "ggLO92Q0z5s_text": "<p>Gengibre, Gojiberry, Chá verde.</p>",
-        "ggiHhu5Y_qP_label": "Fibras Prebióticas:",
-        "gg_b5n09NZb_text": "<p>Inulina FOS, Psyllium, Polidextrose, Tapioca IMO,</p>",
-        "ggDj46wV2vV_label": "Vitaminas &amp; Minerais:",
-        "gg5FdM6upTE_text": "<p>Magnésio, Vitamina C, Vitamina E , Zinco , Vitamina B6 , Biotina, Vitamina B12</p>",
-        "gg7-RjYkR5d_label": "Comprar",
-        "gg7-RjYkR5d_outOfStockLabel": "Fora de estoque",
-        "gg8ObAvtC7U_text": "<p>Vegano</p>",
-        "ggjziwl-NRi_text": "<p>Sem lactose</p>",
-        "ggFpdGROl2i_text": "<p>Sem glúten</p><p> </p>",
-        "ggm6i_15HhU_text": "<p>Sem açúcar</p><p> </p>"
+        "checksum": "_1_1"
       }
     },
     "gp_section_511770980314514599": {
       "type": "gp-section-511770980314514599",
-      "disabled": true,
-      "settings": {
-        "section_preload": "false",
-        "ggY7_0jvl81_text": "<strong>Tenha Jui sempre </strong><br><strong>com você</strong>",
-        "ggljC1TyBV6_text": "<p>Jui é anti-oxidante, <br>anti-inchaço e anti-tédio. <br>Viva uma vida mais juicy</p>"
-      }
+      "settings": {}
     },
     "gp_section_514655966772331532": {
       "type": "gp-section-514655966772331532",
-      "disabled": true,
-      "settings": {
-        "section_preload": "false",
-        "gNxxYZOwXgjJG_text": "<p>1xJui - Limão </p><p>(30 doses)</p>",
-        "ggafONfpSKy_childItem_0": "<p>Tabela Nutricional</p>",
-        "ggafONfpSKy_childItem_1": "<p>Como Preparar</p>",
-        "gg-oWJWKlY-_text": "<p>aaaaaaaaa</p>",
-        "gmMhrmnohAiXn_text": "R$139,80",
-        "ggxwl4kRZs0_label": "Comprar",
-        "ggxwl4kRZs0_outOfStockLabel": "Fora de estoque",
-        "ggNYiw-5WP7_text": "<p>2xJui - Limão </p><p>(60 doses)</p>",
-        "gggeJYC8JY5_childItem_0": "<p>Tabela Nutricional</p>",
-        "gggeJYC8JY5_childItem_1": "<p>Como Preparar</p>",
-        "ggTCiA5wrJF_text": "<p><strong>R$279,00 por</strong></p>",
-        "gguApsEI2un_text": "R$249,90",
-        "ggaXQwLoLvF_label": "Comprar",
-        "ggaXQwLoLvF_outOfStockLabel": "Fora de estoque",
-        "ggUmzJ1bt4r_text": "<p>3xJui - Limão </p><p>(90 doses)</p>",
-        "ggINiDvS9Ew_childItem_0": "<p>Tabela Nutricional</p>",
-        "ggINiDvS9Ew_childItem_1": "<p>Como Preparar</p>",
-        "ggCy0JuWCVj_text": "<p><strong>R$419,40 por</strong></p>",
-        "gglUe7LeHrN_text": "R$349,90",
-        "ggqru2Ou8qf_label": "Comprar",
-        "ggqru2Ou8qf_outOfStockLabel": "Fora de estoque"
-      }
+      "settings": {}
     },
     "gp_section_513864092595782682": {
       "type": "gp-section-513864092595782682",
-      "disabled": true,
       "settings": {
-        "section_preload": "false",
-        "ggqDI_oYHV0_text": "<strong>Verde e Verdadeiro</strong>",
-        "ggWOEzxjWAy_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(125,139,71);font-size:19px;\">Ingredientes naturais que fazem de</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(125,139,71);font-size:19px;\">Jui o melhor suco verde do Brasil.</span></p>",
-        "ggRS80sSYsU_text": "Spirullina e<br>Chlorella",
-        "ggDkcCQOVC9_text": "<p>Possuem propriedades </p><p>anti-inflamatórias </p><p>e antioxidantes.</p>",
-        "ggnyozDdXdR_text": "Biotina",
-        "ggCL72snMg8_text": "<p>Ajuda a regular os níveis </p><p>de glicose no sangue e </p><p>auxilia na saúde da pele</p><p>e do cabelo.</p>",
-        "gg8Gq_vPoHA_text": "Stevia",
-        "ggOgcXEhuVM_text": "<p>Adoçante natural que dá o toque especial para um sabor incrível.</p>",
-        "ggz8Q6bdsaR_text": "Vitaminas e minerais",
-        "ggwf6JLCfcZ_text": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco,</p><p>Vitamina C, Magnésio.</p>",
-        "ggLuJHQNeoT_text": "Extrato de Cúrcuma",
-        "ggcw4cK2OTX_text": "<p>Aumento do metabolismo</p><p>e redução da compulsão </p><p>por carboidratos.</p>",
-        "gg9-WkdebFw_text": "Mix de Greens &amp; Superfoods",
-        "ggXX8IynebC_text": "<p>Limão, espinafre, couve,</p><p>gengibre, chá verde.</p>"
-      }
-    },
-    "reviews_by_turbo_ceKrGQ": {
-      "type": "reviews-by-turbo",
-      "blocks": {
-        "review_bGahcc": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_73_fa297071-b802-435d-8e32-20d19cc3cd06.png",
-            "name": "",
-            "job": "<h4><strong>Spirullina e Chlorella</strong></h4>",
-            "message": "<p>Possuem propriedades anti-inflamatórias e antioxidantes.</p>"
-          }
-        },
-        "review_4qXiQp": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_74.png",
-            "name": "",
-            "job": "<h4><strong>Biotina</strong></h4>",
-            "message": "<p>Ajuda a regular os níveis de glicose no sangue e auxilia na saúde da pele e do cabelo.</p>"
-          }
-        },
-        "review_GTTAPW": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_76.png",
-            "name": "",
-            "job": "<h4><strong>Stevia</strong></h4>",
-            "message": "<p>Adoçante natural que da o toque especial para um sabor incrível.</p>"
-          }
-        },
-        "review_hWcRXN": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_77.png",
-            "name": "",
-            "job": "<h4><strong>Vitaminas e minerais</strong></h4>",
-            "message": "<p>Vitamina B6, Vitamina B12, Vitamina E, Zinco, Vitamina C, Magnésio.</p>"
-          }
-        },
-        "review_3FBTUw": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_78.png",
-            "name": "",
-            "job": "<h4><strong>Extrato de Cúrcuma</strong></h4>",
-            "message": "<p>Aumento do metabolismo e redução da compulsão por carboidratos.</p>"
-          }
-        },
-        "review_cbJGeG": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/greens.png",
-            "name": "",
-            "job": "<h4><strong>Mix de Greens & Superfoods</strong></h4>",
-            "message": "<p>Limão, espinafre, couve, gengibre e chá verde.</p>"
-          }
-        },
-        "review_RJpgMG": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/picture_c266f1b2-1d24-4d43-8bd4-11f7ae75add2.webp",
-            "name": "",
-            "job": "<h4><strong>Blend de Fibras</strong></h4>",
-            "message": "<p>Inulina FOS, Psyllium, Polidextrose, Tapioca IMO,</p>"
-          }
-        }
-      },
-      "block_order": [
-        "review_bGahcc",
-        "review_4qXiQp",
-        "review_GTTAPW",
-        "review_hWcRXN",
-        "review_3FBTUw",
-        "review_cbJGeG",
-        "review_RJpgMG"
-      ],
-      "custom_css": [
-        ".review-card-wrapper {background: none; box-shadow: unset;}",
-        ".reviews-wrapper {display: flex; width: 100%; gap: 9.278;}",
-        ".review-card {margin-top: -71px;}",
-        ".reviews {background: linear-gradient(180deg, #fff 50%, #b3d825 50%);}",
-        ".client-photo {border-radius: 6%; border: 1px solid black;}",
-        ".client-job {display: flex; padding-left: 4%;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "title": "<h1>Verde e Verdadeiro</h1>",
-        "subtitle": "<p>Ingredientes naturais que fazem de Jui o melhor e mais gostoso suco verde</p>",
-        "show_view_all": false,
-        "view_all_link": "",
-        "color_scheme": "",
-        "swiper_on": true,
-        "center_slides": false,
-        "initial_slide": 2,
-        "fixed_width": true,
-        "fixed_width_mobile": true,
-        "slides_width": 260,
-        "slides_width_mobile": 260,
-        "slides": 3,
-        "slides_mobile": 1.6,
-        "photo-cover": true,
-        "text_absolute": false,
-        "border-radius": 12,
-        "vertical-padding": 0,
-        "horizontal-padding": 0,
-        "photo-size": 124,
-        "photo-size-mobile": 54,
-        "photo-height": 260,
-        "photo-height-mobile": 260,
-        "info-flex": false,
-        "text-align": false,
-        "verified_text": "",
-        "order": "1,2,3",
-        "font_size": 16,
-        "gap": 8,
-        "scale_slide": 100,
-        "scale_active_slide": 100,
-        "scale_slide_mobile": 100,
-        "scale_active_slide_mobile": 100,
-        "navigation": "",
-        "pagination": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "tp_preparo2_tNFqPC": {
-      "type": "tp-preparo2",
-      "custom_css": [
-        ".button {color: black; margin-top: 1.4rem;}"
-      ],
-      "settings": {
-        "info__url-image": "https://cdn.shopify.com/s/files/1/0696/0988/1839/files/tebelamobile.webp?v=1723156305",
-        "info__color": "#e375da",
-        "info__title": "Informações nutricionais",
-        "info__text": "Com uma composição nutricional de fitonutrientes, vitaminas e minerais essenciais, Jui oferece a nutrição perfeita para o seu dia.",
-        "info__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
-        "info__cta-text": "Comprar agora",
-        "image_layout": "left"
-      }
-    },
-    "tp_preparo_7fdL9w": {
-      "type": "tp-preparo",
-      "blocks": {
-        "bullets_nVXXAA": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "1.",
-            "bullet__desc": "Coloque 200ml de água beeeem gelada em um copo."
-          }
-        },
-        "bullets_EW3JAq": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "2.",
-            "bullet__desc": "Adicione 1 dose (10g) de Jui"
-          }
-        },
-        "bullets_R7hg8P": {
-          "type": "bullets",
-          "settings": {
-            "bullet__number": "3.",
-            "bullet__desc": "Misture bem e curta o sabor refrescante para ajudar seu dia a fluir juicemente"
-          }
-        }
-      },
-      "block_order": [
-        "bullets_nVXXAA",
-        "bullets_EW3JAq",
-        "bullets_R7hg8P"
-      ],
-      "custom_css": [
-        ".button {color: black; margin-top: 1.4rem;}",
-        "@media screen and (min-width: 768px) {.template--18363015954671__tp_preparo_7fdL9w {margin-top: -10rem; }}"
-      ],
-      "settings": {
-        "preparo__url-image2": "",
-        "preparo__color": "#e375da",
-        "preparo__title": "Como preparar meu Jui?",
-        "preparo__url-cta": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
-        "image_layout": "left"
+        "checksum": "_1_1"
       }
     },
     "gp_section_512853366297068749": {
       "type": "gp-section-512853366297068749",
       "settings": {
-        "section_preload": "false",
-        "grixtNHicSgFY_label": "Com Jui",
-        "gMBBHceXyuXqi_label": "Sem Jui"
+        "checksum": "_1_1"
       }
     },
     "gp_section_514853679853994823": {
       "type": "gp-section-514853679853994823",
       "settings": {
-        "section_preload": "false",
-        "ggzP_qJXK0F_text": "<strong>Muito mais</strong><br><strong>economia</strong>",
-        "ggoNji6gd08_text": "<p><strong>Ingredientes </strong></p>",
-        "ggN3-haoAMI_text": "<p><strong>Preço por unidade</strong></p>",
-        "ggzzTMYa3gS_text": "<p><strong>Mix de Greens &amp; Superfoods</strong></p>",
-        "gg2oUQZPPQu_text": "<p><strong>R$ 3,87</strong></p>",
-        "ggfQ5BokqYy_text": "<p><strong>1 colher de chá de Spirulina</strong></p>",
-        "ggJDVX9j9AN_text": "<p><strong>R$ 0,75</strong></p>",
-        "ggCS6yrrYcB_text": "<p><strong>1 colher de chá de Chlorella</strong></p>",
-        "gghZqXYdQQE_text": "<p><strong>R$ 0,64</strong></p>",
-        "ggsN0lSHZP2_text": "<p><strong>1 colher de chá de Cúrcuma</strong></p>",
-        "gghy7cfQt4r_text": "<p><strong>R$ 1,17</strong></p>",
-        "gginR5sbJTN_text": "<p><strong>Mix de Antioxidantes</strong></p>",
-        "ggBoLpe2nem_text": "<p><strong>R$ 1,43</strong></p>",
-        "gg_u0ECHtRO_text": "<p><strong>Blend de Fibras</strong></p>",
-        "gg_mpPNi8eI_text": "<p><strong>R$ 1,11</strong></p>",
-        "gg23c0_XhN4_text": "<p><strong>30mg Biotina</strong></p>",
-        "ggm6nMgMxpg_text": "<p><strong>R$ 1,07</strong></p>",
-        "gg2Sj5NBmak_text": "<p><strong>Blend de Vitaminas</strong></p>",
-        "gg5OPiDVyvU_text": "<p><strong>R$2,25</strong></p>"
+        "checksum": "_1_1"
       }
     },
     "gp_section_516895934638982307": {
       "type": "gp-section-516895934638982307",
       "settings": {
-        "section_preload": "false"
+        "checksum": "_1_1"
       }
     },
     "gp_section_513772542951949467": {
       "type": "gp-section-513772542951949467",
-      "disabled": true,
       "settings": {
-        "section_preload": "false",
-        "ggqpgHXGlRL_text": "<strong>Aval</strong>",
-        "ggBObnnWO3n_text": "Aqui o papo é aberto e reto."
-      }
-    },
-    "tp_video_slides_dwbc9G": {
-      "type": "tp-video_slides",
-      "blocks": {
-        "card_BV4UkL": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Vanessa ASMR Reels.mp4"
-          }
-        },
-        "card_Km4j6k": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels de Adriana Saric.mp4"
-          }
-        },
-        "card_WNaffd": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels Parque Video.mp4"
-          }
-        },
-        "card_fpredJ": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/WhatsApp Video 2024-11-22 at 18.54.47.mp4"
-          }
-        },
-        "card_zXAAdP": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels de Paula Saric.mp4"
-          }
-        },
-        "card_JkJfGC": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels da Marcela Nutri.mp4"
-          }
-        },
-        "card_gUn4hq": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Reels da Familia Malcweski.mp4"
-          }
-        },
-        "card_wWdzik": {
-          "type": "card",
-          "settings": {
-            "url__video": "",
-            "video": "shopify://files/videos/Ariana Barriga Reels.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "card_BV4UkL",
-        "card_Km4j6k",
-        "card_WNaffd",
-        "card_fpredJ",
-        "card_zXAAdP",
-        "card_JkJfGC",
-        "card_gUn4hq",
-        "card_wWdzik"
-      ],
-      "settings": {
-        "title": "Antioxidante, Anti-inchaço e Anti-tédio."
-      }
-    },
-    "1722461618979fbe75": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_homepage_dqmVaM": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "product": "jui-suco-verde-em-po-sabor-limao"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_homepage_dqmVaM"
-      ],
-      "custom_css": [
-        ".scroll-trigger {padding: 5rem 1rem;}"
-      ],
-      "settings": {
-        "include_margins": true,
-        "color_scheme": "",
-        "title": "",
-        "subtitle": "",
-        "center": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "checksum": "_1_1"
       }
     },
     "gp_section_513797264515269478": {
       "type": "gp-section-513797264515269478",
-      "disabled": true,
       "settings": {
-        "section_preload": "false"
+        "checksum": "_1_1"
       }
     },
     "gp_section_511770980398466215": {
       "type": "gp-section-511770980398466215",
-      "custom_css": [],
       "settings": {
-        "section_preload": "false",
-        "gglIgZD8Cxc_text": "<strong>Jui e fui!</strong>",
-        "gguuorA92hF_text": "<p>1) É Pratico </p><p>2) É Natural </p><p>3) É Versatil</p><p>4) É Completo </p><p>5) É Delicia</p><p> </p>",
-        "gg8PZfvMJ2e_label": "Vai de Jui!"
+        "checksum": "_1_1"
       }
     },
     "gp_section_511770980381623463": {
       "type": "gp-section-511770980381623463",
-      "disabled": true,
       "settings": {
-        "section_preload": "false",
-        "ggnyy9CPl58_text": "FAQ",
-        "ggOJNNnV_AI_childItem_0": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>1) O que é Jui?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_1": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>2) Como o Jui contribui para uma digestão saudável?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_2": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>3) Quem pode se beneficiar do Jui?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_3": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>4) O Jui contém cafeína?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_4": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>5) Qual é o melhor momento para tomar Jui?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_5": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>6) O Jui é adequado para veganos?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_6": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>7) Existem contraindicações para o Jui?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_7": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>8) O Jui é considerado um medicamento?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_8": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>9) Posso tomar Jui diariamente?</strong></span></p>",
-        "ggOJNNnV_AI_childItem_9": "<p><span style=\"background-color:rgb(178,217,38);color:rgb(0,0,0);font-size:18px;\"><strong>10) Qual é a dose recomendada de Jui por dia para obter os melhores resultados?</strong></span></p>",
-        "ggkfOWf-uAf_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Jui é um suco verde em pó funcional elaborado com ingredientes criteriosamente selecionados, incluindo superfoods, adaptógenos, antioxidantes, fibras prebióticas e uma variedade de vitaminas e minerais essenciais, como a coenzima Q10. Nossos blends oferecem uma combinação única de nutrientes para promover uma vida mais saudável que promovem uma digestão saudável, ajudando a aliviar o inchaço e o desconforto abdominal</span></p>",
-        "ggtH0c07c6D_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">O Jui é formulado com uma combinação única de ingredientes, incluindo superfoods, adaptógenos e antioxidantes, que ajudam a promover uma digestão saudável, reduzindo o inchaço abdominal e aumentando a disposição.</span></p>",
-        "gglW7xDIHFb_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">O Jui é ideal para adultos saudáveis em busca de uma solução natural para problemas digestivos, como inchaço e desconforto abdominal. Também é indicado para aqueles interessados em melhorar sua saúde e bem-estar.</span></p>",
-        "ggdfn-ULfwk_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Não, o Jui é livre de cafeína, tornando-o adequado para consumo a qualquer hora do dia, inclusive para aqueles sensíveis à cafeína.</span></p>",
-        "ggy6vAEF3Um_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">O Jui pode ser consumido a qualquer momento do dia, como parte de uma dieta equilibrada. Muitas pessoas optam por tomá-lo pela manhã em jejum para uma dose inicial de nutrientes.</span></p>",
-        "ggQ9hmTm1nZ_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Sim, o Jui é vegano, sem glúten e sem lactose, atendendo às necessidades de uma variedade de preferências alimentares.</span></p>",
-        "ggTW0ietQQY_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Embora é seguro para a maioria das pessoas, sendo contra indicado apenas para gestantes, lactantes e crianças sem orientação médica.</span></p>",
-        "gg6EOzyB0Oc_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Não, o Jui é um suplemento alimentar, não um medicamento.</span></p>",
-        "ggUsxRVRs6m_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">Sim, o Jui pode ser consumido diariamente como parte de uma rotina saudável. No entanto, recomenda-se seguir as instruções de dosagem no rótulo do produto.</span></p>",
-        "ggvwrQ0Dxkf_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:18px;\">A dose recomendada de Jui pode variar de acordo com as necessidades individuais, mas geralmente é de até 40g por dia, dividida em várias doses, conforme necessário. Consulte um profissional de saúde para orientação personalizada.</span></p>"
-      }
-    },
-    "tp_faq_iiYfyA": {
-      "type": "TP-faq",
-      "blocks": {
-        "faq_cCHJa7": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "O que é Jui?",
-            "faq_resposta": "<p>Jui é um suco verde em pó funcional elaborado com ingredientes criteriosamente selecionados, incluindo superfoods, antioxidantes, fibras prebióticas e uma variedade de vitaminas e minerais essenciais, como a Biotina. Nossos blends oferecem uma combinação única de nutrientes para promover uma vida mais saudável que promovem uma digestão saudável, ajudando a aliviar o inchaço e o desconforto abdominal.</p>"
-          }
-        },
-        "faq_4Ed88n": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Como o Jui contribui para uma digestão saudável?",
-            "faq_resposta": "<p>O suco verde em pó Jui é formulado com uma combinação única de ingredientes incluindo fibras prebióticas que ajudam a promover uma digestão saudável. As fibras prebióticas aumentam o volume e a umidade das 💩, facilitando o movimento através do intestino. Isso pode aliviar a constipação, um dos fatores que contribui para o inchaço abdominal.</p>"
-          }
-        },
-        "faq_FmabAP": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Jui ajuda a reduzir a fome?",
-            "faq_resposta": "<p>Nossa formulação é rica em nutrientes, fibras e possui baixo teor calórico, o que ajuda:</p><ul><li>A seu corpo a receber os nutrientes necessários para funcionar corretamente, e satisfazer as necessidades nutricionais, reduzindo a vontade de comer mais.</li><li>A regular o trânsito intestinal e retardar o esvaziamento gástrico, prolongando a sensação de plenitude após uma refeição. </li><li>A consumir Jui sem exceder suas necessidades calóricas, contribuindo para uma sensação de saciedade sem excesso de calorias.<br/></li></ul>"
-          }
-        },
-        "faq_ifYnDR": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Como Jui reduz o inchaço abdominal?",
-            "faq_resposta": "<p>O blend de fibras prebióticas junto com uma formulação FODMAP free equilibra o microbioma intestinal, o que reduz a produção de gases intestinais associados à fermentação de alimentos não digeridos, que por sua vez diminui a sensação de inchaço.</p>"
-          }
-        },
-        "faq_9LzmVr": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Quem pode se beneficiar do Jui?",
-            "faq_resposta": "<p>Jui é ideal para pessoas em busca de uma solução natural para melhorar sua saúde e bem-estar. Também é indicado para aqueles interessados em melhorar seus problemas digestivos, como inchaço e desconforto abdominal.</p>"
-          }
-        },
-        "faq_qET8nh": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "O Jui contém cafeína?",
-            "faq_resposta": "<p>Não, o Jui é livre de cafeína, tornando-o adequado para consumo a qualquer hora do dia, inclusive para aqueles sensíveis à cafeína.</p>"
-          }
-        },
-        "faq_NTQhwd": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Qual é o melhor momento para tomar Jui?",
-            "faq_resposta": "<p>Jui pode ser consumido a qualquer momento do dia, como parte de uma dieta equilibrada. Muitas pessoas optam por tomá-lo pela manhã em jejum para uma dose inicial de nutrientes.</p>"
-          }
-        },
-        "faq_8qJnyJ": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "O Jui é adequado para veganos?",
-            "faq_resposta": "<p>Sim, Jui é vegano, sem glúten e sem lactose, atendendo às necessidades de uma variedade de preferências alimentares.</p>"
-          }
-        },
-        "faq_JURrXA": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Existem contraindicações para o Jui?",
-            "faq_resposta": "<p>Não. Jui pode ser consumido por todos, até mesmo por crianças.</p>"
-          }
-        },
-        "faq_jbAVam": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "O Jui é considerado um medicamento?",
-            "faq_resposta": "<p>Não, Jui é uma mistura em pó para preparo de bebida.</p>"
-          }
-        },
-        "faq_wF33gj": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Posso tomar Jui diariamente?",
-            "faq_resposta": "<p>Sim, Jui pode ser consumido diariamente como parte de uma rotina saudável. </p>"
-          }
-        },
-        "faq_MwUTXG": {
-          "type": "faq",
-          "settings": {
-            "faq_pergunta": "Quantas vezes ao dia posso tomar Jui?",
-            "faq_resposta": "<p>Jui não possui nenhuma restrição referente a quantidade de doses diárias por ser uma mistura em pó para preparo de bebida. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_cCHJa7",
-        "faq_4Ed88n",
-        "faq_FmabAP",
-        "faq_ifYnDR",
-        "faq_9LzmVr",
-        "faq_qET8nh",
-        "faq_NTQhwd",
-        "faq_8qJnyJ",
-        "faq_JURrXA",
-        "faq_jbAVam",
-        "faq_wF33gj",
-        "faq_MwUTXG"
-      ],
-      "custom_css": [
-        "h1 {color: #3d4326;}"
-      ],
-      "settings": {
-        "title": "Perguntas Frequentes",
-        "background_color": "#ffffff"
-      }
-    },
-    "173135698940fae428": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_fq4Xkx": {
-          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "background_color": "",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_fq4Xkx"
-      ],
-      "custom_css": [
-        "#insta-feed {padding: 0 0 5rem;}",
-        "h2 {font-size: 5rem; margin: 0;}",
-        "h3 {font-size: 3rem; margin: 0;}"
-      ],
-      "settings": {
-        "include_margins": true,
-        "color_scheme": "",
-        "title": "<h2>Nos siga nas redes sociais</h2>",
-        "subtitle": "<h3><a href=\"https://www.instagram.com/vivajui/\" target=\"_blank\" title=\"https://www.instagram.com/vivajui/\">@vivajui</a></h3>",
-        "center": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "checksum": "82b125c81f0da7f14923e3d19e7828ddaf50b4259d3c30cf2e485a7cc5cfbb5f_1_1"
       }
     },
     "gp_section_514710608571008012": {
       "type": "gp-section-514710608571008012",
       "settings": {
-        "section_preload": "false",
-        "ggsnbXg4iZN_label": "Segue a gente no instagram!",
-        "ggYB0lVfSRb_text": "<p><strong>Viver bem é tudo de Jui</strong></p><p><strong>+55 (21) 97262-9926</strong></p><p><a href=\"mailto:contato@vivajui.com\"><strong>contato@vivajui.com</strong></a></p>\n<p><strong>CNPJ: 49.409.169/0001-99\n</strong></p><p><strong><strong>Razão Social: JUI FABRICACAO E COMERCIO DE ALIMENTOS E SUPLEMENTOS LTDA\n </strong></strong></p>",
-        "ggxFb3o-v53_text": "AJUDA E SUPORTE",
-        "ggurI4V2Boh_label": "CONHECA A JUI",
-        "ggCwR9hPXYp_label": "VAI DE JUI",
-        "ggkO1sk_JvT_label": "BLOG",
-        "ggWrzE3TZfa_label": "POLÍTICA DE PRIVACIDADE",
-        "ggiaC1KkTMd_text": "<strong>INSTITUCIONAL</strong>",
-        "ggv00kxgdMn_label": "FALE CONOSCO",
-        "ggkV21uPE_Z_label": "ENTREGA",
-        "gguYCbknrbk_label": "DUVIDAS",
-        "ggQpVMkDrIs_label": "POLITICA DE TROCA CANCELAMENTOS E DEVOLUÇÕES",
-        "ggi_4XFw6Ew_text": "<strong>Newsletter</strong>",
-        "gghdvszz-Jx_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "gghdvszz-Jx_errorMessage": "Can’t send email. Please try again later.",
-        "gg0-HWcUmaF_placeholder": "Email",
-        "ggLcjyWLxd5_label": "Inscreva-se"
+        "checksum": "1ebc4cdd62fc74e759b439a4dda5adcad242fd1244ee66043f3c5d9b42c8614f_1_1"
       }
     }
   },
   "order": [
-    "tp_banner_Ph7QwD",
-    "tp_faqlateral_CYUqVP",
     "gp_section_511770980398400679",
     "gp_section_511770980364911783",
-    "tp_carrossel_3gn7tV",
-    "featured_product_AcjiFr",
     "gp_section_511770980348069031",
     "gp_section_511770980314514599",
     "gp_section_514655966772331532",
     "gp_section_513864092595782682",
-    "reviews_by_turbo_ceKrGQ",
-    "tp_preparo2_tNFqPC",
-    "tp_preparo_7fdL9w",
     "gp_section_512853366297068749",
     "gp_section_514853679853994823",
     "gp_section_516895934638982307",
     "gp_section_513772542951949467",
-    "tp_video_slides_dwbc9G",
-    "1722461618979fbe75",
     "gp_section_513797264515269478",
     "gp_section_511770980398466215",
     "gp_section_511770980381623463",
-    "tp_faq_iiYfyA",
-    "173135698940fae428",
     "gp_section_514710608571008012"
   ]
 }
