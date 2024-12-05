@@ -12,26 +12,41 @@
     "gp_section_514821447097517266": {
       "type": "gp-section-514821447097517266",
       "settings": {
-        "section_preload": "true"
+        "section_preload": "true",
+        "checksum": "",
+        "ggmDIZsqBx4_text": "Política de entrega"
       }
     },
     "gp_section_511430455459840952": {
       "type": "gp-section-511430455459840952",
-      "settings": {}
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gg_87RbvcHW_text": "<strong>Política de Envio:</strong><br><br><span style=\"font-size:20px;\">Para calcular o tempo de entrega e o custo do frete, utilize o nosso simulador de frete, disponível na página do produto ou no carrinho de compras. É importante destacar que o processamento interno do pedido, que inclui separação, conferência, embalagem e envio, geralmente leva cerca de 2 dias úteis.</span><br> <br><span style=\"font-size:20px;\">Os prazos de entrega informados para as opções de frete começam a contar a partir do momento em que o pedido é entregue à transportadora. Em circunstâncias normais, os produtos são despachados no mesmo dia ou no próximo dia útil. No entanto, em situações especiais, como grandes promoções ou datas comemorativas, o prazo de entrega pode ser estendido, e os clientes serão devidamente informados.</span><br> <br><span style=\"font-size:20px;\">Oferecemos as seguintes opções de frete: – Envio via SEDEX dos Correios: Prazo de entrega de 2 a 5 dias úteis (dependendo da localidade) após o processamento do pedido. – Envio via PAC dos Correios: Prazo de entrega de 7 a 26 dias (dependendo da localidade) após o processamento do pedido.</span><br> <br><span style=\"font-size:20px;\">O código de rastreamento do pacote será automaticamente enviado para o e-mail cadastrado.</span><br> <br><span style=\"font-size:20px;\">Caso o rastreamento não esteja ativo no mesmo dia, não se preocupe: às vezes, as transportadoras demoram até 1 ou 2 dias para ativá-lo, mas o código está correto.</span><br> <br><span style=\"font-size:20px;\">Algumas áreas podem ter restrições de entrega domiciliar pelos Correios, como certas cidades, áreas rurais, locais de difícil acesso ou com riscos.</span><br> <br><span style=\"font-size:20px;\">Nestes casos, os objetos são encaminhados para a unidade mais próxima do endereço do destinatário. Se tiver alguma dúvida, entre em contato conosco pelo e-mail: </span><a href=\"mailto:contato@vivajui.com\"><span style=\"font-size:20px;\"><strong>contato@vivajui.com</strong></span></a><span style=\"font-size:20px;\">. Estamos à disposição para ajudar.</span><br><br><br><strong>Política de Envio:</strong><br><br><span style=\"font-size:20px;\">Após a emissão da nota fiscal, não é possível modificar o endereço de entrega do pedido.</span><br> <br><span style=\"font-size:20px;\">Portanto, é importante conferir cuidadosamente o endereço para evitar erros. Se for necessário fazer alguma alteração nas informações do endereço ou local de entrega após a confirmação do pedido, solicitamos que entre em contato o mais breve possível por meio do e-mail <strong>(</strong></span><a href=\"mailto:contato@vivajui.com\"><span style=\"font-size:20px;\"><strong>contato@vivajui.com</strong></span></a><span style=\"font-size:20px;\"><strong>)</strong>.</span><br> <br><span style=\"font-size:20px;\">Se a solicitação de alteração ocorrer após a emissão da nota fiscal, poderá haver custos associados a essas modificações. Se o endereço fornecido estiver incorreto e não for possível efetuar a entrega, os custos do reenvio serão de responsabilidade do cliente.</span><br> <br><span style=\"font-size:20px;\">No caso de ausência do destinatário ou estabelecimento fechado, as transportadoras farão até duas tentativas de entrega. Se todas as tentativas forem mal sucedidas, o produto retornará ao Centro de Distribuição da Jui, e o cliente será responsável pelos custos do reenvio. Em caso de erro por parte da transportadora contratada ou da Jui, o pedido será reenviado sem custos adicionais. A mesma política se aplica a casos de extravio ou roubo da carga. Situações não abordadas nesta política serão analisadas individualmente pela nossa equipe.</span><br><br> "
+      }
     },
     "gp_global_section_514563501394494476-1": {
       "type": "gp-global-section-514563501394494476",
       "settings": {
-        "section_preload": "false"
+        "section_preload": "false",
+        "checksum": ""
       }
     },
     "gp_section_511430455476618168": {
       "type": "gp-section-511430455476618168",
-      "settings": {}
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
     },
     "gp_section_511430455493395384": {
       "type": "gp-section-511430455493395384",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggLaaHOf3n7_text": "Política de<br>entrega"
+      }
     }
   },
   "order": [
