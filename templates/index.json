@@ -26,7 +26,7 @@
             "text_alignment_mobile": "center",
             "slider_text": "",
             "button_text": "",
-            "button_link": ""
+            "button_link": "shopify://collections/all"
           }
         }
       },
@@ -835,6 +835,7 @@
         "instafeed_app_block_fq4Xkx": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "feed_id": "",
             "title": "",
             "title_color": "",
             "alignment": "center",
