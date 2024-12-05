@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "gp_global_section_514821275097498468-1": {
@@ -18,22 +18,74 @@
     "gp_section_514719475900089554": {
       "type": "gp-section-514719475900089554",
       "settings": {
+        "section_preload": "false",
+        "gg4Ddg1jTA1_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggysHo0DiGj_label": "Explorando os Benefícios e Funções da Coenzima Q10 para a Saúde",
+        "ggYHCVOyqAT_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggeG5-qJbKf_label": "Por que a Falta de Verduras Pode Prejudicar a sua Saúde",
+        "gg8N8T2z9E9_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 setembro, 2023</span></p>",
+        "ggpwM02nWd6_label": "Cultivando a Mentalidade Positiva: Dicas para Superar Desafios",
+        "gg150g20K4c_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 setembro, 2023</span></p>",
+        "ggjIx2J0x-y_label": "Encontrando Inspiração na Natureza: Conexão e Renovação",
+        "ggy2SMKpdJh_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 setembro, 2023</span></p>",
+        "ggojzlFq58V_label": "Transformando Obstáculos em Oportunidades: Histórias Inspiradoras",
+        "ggvWNs8JExE_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 setembro, 2023</span></p>",
+        "gg2_GYusfr5_label": "Encontre Diversão e Movimento: Atividades Físicas Fora da Academia",
+        "ggk8Dzexu1K_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggqtIUudwIH_label": "A Importância do Alongamento na Rotina de Exercícios",
+        "ggMY-eOttPd_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "gg4pmRX1rWs_label": "Exercícios Essenciais para Fortalecimento Muscular em Casa",
+        "ggCENSRecqV_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggCMJ8Kn-O5_label": "Wrap de Frango com Abacate e Vegetais",
+        "ggG2JDyWKuJ_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggHTDYVBh2e_label": "Salada Colorida com Quinoa e Legumes",
+        "ggl_qemO6Cd_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggAuZRTIS21_label": "Smoothie Energizante de Frutas e Vegetais"
       }
     },
     "gp_global_section_514563501394494476-2": {
       "type": "gp-global-section-514563501394494476",
+      "custom_css": [],
       "settings": {
-        "section_preload": "false"
+        "section_preload": "false",
+        "checksum": ""
       }
     },
     "gp_section_511434241087636512": {
       "type": "gp-section-511434241087636512",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
+        "ggLaaHOf3n7_text": "Blog"
       }
     },
     "gp_section_511434296569889824": {
       "type": "gp-section-511434296569889824",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
+        "ggq_mlkbdz2_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggU9ByYdSmh_label": "Explorando os Benefícios e Funções da Coenzima Q10 para a Saúde",
+        "ggQfaEsDWV-_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggZSIUVLSP7_label": "Por que a Falta de Verduras Pode Prejudicar a sua Saúde",
+        "ggBEBHvMmh__text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "gg5LVb35dB__label": "Cultivando a Mentalidade Positiva: Dicas para Superar Desafios",
+        "ggYkzmxWDrh_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggsYY8JOwEJ_label": "Encontrando Inspiração na Natureza: Conexão e Renovação",
+        "ggKpNhixqkG_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "gg1BGUwc_Zj_label": "Transformando Obstáculos em Oportunidades: Histórias Inspiradoras",
+        "ggWe3td0f4Q_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggnzwezbFpV_label": "Encontre Diversão e Movimento: Atividades Físicas Fora da Academia",
+        "gg9mjsm22nP_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggASTfhZ8YS_label": "A Importância do Alongamento na Rotina de Exercícios",
+        "ggL0Ck0eMoG_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">1 setembro, 2023</span></p>",
+        "ggLycgMDF-O_label": "Exercícios Essenciais para Fortalecimento Muscular em Casa",
+        "ggTAXqinmsE_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "gg2wEq3zlS8_label": "Wrap de Frango com Abacate e Vegetais",
+        "gg0HLlPDcpi_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggYfrrW7GGN_label": "Salada Colorida com Quinoa e Legumes",
+        "gg5O2q1g1sx_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">21 agosto, 2023</span></p>",
+        "ggtp99-8s2z_label": "Smoothie Energizante de Frutas e Vegetais"
       }
     }
   },
