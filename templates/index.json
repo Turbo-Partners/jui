@@ -18,7 +18,7 @@
             "color_scheme": "accent-1",
             "image": "shopify://shop_images/backgrounddesktop.webp",
             "image_mobile": "shopify://shop_images/backgroundmobilee.webp",
-            "bannerlink": "shopify://products/jui-suco-verde-em-po-sabor-limao",
+            "bannerlink": "#ProductInfo-template--18363015954671__featured_product_AcjiFr",
             "max_width": 400,
             "desktop_content_position": "middle-center",
             "text_alignment": "center",
@@ -26,7 +26,7 @@
             "text_alignment_mobile": "center",
             "slider_text": "",
             "button_text": "",
-            "button_link": "shopify://collections/all"
+            "button_link": "#ProductInfo-template--18363015954671__featured_product_AcjiFr"
           }
         }
       },
