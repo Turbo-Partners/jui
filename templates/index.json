@@ -88,6 +88,7 @@
         "card_Bi7iLn",
         "card_TMCqdF"
       ],
+      "custom_css": [],
       "settings": {
         "title": "Porque tomar Jui?",
         "description": "Benefícios que você pode realmente sentir"
@@ -119,67 +120,51 @@
         "gg_p3NNeBzx_label": "Vai de Jui!"
       }
     },
-    "tp_carrossel_3gn7tV": {
-      "type": "tp-carrossel",
+    "image_with_text_Xyz7b4": {
+      "type": "image-with-text",
       "blocks": {
-        "image_GE3RME": {
-          "type": "image",
+        "heading_zegran": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Jui11_2_1_1.jpg",
-            "full_height": true
+            "heading": "Image with text",
+            "heading_size": "h1"
           }
         },
-        "image_XUHBfF": {
-          "type": "image",
+        "text_xcgdyN": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Jui17_1_1_1.jpg",
-            "full_height": true
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
           }
         },
-        "image_YRKXQt": {
-          "type": "image",
+        "button_txGEne": {
+          "type": "button",
           "settings": {
-            "image": "shopify://shop_images/jui_clean_31_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_faU7Xi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/foto_dsc05205_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_EQ8cdT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/jui_clean_20_1_1.jpg",
-            "full_height": true
-          }
-        },
-        "image_nGi8Ce": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/jui_clean_24_1_1.jpg",
-            "full_height": true
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "image_GE3RME",
-        "image_XUHBfF",
-        "image_YRKXQt",
-        "image_faU7Xi",
-        "image_EQ8cdT",
-        "image_nGi8Ce"
+        "heading_zegran",
+        "text_xcgdyN",
+        "button_txGEne"
       ],
-      "disabled": true,
       "settings": {
-        "height": 500,
-        "padding": 0,
-        "marquee-color": "",
-        "margin": 36,
-        "text-size": 16
+        "image": "shopify://shop_images/Jui_Sessao_223_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_product_AcjiFr": {
@@ -891,7 +876,7 @@
     "tp_faqlateral_CYUqVP",
     "gp_section_511770980398400679",
     "gp_section_511770980364911783",
-    "tp_carrossel_3gn7tV",
+    "image_with_text_Xyz7b4",
     "featured_product_AcjiFr",
     "gp_section_511770980348069031",
     "gp_section_511770980314514599",
