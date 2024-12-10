@@ -138,6 +138,9 @@
       "block_order": [
         "row_egqQtn"
       ],
+      "custom_css": [
+        ".image-with-text__media, .image-with-text__media--medium, .gradient, .color-scheme-1, .global-media-settings, .media {border-radius: 10px; }"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
