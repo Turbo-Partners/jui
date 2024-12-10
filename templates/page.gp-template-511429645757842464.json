@@ -13,30 +13,59 @@
       "type": "gp-section-511429645892125728",
       "settings": {
         "section_preload": "true",
-        "checksum": "_1_1"
+        "checksum": "_1_1",
+        "ggLaaHOf3n7_text": "Estamos aqui para ouvir você. <br>Sua opinião é fundamental para nós."
       }
     },
     "gp_section_511429862318146592": {
       "type": "gp-section-511429862318146592",
       "settings": {
+        "section_preload": "false",
+        "checksum": "_1_1",
+        "ggW3y3jkeO5_text": "Contate-nos",
+        "ggxcN2vDgq2_text": "Informações de Contato",
+        "gglDaYg3v4g_text": "Informações de contato",
+        "ggu9YwGG95Q_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:17px;\">Entre em contato e compartilhe seus pensamentos, dúvidas e sugestões.</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(61,67,38);font-size:17px;\">Estamos prontos para te escutar!</span></p>",
+        "gg0vf_aAyll_text": "<p><strong>+55 (21) 97262-9926</strong></p>",
+        "ggtKAqTlKo9_text": "<p><a href=\"mailto:contato@vivajui.com\"><strong>contato@vivajui.com</strong></a></p>",
+        "ggONsxu5xGf_text": "<p>PRIMEIRO NOME</p>",
+        "ggJ0NfWCiVv_text": "<p>NAME</p>",
+        "ggonVAuihFd_placeholder": "Digite seu primeiro nome",
+        "ggXk9UOgibB_text": "<p>Email</p>",
+        "ggSh2xZ8pDU_text": "<p>Email</p>",
+        "ggfZDRB0Us2_placeholder": "Digite seu e-mail",
+        "ggYN5I7tDnh_text": "<p>MENSAGEM</p>",
+        "ggxb_i0P2Ip_text": "<p>MESSAGE</p>",
+        "ggYh2GEXdvV_placeholder": "Digite sua mensagem",
+        "ggzqiwmuDUd_label": "Envie sua mensagem",
+        "ggtvrJbyAQt_successMessage": "Obrigado por nos contatar. Entraremos em contato com você o mais breve possível.",
+        "ggtvrJbyAQt_errorMessage": "Não é possível enviar e-mail. Por favor, tente novamente mais tarde.",
+        "ggwhPUDdRqJ_placeholder": "Name",
+        "gg8r_-T4cCl_placeholder": "Email",
+        "gg0Zdk7FHXs_placeholder": "Número de telefone",
+        "ggf0gLDVQ8M_placeholder": "Mensagem",
+        "ggdNpPwOjm0_label": "Envie sua mensagem"
+      }
+    },
+    "gp_section_511429645875282976": {
+      "type": "gp-section-511429645875282976",
+      "disabled": true,
+      "settings": {
+        "section_preload": "false",
         "checksum": "_1_1"
       }
     },
     "gp_global_section_514563501394494476-1": {
       "type": "gp-global-section-514563501394494476",
       "settings": {
-        "section_preload": "false"
+        "section_preload": "false",
+        "checksum": ""
       }
     },
     "gp_section_511429645892060192": {
       "type": "gp-section-511429645892060192",
       "settings": {
-        "checksum": "_1_1"
-      }
-    },
-    "gp_section_511429645875282976": {
-      "type": "gp-section-511429645875282976",
-      "settings": {
+        "section_preload": "false",
         "checksum": "_1_1"
       }
     }
@@ -44,8 +73,8 @@
   "order": [
     "gp_section_511429645892125728",
     "gp_section_511429862318146592",
+    "gp_section_511429645875282976",
     "gp_global_section_514563501394494476-1",
-    "gp_section_511429645892060192",
-    "gp_section_511429645875282976"
+    "gp_section_511429645892060192"
   ]
 }
