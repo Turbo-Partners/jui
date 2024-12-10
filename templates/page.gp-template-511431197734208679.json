@@ -12,26 +12,41 @@
     "gp_section_514821769522053959": {
       "type": "gp-section-514821769522053959",
       "settings": {
-        "section_preload": "true"
+        "section_preload": "true",
+        "checksum": "",
+        "ggrn-I-awrx_text": "Políticas de troca, <br>cancelamento e devolução"
       }
     },
     "gp_section_511431197784540327": {
       "type": "gp-section-511431197784540327",
-      "settings": {}
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gg_87RbvcHW_text": "<span style=\"font-size:20px;\"><strong>Políticas de troca, cancelamento e devolução.</strong></span><br><br><span style=\"font-size:20px;\">A Jui tem o compromisso de garantir a satisfação e felicidade de seus clientes, produzindo apenas produtos de alta qualidade, com tecnologia avançada e de ponta.</span><br><br><span style=\"font-size:20px;\">Para manter a credibilidade e cultivar um bom relacionamento com nossos clientes, criamos uma política de devolução e troca baseada no Código de Defesa do Consumidor. </span><br><br><span style=\"font-size:20px;\">As regras são simples e práticas. Nas compras realizadas pelo site da Jui, caso o cliente deseje cancelar a compra, se arrependa da aquisição ou receba um produto com defeito, ele deve entrar em contato conosco por meio do SAC: contato@vivajui.com, no prazo de até 7 dias corridos a partir da data de recebimento do produto. </span><br><br><span style=\"font-size:20px;\">O cliente deve enviar um e-mail informando seus dados pessoais (nome e CPF), além do número do pedido realizado. </span><br><br><span style=\"font-size:20px;\">Ao iniciar o processo de devolução, o cliente deve escrever no verso da nota fiscal do produto o motivo pelo qual está solicitando a devolução, juntamente com a data de devolução e o nome completo com CPF de quem está realizando a devolução.</span><br><br><span style=\"color:var(--e-global-color-primary);font-size:20px;\"><strong>Observação:</strong> não serão aceitas devoluções sem a nota fiscal acompanhada da descrição do motivo e/ou sem a solicitação prévia de devolução. </span><br><br><span style=\"color:var(--e-global-color-primary);font-size:20px;\"><strong><u>Nesse caso, as seguintes condições devem ser consideradas: </u></strong>O produto não deve apresentar sinais de ter sido aberto ou utilizado;</span><br><br><span style=\"color:var(--e-global-color-primary);font-size:20px;\">O produto deve ser enviado preferencialmente na embalagem original, acompanhado da nota fiscal, etiquetas e tags de identificação.</span><br><br><span style=\"color:var(--e-global-color-primary);font-size:20px;\">Endereço de devolução e custos de envio Para realizar a devolução do produto, o cliente deve enviá-lo para o endereço fornecido por e-mail.</span><br><br><span style=\"color:var(--e-global-color-primary);font-size:20px;\">Nesse caso, os custos do envio da devolução serão cobertos pela Jui. Mais uma vez, é fundamental que o produto não apresente sinais de ter sido aberto ou utilizado.</span>"
+      }
     },
     "gp_global_section_514563501394494476-1": {
       "type": "gp-global-section-514563501394494476",
       "settings": {
-        "section_preload": "false"
+        "section_preload": "false",
+        "checksum": ""
       }
     },
     "gp_section_511431197801317543": {
       "type": "gp-section-511431197801317543",
-      "settings": {}
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
     },
     "gp_section_511431197801383079": {
       "type": "gp-section-511431197801383079",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggLaaHOf3n7_text": "Políticas de troca, <br>cancelamento e <br>devolução"
+      }
     }
   },
   "order": [
