@@ -52,7 +52,7 @@
         "card_ygGQcm": {
           "type": "card",
           "settings": {
-            "card__background": "shopify://shop_images/Jui_Sessao_21.jpg",
+            "card__background": "shopify://shop_images/Jui_Sessao_21_3935eada-ca09-4c1a-9bc6-c44bce8670ea.jpg",
             "card__title": "Vitalidade para corpo e mente",
             "card__description": "Combinação de micronutrientes e fitonutrientes essenciais para promover vitalidade física e mental."
           }
@@ -835,11 +835,11 @@
         "instafeed_app_block_fq4Xkx": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "feed_id": "",
             "title": "",
             "title_color": "",
             "alignment": "center",
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
