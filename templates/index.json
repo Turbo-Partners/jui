@@ -140,8 +140,7 @@
       ],
       "custom_css": [
         ".image-with-text__media,.image-with-text__media--medium,.gradient,.color-scheme-1,.global-media-settings,.media {border-radius: 10px;}",
-        ".image-with-text__heading,.h1,.rte {font-family: \"Manrope\" !important;}",
-        ".image-with-text__text,.rte,.body {font-family: \"Manrope\" !important;}"
+        ".image-with-text__heading,.h1,.rte {font-family: 'Manrope' !important;}"
       ],
       "settings": {
         "image_height": "medium",
