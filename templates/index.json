@@ -16,8 +16,8 @@
           "type": "slider",
           "settings": {
             "color_scheme": "accent-1",
-            "image": "shopify://shop_images/backgrounddesktop.webp",
-            "image_mobile": "shopify://shop_images/backgroundmobilee.webp",
+            "image": "shopify://shop_images/WEB.webp",
+            "image_mobile": "shopify://shop_images/MOBILE.webp",
             "bannerlink": "#ProductInfo-template--18934392520943__featured_product_AcjiFr",
             "max_width": 400,
             "desktop_content_position": "middle-center",
