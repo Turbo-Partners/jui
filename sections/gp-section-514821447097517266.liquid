@@ -43,7 +43,7 @@
         class="pointer-events-auto h-full gp-flex"
         
         class="gp-h-full gp-w-full"
-        style="--shadow:none;border-radius:inherit;overflow:hidden;--jc:left;--jc-mobile:center"
+        style="--shadow:none;border-radius:inherit;--jc:left;--jc-mobile:center"
       >
         
   <img
@@ -70,6 +70,7 @@
 }
       </style>
     
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
   <gp-text data-id="gmDIZsqBx4">
     <div
       enableLazyloadImage="true" parentTag="Col"
@@ -82,7 +83,7 @@
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-g-heading-1 gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:center;--c:#FFFFFF;word-break:break-word;--radius:var(--g-radius-none);overflow:hidden"
-        >{{ section.settings.ggmDIZsqBx4_text }}</h2>
+        >{{ section.settings.ggmDIZsqBx4_text | replace: '$locationOrigin', locationOrigin }}</h2>
       </div>
     </div>
     </gp-text>
