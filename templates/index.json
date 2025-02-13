@@ -168,6 +168,27 @@
         "title": "Antioxidante, Anti-inchaço e Anti-tédio."
       }
     },
+    "tp_product_slide_4m7mM9": {
+      "type": "tp-product-slide",
+      "blocks": {
+        "product_mzbJR6": {
+          "type": "product",
+          "settings": {
+            "product": "jui-teste",
+            "price": "",
+            "number_review": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_mzbJR6"
+      ],
+      "settings": {
+        "header": "",
+        "subheader": ""
+      }
+    },
     "1722461618979fbe75": {
       "type": "apps",
       "blocks": {
@@ -265,6 +286,7 @@
     "tp_banner_Ph7QwD",
     "tp_faqlateral_CYUqVP",
     "tp_video_slides_dwbc9G",
+    "tp_product_slide_4m7mM9",
     "1722461618979fbe75",
     "gp_section_511770980398466215",
     "173135698940fae428",
