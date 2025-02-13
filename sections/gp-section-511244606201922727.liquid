@@ -33,6 +33,7 @@
       class="gJ2ArPT6EW gp-relative gp-flex gp-flex-col"
     >
       
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
   <gp-text data-id="g_87RbvcHW">
     <div
       enableLazyloadImage="true" parentTag="Col"
@@ -45,7 +46,7 @@
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:justify;--ff:var(--g-font-Manrope, 'Manrope'), var(--g-font-heading, heading);--weight:400;--size:40px;--size-tablet:41px;--size-mobile:36px;--c:#3D4326;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--radius:var(--g-radius-none);overflow:hidden"
-        >{{ section.settings.gg_87RbvcHW_text }}</h2>
+        >{{ section.settings.gg_87RbvcHW_text | replace: '$locationOrigin', locationOrigin }}</h2>
       </div>
     </div>
     </gp-text>
