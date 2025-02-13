@@ -1,0 +1,85 @@
+{% style %}
+
+    .{{ section.id }} {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        background: #FF8AE8;
+    }
+    .{{ section.id }} .header-wrapper .button--desktop {
+        display: none;
+    }
+
+    .{{ section.id }} .blog-wrapper .button--mobile {
+        display: block;
+    }
+
+
+    @media screen and (min-width: 1024px) {
+        .{{ section.id }} .header-wrapper .button--desktop {
+            display: block;
+        }
+
+        .{{ section.id }} .blog-wrapper .button--mobile {
+            display: none;
+        }
+    }
+{% endstyle %}
+
+<section class="{{ section.id }} page-width">
+    <div class="header-wrapper">
+        <h3>{{ section.settings.header }}</h3>
+        {% if section.settings.button_text %}
+            <a class="button button--desktop" href="{{ section.settings.button_url }}">
+                <button>{{ section.settings.button_text }}</button>
+            </a>
+        {% endif %}
+    </div>
+    <div class="blog-wrapper">
+        {% render 'article-card', article: section.settings.article1 %}
+        {% render 'article-card', article: section.settings.article2 %}
+        {% if section.settings.button_text %}
+            <a class="button button--mobile" href="{{ section.settings.button_url }}">
+                <button>{{ section.settings.button_text }}</button>
+            </a>
+        {% endif %}
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "TP Blog Section",
+    "settings":[
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "article",
+            "id": "article1",
+            "label": "Blog 1"
+        },
+        {
+            "type": "article",
+            "id": "article2",
+            "label": "Blog 2"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button URL"
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP Blog Section"
+        }
+    ]
+}
+{% endschema %}

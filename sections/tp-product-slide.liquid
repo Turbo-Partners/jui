@@ -1,0 +1,304 @@
+{% style %}
+.{{ section.id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.{{ section.id }}__swiper {
+    width: 100%;
+}
+
+.{{section.id}}__swiper-pagination .swiper-pagination-bullet-active {
+    background: #B3D825;
+}
+
+.{{ section.id }} .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.{{ section.id }} .text-wrapper h3 {
+    color: #3D4326;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.{{ section.id }} .text-wrapper p {
+    color: #3D4326;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    border: solid 1px #000;
+    border-radius: 20px;
+    padding-bottom: 28px;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .product-card__stars-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #212121;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Manrope;
+    font-size: 14.222px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.756px */
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper h4 {
+    color: #212121;
+    font-family: Manrope;
+    font-size: 17.778px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.111px */
+    text-decoration: none;
+    margin: 0;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper .price-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper .price-wrapper s {
+    color: #727376;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14.222px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.489px */
+    text-decoration-line: strikethrough;
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper .price-wrapper {
+    color: #212121;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+}
+
+.{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content button {
+    display: flex;
+    padding: 14.222px 28.444px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.889px;
+    border-radius: 42.667px;
+    background: #B3D825;
+    border: none;
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 17.778px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.{{section.id}}__swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+} 
+
+@media screen and (min-width: 1024px) {
+    .{{ section.id }} {
+        gap: 64px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .{{ section.id }}__swiper {
+        width: 70%;
+    }
+
+    .{{ section.id }} .text-wrapper h3 {
+        color: #3D4326;
+        font-family: Manrope;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 57.6px */
+        letter-spacing: 0.6px;
+    }
+
+    .{{ section.id }} .{{ section.id }}__swiper .swiper-wrapper .swiper-slide .product-card .product-card__content .text-wrapper h4 {
+        color: #212121;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%; /* 26px */
+    }
+
+
+}
+{% endstyle %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section class="{{ section.id }} page-width">
+    <div class="text-wrapper">
+        <h3>{{ section.settings.header }}</h3>
+        <p>{{ section.settings.subheader }}</p>
+    </div>
+    <div class="swiper {{ section.id }}__swiper">
+        <div class="swiper-wrapper">
+            {% for product in section.blocks %}
+                <div class="swiper-slide">
+                    <a class="product-card" href="{{ product.settings.product.url }}">
+                        {% if product.settings.image %}
+                            <img src="{{ product.settings.image | img_url: 'medium' }}" alt="{{ product.settings.product.title }}">
+                        {% endif %}
+                        <div class="product-card__content">
+                            <div class="text-wrapper">
+                                <h4>{{ product.settings.product.title }}</h4>
+                                <div class="price-wrapper">{{ product.settings.price }}</div>
+                                <div class="product-card__stars-wrapper">
+                                    {% render 'five-stars' -%}
+                                    {{ product.settings.number_review }}
+                                </div>
+                            </div>
+                            {% if product.settings.button_text != blank %}
+                                <button>{{ product.settings.button_text }}</button>
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="{{section.id}}__swiper-pagination"></div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiperPratica = new Swiper('.{{ section.id }}__swiper', {
+          direction: 'horizontal',
+          pagination: {
+            el: ".{{section.id}}__swiper-pagination",
+            clickable: true,
+          },
+          loop: false,
+          slidesPerView: 1,
+          spaceBetween: 8,
+          breakpoints: {
+            728: {
+              slidesPerView: 2,
+              spaceBetween: 12
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 32
+            }
+          }
+        });
+      });
+</script>
+
+{% schema %}
+{
+    "name": "tp-product-slide",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "text",
+            "id": "subheader",
+            "label": "Subheader"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Product",
+            "type": "product",
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "html",
+                    "id": "price",
+                    "label": "Price"
+                },
+                {
+                    "type": "text",
+                    "id": "number_review",
+                    "label": "Número de reviews"
+                },
+                {
+                    "type": "text",
+                    "label": "Button text",
+                    "id": "button_text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP Product Slide"
+        }
+    ]
+}
+{% endschema %}

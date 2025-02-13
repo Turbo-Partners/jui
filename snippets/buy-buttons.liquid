@@ -102,6 +102,7 @@
               assign quantity_rule_soldout = true
             endif
           -%}
+          <div>{{ quantity_rule_soldout }}</div>
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -112,11 +113,14 @@
             {% endif %}
           >
             <span style="font-family: 'Athletics Bold'; text-transform: uppercase; color: #3D4326; font-weight: 700;">
-              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
+              {{quantity_rule_soldout}}
+              {%comment%}{%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                {{ 'products.product.sold_out' | t }}9
               {%- else -%}
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
+               {% endcomment %}
+               {{ 'products.product.add_to_cart' | t }}
             </span>
             {% if product.selected_or_first_available_variant.available %}
               <span  style="font-family: 'Athletics Bold';" id="price-button-{{ section.id }}">

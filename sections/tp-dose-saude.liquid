@@ -1,0 +1,275 @@
+{% style %}
+
+    .{{ section.id }} {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .{{ section.id }} h4 {
+        color: #3D4326;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+        letter-spacing: 0.6px;
+        margin: 0;
+    }
+
+    .{{ section.id }} .beneficios-wrapper {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 24px;
+    }
+
+    .{{ section.id }} .beneficios-wrapper .beneficio-column {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper .text-wrapper h5 {
+        color: #3D4326;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper .text-wrapper p {
+        color: #3D4326;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.6px;
+        margin: 0;
+    }
+
+    .{{ section.id }} .beneficios-wrapper img.desktop {
+        display: none;
+    }
+
+    .{{ section.id }} .beneficios-wrapper img.mobile {
+        display: block;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .{{ section.id }} {
+            gap: 80px;
+        }
+
+        .{{ section.id }} h4 {
+            color: #3D4326;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 67.2px */
+            letter-spacing: 0.6px;
+        }
+
+        .{{ section.id }} .beneficios-wrapper {
+            grid-template-columns: auto auto auto;
+            column-gap: 48px;
+        }
+
+        .{{ section.id }} .beneficios-wrapper .beneficio-column.beneficio-column--1 {
+            order: 1;
+        }
+
+        .{{ section.id }} .beneficios-wrapper img.desktop {
+            display: block;
+            order: 2;
+        }
+
+        .{{ section.id }} .beneficios-wrapper img.mobile {
+            display: none;
+        }
+
+        .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper svg {
+            width: 70px;
+            height: auto;
+        }
+
+        .{{ section.id }} .beneficios-wrapper .beneficio-column.beneficio-column--2 {
+            order: 3;
+        }
+
+        .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper .text-wrapper h5 {
+            color: #3D4326;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Manrope;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 24px */
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .{{ section.id }} .beneficios-wrapper .beneficio-column .beneficio-wrapper {
+            padding: 0px 24px 24px 24px;
+        }
+    }
+
+{% endstyle %}
+
+<section class="{{ section.id }} page-width">
+    <h4>{{ section.settings.header }}</h4>
+    <div class="beneficios-wrapper">
+        {% if section.settings.image_mobile %}
+            <img src="{{ section.settings.image_mobile | img_url: 'master' }}" class="mobile">
+        {% endif %}
+        {% if section.settings.image_desktop %}
+            <img src="{{ section.settings.image_desktop | img_url: 'master' }}" class="desktop">
+        {% endif %}
+        <div class="beneficio-column beneficio-column--1">
+            {% for beneficio in section.blocks %}
+                {% if beneficio.type == "beneficio-column1" %}
+                    <div class="beneficio-wrapper">
+                        {% if beneficio.settings.image %}
+                            <img src="{{ beneficio.settings.image | img_url: 'master' }}">
+                        {% else %}
+                            {{ beneficio.settings.svg }}
+                        {% endif %}
+                        <div class="text-wrapper">
+                            <h5>{{ beneficio.settings.header }}</h5>
+                            <p>{{ beneficio.settings.text }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="beneficio-column beneficio-column--2">
+            {% for beneficio in section.blocks %}
+                {% if beneficio.type == "beneficio-column2" %}
+                    <div class="beneficio-wrapper">
+                        {% if beneficio.settings.image %}
+                            <img src="{{ beneficio.settings.image | img_url: 'master' }}">
+                        {% else %}
+                            {{ beneficio.settings.svg }}
+                        {% endif %}
+                        <div class="text-wrapper">
+                            <h5>{{ beneficio.settings.header }}</h5>
+                            <p>{{ beneficio.settings.text }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "TP-dose-saude",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_desktop",
+            "label": "Image Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Image Mobile"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "beneficio-column1",
+            "name": "Beneficio column 1",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "html",
+                    "id": "svg",
+                    "label": "SVG"
+                },
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ],
+            "limit": 2
+        },
+        {
+            "type": "beneficio-column2",
+            "name": "Beneficio column 2",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "html",
+                    "id": "svg",
+                    "label": "SVG"
+                },
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ],
+            "limit": 2  
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP Dose saude"
+        }
+    ]
+}
+{% endschema %}

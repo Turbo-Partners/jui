@@ -60,7 +60,7 @@ variant-selects {
 
 /* Custom styles for Pill display type */
 .product-form__input--pill input[type='radio'] + label {
-  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  border: 1px solid #DBDCE2;
   background-color: rgb(var(--color-background));
   color: rgba(var(--color-foreground));
   border-radius: var(--variant-pills-radius);
@@ -75,6 +75,93 @@ variant-selects {
   transition: border var(--duration-short) ease;
   cursor: pointer;
   position: relative;
+  width: calc(50% - 14px);
+  display: flex;
+  width: 174px;
+  height: 78px;
+  padding: 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin: 0;
+  flex-direction: column;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.product-form__input--pill input[type='radio'] + label .desconto {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px 4px 0px 0px;
+  background: #F8FBEB;
+  color: #3D4326;
+  font-family: Manrope;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-form__input--pill input[type='radio'] + label .price-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.product-form__input--pill input[type='radio'] + label .value-name {
+  color: #3D4326;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-form__input--pill input[type='radio'] + label .value-name .doses {
+  color: #3D4326;
+  font-family: Manrope;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-form__input--pill input[type='radio'] + label .price {
+  color: #3D4326;
+  font-family: Manrope;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: right;
+}
+
+.product-form__input--pill input[type='radio'] + label .price .compare-at-price {
+  color: var(--Gray-2, #AEB6B3);
+  text-align: right;
+  font-family: Manrope;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+}
+
+.product-form__input--pill input[type='radio'] + label .price .cada {
+  color: #3D4326;
+  font-family: Manrope;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .product-form__input--pill input[type='radio'] + label:before {
@@ -91,12 +178,18 @@ variant-selects {
 }
 
 .product-form__input--pill input[type='radio'] + label:hover {
-  border-color: rgb(var(--color-foreground));
+  border: 1px solid #B3D825;
 }
 
 .product-form__input--pill input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
+  background: rgba(179, 216, 37, 0.09);
   color: rgb(var(--color-background));
+  border: 1px solid #B3D825;
+}
+
+.product-form__input--pill input[type='radio']:checked + label .desconto {
+  background: #B3D825;
+  
 }
 
 @media screen and (forced-colors: active) {
@@ -156,3 +249,14 @@ variant-selects {
   }
 }
 /* End custom styles for Swatch display type */
+
+
+.product-form__input.product-form__input--pill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+}

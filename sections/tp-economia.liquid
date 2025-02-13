@@ -1,0 +1,185 @@
+{% style %}
+.{{ section.id }} {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.{{ section.id }} .tabela {
+    display: grid;
+    grid-template-rows: auto;
+    background: #F2EDDA;
+    padding: 0 1.5rem;
+    padding-top: 40px;
+    row-gap: 10px;
+}
+
+.{{ section.id }} .tabela .price-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    position: relative;
+    bottom: -30px;
+}
+
+.{{ section.id }} .tabela .price-wrapper img {
+    width: calc(50% - 14px);
+    padding: 0;
+}
+
+.{{ section.id }} .tabela .linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.{{ section.id }} .tabela .linha .coluna {
+    width: 50%;
+    color: #4D4D4D;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.4px; /* 180% */
+    letter-spacing: 0.6px;
+}
+
+.{{ section.id }} .tabela .linha .coluna2 {
+    text-align: right;
+}
+
+.{{ section.id }} .tabela .linha.linha--1 .coluna1 {
+    color: #3E4328;
+    font-family: Inter;
+    font-size: 35.715px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 49.2px; /* 137.758% */
+    letter-spacing: 0.6px;
+}
+
+.{{ section.id }} .tabela .linha.linha--2 {
+    border-bottom: 1px solid #7D7D7D;
+}
+
+.{{ section.id }} img {
+    width: 100%;
+    height: auto; /* Ensures the aspect ratio is maintained */
+    padding: 0 1.5rem;
+    object-fit: contain; /* Prevents cropping */
+}
+
+@media screen and (min-width: 768px) {
+    .{{ section.id }} {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .{{ section.id }} {
+        flex-direction: row;
+        gap: 32px;
+        padding-top: 80px;
+    }
+
+    .{{ section.id }} img {
+        width: 50%;
+        height: auto; /* Maintain aspect ratio on desktop */
+        padding: 0;
+    }
+
+    .{{ section.id }} .tabela {
+        width: calc(50% - 32px);
+        padding: 40px 20px 0px 20px;
+        border-radius: 30px;
+        background: #F2EDDA;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    .{{ section.id }} .tabela .price-wrapper img {
+        width: calc(40% - 14px);
+    }
+
+    .{{ section.id }} .tabela .price-wrapper {
+        justify-content: center;
+    }
+}
+{% endstyle %}
+
+<section class="{{ section.id }} page-width">
+    <div class="tabela">
+        {% for linha in section.blocks %}
+            {% if linha.type == "linha" %}
+                <div class="linha linha--{{ forloop.index }}">
+                    <div class="coluna coluna1 coluna1--{{ forloop.index }}">
+                        {{ linha.settings.coluna1 }}
+                    </div>
+                    <div class="coluna coluna2 coluna2--{{ forloop.index }}">
+                        {{ linha.settings.coluna2 }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="price-wrapper">
+            {% if section.settings.price_image1 %}
+                <img src="{{ section.settings.price_image1 | img_url: 'master' }}">
+            {% endif %}
+            {% if section.settings.price_image2 %}
+                <img src="{{ section.settings.price_image2 | img_url: 'master' }}">
+            {% endif %}
+        </div>
+    </div>
+    <img src="{{ section.settings.image | img_url: 'master' }}">
+</section>
+
+{% schema %}
+{
+    "name": "TP Economia",
+    "settings":[
+        {
+            "type": "text",
+            "id": "table_header",
+            "label": "Table Header"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Main Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "price_image1",
+            "label": "Price Image 1"
+        },
+        {
+            "type": "image_picker",
+            "id": "price_image2",
+            "label": "Price Image 2"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "linha",
+            "name": "Linha",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "coluna1",
+                    "label": "Coluna 1"
+                },
+                {
+                    "type": "text",
+                    "id": "coluna2",
+                    "label": "Coluna 2"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP Economia"
+        }
+    ]
+}
+{% endschema %}

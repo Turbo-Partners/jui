@@ -40,6 +40,13 @@
 }
 {% endschema %}
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <div class="{{ section.id }}">
   <div class="page-width">
     <div class="{{ section.id }}-title">
@@ -53,23 +60,12 @@
       <div class="{{ section.id }}-swiper-wrapper swiper-wrapper">
         {% for block in section.blocks %}
           <div class="{{ section.id }}-swiper-slide swiper-slide">
-            {{ block.settings.video | video_tag: controls: true }}
+            {{ block.settings.video | video_tag: controls: true, autoplay: true, loop: true }}
             {% comment %}<video src="{{ block.settings.url__video }}"></video>{% endcomment %}
           </div>
         {% endfor %}
       </div>
-      <!--
-        <div class="swiper-button-next">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-            <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/>
-          </svg>
-        </div>
-        <div class="swiper-button-prev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-            <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/>
-          </svg>
-        </div>
-      -->
+      <div class="{{section.id}}__swiper-pagination"></div>
     </div>
   </div>
 </div>
@@ -81,6 +77,10 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".{{section.id}}__swiper-pagination",
+        clickable: true,
       },
       loop: false,
       slidesPerView: 2,
@@ -127,6 +127,16 @@
    h1 {
     font-family: Athletics, sans-serif !important;
   }
+
+  .{{section.id}}__swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .{{section.id}}__swiper-pagination .swiper-pagination-bullet {
+    background: #B3D825;
+  }
   
   .swiper-button-next, swiper-button-prev {
     width: 20px;
@@ -166,4 +176,6 @@
       width: 100%;
       border-radius: 1rem;
   }
+
+
 {% endstyle %}

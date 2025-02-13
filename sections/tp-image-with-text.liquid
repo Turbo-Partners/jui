@@ -1,0 +1,174 @@
+{% style %}
+  .{{ section.id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .{{ section.id }}__image {
+    background: url('{{ section.settings.image_mobile | img_url: 'master' }}') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: block !important;
+  }
+
+  .{{ section.id }}__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #B2D926;
+    color: white;
+    padding-top: 32px;
+    padding-bottom: 42px;
+    gap: 32px;
+  }
+
+  .{{ section.id }}__button {
+    display: flex;
+    width: 300px;
+    height: 56px;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 32px;
+    background: #FFF;
+    text-decoration: none;
+  }
+
+  .{{ section.id }}__button:hover {
+
+  }
+
+  .{{ section.id }}__content .text-wrapper {
+    gap: 8px;
+  }
+
+  .{{ section.id }}__content .text-wrapper h3 {
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+    letter-spacing: 0.6px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .{{ section.id }}__content .text-wrapper p {
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.6px;
+    text-align: left;
+    margin: 0;
+  } 
+
+  @media (min-width: 768px) {
+    .{{ section.id }} {
+      grid-template-columns: 1fr 1fr;
+      height: 75vh;
+    }
+
+    .{{ section.id }}__content {
+      gap: 48px;
+      align-items: flex-start;
+      padding-left: 113px;
+    }
+
+    .{{ section.id }}__image {
+      background: url('{{ section.settings.image_desktop | img_url: 'master' }}') no-repeat center center;
+      background-size: cover;
+      display: block !important;
+      height: 100%;
+    }
+
+
+
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    .{{ section.id }}__content .text-wrapper h3 {
+      color: #3D4326;
+      font-family: Manrope;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 67.2px */
+      letter-spacing: 0.6px;
+    }
+
+    .{{ section.id }}__content .text-wrapper p {
+      color: #3D4326;
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 25.2px */
+      letter-spacing: 0.6px;
+    } 
+  }
+{% endstyle %}
+
+
+<section class="{{ section.id }}">
+  <div class="{{ section.id }}__image"></div>
+  <div class="{{ section.id }}__content page-width">
+    <div class="text-wrapper">{{ section.settings.text }}</div>
+    {% if section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_url }}" class="{{ section.id }}__button">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+    "name": "tp-image-with-text",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Image mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_desktop",
+            "label": "Image Desktop"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button URL"
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP image with text"
+        }
+    ]
+}
+{% endschema %}

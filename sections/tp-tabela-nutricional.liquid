@@ -1,0 +1,197 @@
+{% style %}
+
+.{{ section.id }} {
+    background: #B3D826;
+}
+
+.{{ section.id }}__page-width {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.{{ section.id }} .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.{{ section.id }} .text-wrapper h4 {
+    color: #3D4326;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.{{ section.id }} .text-wrapper p {
+    color: #3D4326;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+.{{ section.id }} .text-wrapper a {
+    display: none;
+}
+
+.{{ section.id }} img {
+    width: 100%;
+}
+
+.{{ section.id }} a {
+    text-decoration: none;
+}
+
+.{{ section.id }} a button {
+    display: flex;
+    width: 300px;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    background: #FFF;
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .{{ section.id }}__page-width {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        flex-direction: row;
+        gap: 148px;
+        width: 85%;
+    }
+
+    .{{ section.id }} a {
+        display: none;
+    }
+
+    .{{ section.id }} .text-wrapper a {
+        display: flex;
+        margin-top: 48px;
+    }
+
+    .{{ section.id }} .text-wrapper {
+        align-items: flex-start;
+    }
+
+    .{{ section.id }} .text-wrapper h4 {
+        text-align: left;
+    }
+
+    .{{ section.id }} .text-wrapper p {
+        text-align: left;
+    }
+
+    .{{ section.id }} .text-wrapper h4 {
+        color: #3D4326;
+        font-family: Manrope;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%; /* 57.6px */
+        letter-spacing: 0.6px;
+    }
+
+    .{{ section.id }} .text-wrapper p {
+        color: #3D4326;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 24px */
+        letter-spacing: 0.6px;
+    }
+
+    .{{ section.id }} a button {
+        display: flex;
+        padding: 18px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 32px;
+        background: #FFF;
+        width: unset;
+    }
+}
+{% endstyle %}
+
+<section class="{{ section.id }}">
+    <div class="page-width {{ section.id }}__page-width">
+        <div class="text-wrapper">
+            <h4>{{ section.settings.header }}</h4>
+            <p>{{ section.settings.text }}</p>
+            <a href="{{ section.settings.url }}"><button>{{ section.settings.button_text }}</button></a>
+        </div>
+        {% if section.settings.tabela %}
+            <img src="{{ section.settings.tabela | img_url: 'master' }}">
+        {% endif %}
+        {% if section.settings.button_text %}
+            <a href="{{ section.settings.url }}"><button>{{ section.settings.button_text }}</button></a>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "TP tabela nutricional",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "tabela",
+            "label": "Tabela Nutricional"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "url",
+            "label": "Button URL"
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP tabela nutricional"
+        }
+    ]
+
+}
+{% endschema %}

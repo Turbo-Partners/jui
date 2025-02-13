@@ -1,0 +1,72 @@
+{% style %}
+  .{{ section.id }} .desktop {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .{{ section.id }} .mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .{{ section.id }} .mobile {
+      display: none;
+    }
+    .{{ section.id }} .desktop {
+      display: block;
+    }
+  }
+
+{% endstyle %}
+<section class="{{ section.id }}">
+  <a href="{{ section.settings.url }}">
+    {% if section.settings.image_desktop %}
+      <img 
+        src="{{ section.settings.image_desktop | image_url }}" 
+        alt="Desktop Image" 
+        class="image desktop" 
+        height="720"
+      >
+    {% endif %}
+    {% if section.settings.image_mobile %}
+      <img 
+        src="{{ section.settings.image_mobile | image_url}}" 
+        alt="Mobile Image" 
+        class="image mobile" 
+        height="720"
+      >
+    {% endif %}
+  </a>
+</section>
+
+
+{% schema %}
+  {
+    "name": "TP hero",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Image Desktop"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Image Mobile"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "URL"
+      }
+    ],
+    "presets":[
+      {
+        "name": "TP Hero"
+      }
+    ]
+  }
+{% endschema %}

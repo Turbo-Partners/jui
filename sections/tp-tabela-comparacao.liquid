@@ -1,0 +1,306 @@
+{% style %}
+.{{ section.id }} {
+    padding-top: 100px;
+
+}
+
+.{{ section.id }} .tabela-wrapper {
+    background: #B3D826;
+    border-radius: 40px;
+    padding: 16px;
+    position: relative;
+}
+
+.{{ section.id }} .tabela-wrapper .image_top-left,
+.{{ section.id }} .tabela-wrapper .image_bottom-right {
+    display: none;
+}
+
+
+.{{ section.id }} .tabela-wrapper .tabela {
+    display: grid;
+    border: 1px solid #3D4326;
+    border-radius: 22px 22px 34px 34px; 
+
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha {
+    display: grid;
+    grid-template-columns: 45% 27.5% 27.5%;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3D4326;
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--2,
+.{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--3 {
+    padding: 0px;
+
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--2 img {
+    margin-top: -80px;
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--3 img {
+    margin-top: -80px;
+}
+
+
+.{{ section.id }} .tabela-wrapper .tabela .linha:last-child {
+    border-bottom: none;
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha .coluna {
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    display: flex;
+    border-left: 1px solid #3D4326;
+    box-sizing: border-box;
+    height: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha .coluna:first-child {
+    border-left: none;
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha .coluna.coluna--2,
+.{{ section.id }} .tabela-wrapper .tabela .linha .coluna.coluna--3 {
+    justify-content: center;
+    color: #3D4326;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+} 
+
+.{{ section.id }} .tabela-wrapper .tabela .linha .coluna.coluna--1 {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+}
+
+.{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--1 {
+    justify-content: center;
+    color: #3D4326;
+    font-family: Manrope;
+    font-size: 14.749px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%; /* 13.274px */
+}
+
+@media screen and (min-width: 1024px) {
+
+    .{{ section.id }} {
+        width: 75%;
+    }
+
+    .{{ section.id }} .tabela-wrapper .image_top-left,
+    .{{ section.id }} .tabela-wrapper .image_bottom-right {
+        display: block;
+        position: absolute;
+    }
+
+    .{{ section.id }} .tabela-wrapper .image_bottom-right {
+        bottom: -75px;
+        right: -100px;
+    }
+
+    .{{ section.id }} .tabela-wrapper .image_top-left {
+        top: -60px;
+        left: -100px;
+    }
+
+    .{{ section.id }} .tabela-wrapper .tabela .linha.linha1 .coluna.coluna--1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #3D4326;
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%; /* 27px */
+    }
+}
+{% endstyle %}
+
+<section class="{{ section.id }} page-width">
+    <div class="tabela-wrapper">
+        {% if section.settings.image_bottom_right %}
+            <img class="image_bottom-right" src="{{ section.settings.image_bottom_right | img_url: 'master' }}">
+        {% else %}
+            {{ section.settings.svg_bottom_right | replace: '<svg', '<svg class="image_bottom-right"' }}
+
+        {% endif %}
+        {% if section.settings.image_top_left %}
+            <img class="image_top-left" src="{{ section.settings.image_top_left | img_url: 'master' }}">
+        {% else %}
+            {{ section.settings.svg_top_left | replace: '<svg', '<svg class="image_top-left"' }}
+        {% endif %}
+        <div class="tabela">
+            {% for linha in section.blocks %}
+                {% if linha.type == "primeira_linha" %}
+                    <div class="linha linha1">
+                        <div class="coluna coluna--1">
+                            {{ linha.settings.coluna1 }}
+                        </div>
+                        <div class="coluna coluna--2">
+                            {% if linha.settings.coluna2 %}
+                                <img src="{{ linha.settings.coluna2 | img_url: 'master' }}">
+                            {% else %}
+                                {{ linha.settings.svg_coluna2 }}
+                            {% endif %}
+                        </div>
+                        <div class="coluna coluna--3">
+                            {% if linha.settings.coluna3 %}
+                                <img src="{{ linha.settings.coluna3 | img_url: 'master' }}">
+                            {% else %}
+                                {{ linha.settings.svg_coluna3 }}
+                            {% endif %}
+                        </div>
+                    </div> 
+                {% else %}
+                    <div class="linha">
+                        <div class="coluna coluna--1">
+                            
+                            {{ linha.settings.coluna1 }}
+                        </div>
+                        <div class="coluna coluna--2">
+                            {% if linha.settings.svg_coluna2 != blank %}
+                                {{ linha.settings.svg_coluna2 }}
+                            {% else %}
+                                {{ linha.settings.coluna2 }}
+                            {% endif %}
+                            
+                        </div>
+                        <div class="coluna coluna--3">
+                            {% if linha.settings.svg_coluna3 != blank%}
+                                {{ linha.settings.svg_coluna3 }}
+                            {% else %}
+                                {{ linha.settings.coluna3 }}
+                            {% endif %}
+                        </div>
+                    </div> 
+                {% endif %}
+            {% endfor %} 
+        </div>
+        
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "TP Tabela Comparação",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_top_left",
+            "label": "Imagem TOP LEFT"
+        },
+        {
+            "type": "html",
+            "id": "svg_top_left",
+            "label": "SVG TOP LEFT"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_bottom_right",
+            "label": "Imagem BOTTOM RIGHT"
+        },
+        {
+            "type": "html",
+            "id": "svg_bottom_right",
+            "label": "SVG BOTTOM RIGHT"
+        },
+
+    ],
+    "blocks": [
+        {
+            "type": "linha",
+            "name": "Linha",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "coluna1",
+                    "label": "Coluna 1"
+                },
+                {
+                    "type": "text",
+                    "id": "coluna2",
+                    "label": "Coluna 2"
+                },
+                {
+                    "type": "html",
+                    "id": "svg_coluna2",
+                    "label": "SVG Coluna 2"
+                },
+                {
+                    "type": "text",
+                    "id": "coluna3",
+                    "label": "Coluna 3"
+                },
+                {
+                    "type": "html",
+                    "id": "svg_coluna3",
+                    "label": "SVG Coluna 3"
+                },
+            ]
+        },
+        {
+            "type": "primeira_linha",
+            "name": "Primeira Linha",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "coluna1",
+                    "label": "Coluna 1",
+                },
+                {
+                    "type": "image_picker",
+                    "id": "coluna2",
+                    "label": "Coluna 2",
+                },
+                {
+                    "type": "html",
+                    "id": "svg_coluna2",
+                    "label": "SVG Coluna 2"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "coluna3",
+                    "label": "Coluna 3"
+                },
+                {
+                    "type": "html",
+                    "id": "svg_coluna3",
+                    "label": "SVG Coluna 3"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "TP Tabela Comparação"
+        }
+    ]
+}
+{% endschema %}

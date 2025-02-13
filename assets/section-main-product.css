@@ -1248,8 +1248,6 @@ a.product__text {
 }
 
 .icon-with-text img {
-  height: var(--icon-size);
-  width: var(--icon-size);
   object-fit: contain;
 }
 

@@ -97,8 +97,35 @@
       {% endif %}
     >
     <label for="{{ input_id }}" style="font-family: 'Manrope'">
-      {{ value -}}
-      {{ label_unavailable }}
+      {% if value.variant.metafields.custom.texto_desconto.value %}
+        <div class="desconto">{{value.variant.metafields.custom.texto_desconto.value}}</div>
+      {% endif %}
+      <div class="price-wrapper">
+        <span class="value-name">
+          {{ value -}}
+          <br>
+          <span class="doses">
+            {% if value.name == "1 Lata" %}
+              30 doses
+            {% elsif value.name == "2 Latas" %}
+              60 doses
+            {% elsif value.name == "3 Latas" %}
+              90 doses
+            {% elsif value.name == "6 Latas" %}
+              180 doses
+            {% endif %}
+          </span>
+        </span>
+        {{ label_unavailable }}
+        <span class="price">
+          {% if value.variant.compare_at_price %}
+            <s class="compare-at-price">{{ value.variant.compare_at_price | money_with_currency | remove: 'BRL' }}</s>
+          {% endif %}
+          <br>
+          {{ value.variant.price | money_with_currency | remove: 'BRL' }}
+          <span class="cada">/cada</span>
+        </span>
+      </div>
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
